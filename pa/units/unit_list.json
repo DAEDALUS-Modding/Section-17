@@ -205,6 +205,7 @@
 
         "/pa/units/pandapack/swole_stinger/swole_stinger.json",
         "/pa/units/pandapack/vehicle_chaddriffter/vehicle_chaddriffter.json",
-        "/pa/units/pandapack/pineapple/bot_radarpineapple.json"
+        "/pa/units/pandapack/pineapple/bot_radarpineapple.json",
+        "/pa/units/pandapack/titan_yandercannon/titan_yandercannon.json"
     ]
 }

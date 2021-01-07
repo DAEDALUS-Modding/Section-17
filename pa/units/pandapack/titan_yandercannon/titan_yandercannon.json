@@ -48,27 +48,51 @@
       "fire_event": "fired0",
       "projectiles_per_fire": 1,
       "muzzle_bone": [
-        "socket_muzzle"
+        "socket_cannon_muzzle"
       ]
     },
     {
-      "spec_id": "/pa/units/pandapack/titan_yandercannon/mni_weapon.json",
+      "spec_id": "/pa/units/pandapack/titan_yandercannon/mini_weapon.json",
       "aim_bone": "bone_rear_left_turret",
       "record_index": 1,
       "fire_event": "fired1",
       "projectiles_per_fire": 1,
       "muzzle_bone": [
-        "socket_right_muzzle"
+        "socket_rear_left_muzzle_1",
+        "socket_rear_left_muzzle_2"
       ]
     },
     {
-      "spec_id": "/pa/units/pandapack/titan_yandercannon/vehicle_chaddriffter_weapon.json",
-      "aim_bone": "bone_left_pitch",
+      "spec_id": "/pa/units/pandapack/titan_yandercannon/mini_weapon.json",
+      "aim_bone": "bone_front_left_turret",
       "record_index": 2,
       "fire_event": "fired2",
       "projectiles_per_fire": 1,
       "muzzle_bone": [
-        "socket_left_muzzle"
+        "socket_front_left_muzzle_1",
+        "socket_front_left_muzzle_2"
+      ]
+    },
+    {
+      "spec_id": "/pa/units/pandapack/titan_yandercannon/mini_weapon.json",
+      "aim_bone": "bone_front_right_turret",
+      "record_index": 2,
+      "fire_event": "fired3",
+      "projectiles_per_fire": 1,
+      "muzzle_bone": [
+        "socket_front_right_muzzle_1",
+        "socket_front_right_muzzle_2"
+      ]
+    },
+    {
+      "spec_id": "/pa/units/pandapack/titan_yandercannon/mini_weapon.json",
+      "aim_bone": "bone_rear_right_turret",
+      "record_index": 2,
+      "fire_event": "fired4",
+      "projectiles_per_fire": 1,
+      "muzzle_bone": [
+        "socket_rear_right_muzzle_1",
+        "socket_rear_right_muzzle_2"
       ]
     }
   ],
@@ -81,13 +105,23 @@
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/veh/tank_hover_fire",
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_right_muzzle",
-      "effect_scale": 3.0
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_rear_left_muzzle_1 /pa/effects/specs/tank_muzzle_flash.pfx socket_rear_left_muzzle_2",
+      "effect_scale": 1.0
     },
     "fired2": {
       "audio_cue": "/SE/Weapons/veh/tank_hover_fire",
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_left_muzzle",
-      "effect_scale": 3.0
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_front_left_muzzle_1 /pa/effects/specs/tank_muzzle_flash.pfx socket_front_left_muzzle_2",
+      "effect_scale": 1.0
+    },
+    "fired3": {
+      "audio_cue": "/SE/Weapons/veh/tank_hover_fire",
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_front_right_muzzle_1 /pa/effects/specs/tank_muzzle_flash.pfx socket_front_right_muzzle_2",
+      "effect_scale": 1.0
+    },
+    "fired4": {
+      "audio_cue": "/SE/Weapons/veh/tank_hover_fire",
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_rear_right_muzzle_1 /pa/effects/specs/tank_muzzle_flash.pfx socket_rear_right_muzzle_2",
+      "effect_scale": 1.0
     },
     "died": {
       "audio_cue": "/SE/Death/Veh",
