@@ -2,19 +2,6 @@ import shutil
 import os
 import sys
 
-# def import_paeiou():
-#     paeiou_dir_in = "PAEIOU_directory.txt"
-#     if (os.path.isfile(paeiou_dir_in)):
-#         with open(paeiou_dir_in) as infile:
-#             paeiou_path = infile.readline()
-#     else:
-#         paeiou_path = input("PAEIOU path: ")
-#         with open(paeiou_dir_in, 'w+') as outfile:
-#             outfile.write(paeiou_path)
-#     sys.path.insert(1, paeiou_path)
-
-#     import paeiou
-
 def call_paeiou():
     paeiou_dir_in = "PAEIOU_directory.txt"
     if (os.path.isfile(paeiou_dir_in)):
@@ -38,8 +25,8 @@ def call_paeiou():
                             "gen")
 
 def main():
-    # shutil.rmtree("gen")
-    # os.mkdir("gen")
+    shutil.rmtree("gen")
+    os.mkdir("gen")
 
     call_paeiou()
 
