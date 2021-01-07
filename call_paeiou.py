@@ -19,14 +19,14 @@ def call_paeiou():
                             True, 
                             0, 
                             0, 
-                            "com.pa.daedalus.dozer", 
+                            "com.pa.daedalus.experimentals", 
                             "PAEIOU_units/", 
                             "unit_add_list.txt", 
                             "gen")
 
 def main():
-    shutil.rmtree("gen")
-    os.mkdir("gen")
+    # shutil.rmtree("gen")
+    # os.mkdir("gen")
 
     call_paeiou()
 

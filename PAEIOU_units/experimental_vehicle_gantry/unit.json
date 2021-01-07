@@ -1,6 +1,6 @@
 {
-    "display_name": "!LOC:Advanced Vehicle Factory",
-    "description": "!LOC:Advanced Manufacturing - Builds basic and advanced land vehicles.",
+    "display_name": "!LOC:Experimental Vehicle Gantry",
+    "description": "!LOC:Experimental Manufacturing - Builds basic, advanced, and experimental land vehicles. 20 second cooldown between units produced.",
     "TEMP_texelinfo": 62.1789,
     "area_build_separation": 2,
     "atrophy_cool_down": 15.0,
@@ -16,8 +16,11 @@
       }
     },
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "build_metal_cost": 4800,
-    "buildable_types": "Mobile & Tank & FactoryBuild",
+    "build_metal_cost": 1800,
+    "production": {
+        "energy": 2000
+      },
+    "buildable_types": "(Mobile & Tank & FactoryBuild) - Custom1 - Custom2 - Custom4",
     "command_caps": [
       "ORDER_Move",
       "ORDER_Patrol",
@@ -34,129 +37,7 @@
         "effect_scale": 1.0
       }
     },
-    "factory_cooldown_time": 4,
-    "fx_offsets": [
-      {
-        "type": "build",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
-        "bone": "socket_nozzle01",
-        "offset": [
-          0,
-          0,
-          0
-        ],
-        "orientation": [
-          0,
-          0,
-          0
-        ]
-      },
-      {
-        "type": "build",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
-        "bone": "socket_nozzle02",
-        "offset": [
-          0,
-          0,
-          0
-        ],
-        "orientation": [
-          0,
-          0,
-          0
-        ]
-      },
-      {
-        "type": "build",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
-        "bone": "socket_nozzle03",
-        "offset": [
-          0,
-          0,
-          0
-        ],
-        "orientation": [
-          0,
-          0,
-          0
-        ]
-      },
-      {
-        "type": "build",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
-        "bone": "socket_nozzle04",
-        "offset": [
-          0,
-          0,
-          0
-        ],
-        "orientation": [
-          0,
-          0,
-          0
-        ]
-      },
-      {
-        "type": "build",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
-        "bone": "socket_nozzle05",
-        "offset": [
-          0,
-          0,
-          0
-        ],
-        "orientation": [
-          0,
-          0,
-          0
-        ]
-      },
-      {
-        "type": "build",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
-        "bone": "socket_nozzle06",
-        "offset": [
-          0,
-          0,
-          0
-        ],
-        "orientation": [
-          0,
-          0,
-          0
-        ]
-      },
-      {
-        "type": "build",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
-        "bone": "socket_nozzle07",
-        "offset": [
-          0,
-          0,
-          0
-        ],
-        "orientation": [
-          0,
-          0,
-          0
-        ]
-      },
-      {
-        "type": "build",
-        "filename": "/pa/effects/specs/fab_spray.pfx",
-        "bone": "socket_nozzle08",
-        "offset": [
-          0,
-          0,
-          0
-        ],
-        "orientation": [
-          0,
-          0,
-          0
-        ]
-      }
-    ],
+    "factory_cooldown_time": 20,
     "headlights": [
       {
         "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
@@ -275,12 +156,12 @@
       23
     ],
     "model": {
-      "filename": "/pa/units/land/vehicle_factory_adv/vehicle_factory_adv.papa",
+      "filename": "{papa/model.papa}",
       "animations": {
-        "idle": "/pa/units/land/vehicle_factory_adv/vehicle_factory_adv_anim_build.papa",
-        "build_start": "/pa/units/land/vehicle_factory_adv/vehicle_factory_adv_anim_start.papa",
-        "build_loop": "/pa/units/land/vehicle_factory_adv/vehicle_factory_adv_anim_build.papa",
-        "build_end": "/pa/units/land/vehicle_factory_adv/vehicle_factory_adv_anim_end.papa"
+        "idle": "{papa/anim_start.papa}",
+        "build_start": "{papa/anim_start.papa}",
+        "build_loop": "{papa/anim_loop.papa}",
+        "build_end": "{papa/anim_end.papa}"
       },
       "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
       "skirt_decal": "/pa/effects/specs/skirt_02.json"
@@ -289,8 +170,8 @@
       "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
     },
     "placement_size": [
-      60,
-      80
+      30,
+      40
     ],
     "recon": {
       "observer": {
@@ -323,22 +204,22 @@
       ]
     ],
     "selection_icon": {
-      "diameter": 74.0
+      "diameter": 40.0
     },
     "tools": [
       {
-        "spec_id": "/pa/units/land/vehicle_factory_adv/vehicle_factory_adv_build_arm.json",
+        "spec_id": "{build_arm.json}",
         "aim_bone": "bone_root"
       }
     ],
-    "unit_name": "Advanced Vehicle Factory",
+    "unit_name": "Experimental Vehicle Gantry",
     "unit_types": [
       "UNITTYPE_Factory",
       "UNITTYPE_Construction",
       "UNITTYPE_Land",
       "UNITTYPE_Tank",
       "UNITTYPE_Structure",
-      "UNITTYPE_Advanced",
+      "UNITTYPE_Titan",
       "UNITTYPE_Important"
     ],
     "wait_to_rolloff_time": 0
