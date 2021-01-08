@@ -1,10 +1,10 @@
 {
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "display_name": "HitCannon",
+  "display_name": "Big_Bill",
   "si_name": "exp_cannon",
   "description": "!LOC:Grrrrr - Devastating damage with heavy armor. Pew Pew Change the Description Yander. 20th hour after rising-STOP. Please help-STOP. I've been conscripted to make Panda units and its pain-END.",
   "max_health": 5000,
-  "build_metal_cost": 3000,
+  "build_metal_cost": 10000,
   "attachable": { "offsets": { "root": [0, 0, 0], "head": [0, 0, 3.4] } },
   "unit_types": [
     "UNITTYPE_Tank",
@@ -56,7 +56,7 @@
       "aim_bone": "bone_rear_left_turret",
       "record_index": 1,
       "fire_event": "fired1",
-      "projectiles_per_fire": 1,
+      "projectiles_per_fire": 2,
       "muzzle_bone": [
         "socket_rear_left_muzzle_1",
         "socket_rear_left_muzzle_2"
@@ -67,7 +67,7 @@
       "aim_bone": "bone_front_left_turret",
       "record_index": 2,
       "fire_event": "fired2",
-      "projectiles_per_fire": 1,
+      "projectiles_per_fire": 2,
       "muzzle_bone": [
         "socket_front_left_muzzle_1",
         "socket_front_left_muzzle_2"
@@ -76,9 +76,9 @@
     {
       "spec_id": "/pa/units/pandapack/titan_yandercannon/mini_weapon.json",
       "aim_bone": "bone_front_right_turret",
-      "record_index": 2,
+      "record_index": 3,
       "fire_event": "fired3",
-      "projectiles_per_fire": 1,
+      "projectiles_per_fire": 2,
       "muzzle_bone": [
         "socket_front_right_muzzle_1",
         "socket_front_right_muzzle_2"
@@ -87,9 +87,9 @@
     {
       "spec_id": "/pa/units/pandapack/titan_yandercannon/mini_weapon.json",
       "aim_bone": "bone_rear_right_turret",
-      "record_index": 2,
+      "record_index": 4,
       "fire_event": "fired4",
-      "projectiles_per_fire": 1,
+      "projectiles_per_fire": 2,
       "muzzle_bone": [
         "socket_rear_right_muzzle_1",
         "socket_rear_right_muzzle_2"
