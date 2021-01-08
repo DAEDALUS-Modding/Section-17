@@ -19,6 +19,13 @@
             ]
         }
     },
+    "consumption": {
+        "energy": 9000
+    },
+    "energy_efficiency_requirement": 0.9,
+    "production": {
+        "energy": -2000
+    },
     "unit_types": [
         "UNITTYPE_Bot",
         "UNITTYPE_Mobile",
