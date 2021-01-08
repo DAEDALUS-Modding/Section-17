@@ -70,7 +70,7 @@
       "aim_bone": "bone_rear_left_turret",
       "record_index": 1,
       "fire_event": "fired1",
-      "projectiles_per_fire": 1,
+      "projectiles_per_fire": 2,
       "muzzle_bone": [
         "socket_rear_left_muzzle_1",
         "socket_rear_left_muzzle_2"
@@ -81,7 +81,7 @@
       "aim_bone": "bone_front_left_turret",
       "record_index": 2,
       "fire_event": "fired2",
-      "projectiles_per_fire": 1,
+      "projectiles_per_fire": 2,
       "muzzle_bone": [
         "socket_front_left_muzzle_1",
         "socket_front_left_muzzle_2"
@@ -92,7 +92,7 @@
       "aim_bone": "bone_front_right_turret",
       "record_index": 3,
       "fire_event": "fired3",
-      "projectiles_per_fire": 1,
+      "projectiles_per_fire": 2,
       "muzzle_bone": [
         "socket_front_right_muzzle_1",
         "socket_front_right_muzzle_2"
@@ -103,7 +103,7 @@
       "aim_bone": "bone_rear_right_turret",
       "record_index": 4,
       "fire_event": "fired4",
-      "projectiles_per_fire": 1,
+      "projectiles_per_fire": 2,
       "muzzle_bone": [
         "socket_rear_right_muzzle_1",
         "socket_rear_right_muzzle_2"
