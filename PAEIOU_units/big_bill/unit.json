@@ -63,7 +63,8 @@
       "projectiles_per_fire": 1,
       "muzzle_bone": [
         "socket_cannon_muzzle"
-      ]
+      ],
+      "secondary_weapon": true
     },
     {
       "spec_id": "{mini_weapon.json}",

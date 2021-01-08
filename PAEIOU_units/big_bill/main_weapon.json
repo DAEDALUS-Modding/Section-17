@@ -17,11 +17,13 @@
     "firing_arc_yaw": 2,
     "firing_arc_pitch": 2,
     "pitch_range": 89,
-    "auto_attack": true,
     "target_layers": [
         "WL_LandHorizontal",
         "WL_Seafloor",
         "WL_WaterSurface",
         "WL_Underwater"
-    ]
+    ],
+    "auto_attack": false,
+    "auto_task_type": "none",
+    "manual_fire": true
 }
