@@ -1,20 +1,32 @@
 {
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "display_name": "HitCannon",
-  "si_name": "exp_cannon",
-  "description": "!LOC:Grrrrr - Devastating damage with heavy armor. Pew Pew Change the Description Yander. 20th hour after rising-STOP. Please help-STOP. I've been conscripted to make Panda units and its pain-END.",
+  "display_name": "Big Bill",
+  "description": "!LOC:Big gun with big number of small guns. Drains large amounts of energy passively and also while shooting. Main gun requires manual aim.",
   "max_health": 5000,
-  "build_metal_cost": 3000,
-  "attachable": { "offsets": { "root": [0, 0, 0], "head": [0, 0, 3.4] } },
+  "build_metal_cost": 10000,
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ],
+      "head": [
+        0,
+        0,
+        3.4
+      ]
+    }
+  },
   "unit_types": [
     "UNITTYPE_Tank",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
     "UNITTYPE_Land",
     "UNITTYPE_Advanced",
-    "UNITTYPE_FactoryBuild"
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Custom3"
   ],
-  "transportable": { "size": 1 },
   "guard_layer": "WL_LandHorizontal",
   "navigation": {
     "type": "land",
@@ -23,7 +35,9 @@
     "move_speed": 10,
     "turn_speed": 50
   },
-  "physics": { "radius": 5 },
+  "physics": {
+    "radius": 5
+  },
   "recon": {
     "observer": {
       "items": [
@@ -37,12 +51,12 @@
     }
   },
   "model": {
-    "filename": "/pa/units/pandapack/titan_yandercannon/titan_yandercannon.papa",
-    "animtree": "/pa/units/pandapack/titan_yandercannon/titan_yandercannon_anim_tree.json"
+    "filename": "{model.papa}",
+    "animtree": "{anim_tree.json}"
   },
   "tools": [
     {
-      "spec_id": "/pa/units/pandapack/titan_yandercannon/main_weapon.json",
+      "spec_id": "{main_weapon.json}",
       "aim_bone": "bone_cannon_pitch",
       "record_index": 0,
       "fire_event": "fired0",
@@ -52,7 +66,7 @@
       ]
     },
     {
-      "spec_id": "/pa/units/pandapack/titan_yandercannon/mini_weapon.json",
+      "spec_id": "{mini_weapon.json}",
       "aim_bone": "bone_rear_left_turret",
       "record_index": 1,
       "fire_event": "fired1",
@@ -63,7 +77,7 @@
       ]
     },
     {
-      "spec_id": "/pa/units/pandapack/titan_yandercannon/mini_weapon.json",
+      "spec_id": "{mini_weapon.json}",
       "aim_bone": "bone_front_left_turret",
       "record_index": 2,
       "fire_event": "fired2",
@@ -74,9 +88,9 @@
       ]
     },
     {
-      "spec_id": "/pa/units/pandapack/titan_yandercannon/mini_weapon.json",
+      "spec_id": "{mini_weapon.json}",
       "aim_bone": "bone_front_right_turret",
-      "record_index": 2,
+      "record_index": 3,
       "fire_event": "fired3",
       "projectiles_per_fire": 1,
       "muzzle_bone": [
@@ -85,9 +99,9 @@
       ]
     },
     {
-      "spec_id": "/pa/units/pandapack/titan_yandercannon/mini_weapon.json",
+      "spec_id": "{mini_weapon.json}",
       "aim_bone": "bone_rear_right_turret",
-      "record_index": 2,
+      "record_index": 4,
       "fire_event": "fired4",
       "projectiles_per_fire": 1,
       "muzzle_bone": [
@@ -97,7 +111,9 @@
     }
   ],
   "events": {
-    "build_complete": { "audio_cue": "/SE/Build_Complete/veh" },
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/veh"
+    },
     "fired0": {
       "audio_cue": "/SE/Weapons/sea/destroyer_fire",
       "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle",
@@ -138,9 +154,27 @@
         "should_stop_func": "is_not_moving"
       }
     },
-    "selection_response": { "cue": "/SE/Selection/veh/tank_leveler_T2" }
+    "selection_response": {
+      "cue": "/SE/Selection/veh/tank_leveler_T2"
+    }
   },
-  "selection_icon": { "diameter": 20.0 },
+  "selection_icon": {
+    "diameter": 20.0
+  },
   "TEMP_texelinfo": 10.3794,
-  "mesh_bounds": [10, 10, 5]
+  "mesh_bounds": [
+    10,
+    10,
+    5
+  ],
+  "production": {
+    "energy": -2000
+  },
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Attack",
+    "ORDER_Assist",
+    "ORDER_FireSecondaryWeapon"
+  ]
 }
