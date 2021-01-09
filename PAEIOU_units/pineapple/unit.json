@@ -38,9 +38,9 @@
     "navigation": {
         "type": "land-small",
         "acceleration": 120,
-        "brake": -1,
+        "brake": 120,
         "move_speed": 12,
-        "turn_speed": 720,
+        "turn_speed": 90,
         "group_preference": "back"
     },
     "transportable": {
