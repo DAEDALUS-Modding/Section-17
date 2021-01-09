@@ -3,7 +3,7 @@
     "ammo_id": "{mini_ammo.json}",
     "rate_of_fire": 0.5,
     "idle_aim_delay": 3,
-    "max_range": 100,
+    "max_range": 120,
     "yaw_rate": 180,
     "pitch_rate": 60,
     "yaw_range": 180,
