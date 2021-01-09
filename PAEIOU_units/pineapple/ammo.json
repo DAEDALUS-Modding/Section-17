@@ -12,10 +12,10 @@
         "burnable_remove_radius": 100.0
     },
     
-    "splash_radius": 80,
-    "full_damage_splash_radius": 80,
+    "splash_radius": 85,
+    "full_damage_splash_radius": 85,
     "burn_damage": 25,
     "burn_radius": 80,
-    "sim_fire_effect": "/pa/units/land/titan_bot/titan_bot_stomp_ent.json",
+    "sim_fire_effect": "{shock_effect_ent.json}",
     "splash_damages_allies": false
 }
