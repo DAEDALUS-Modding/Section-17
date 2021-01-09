@@ -3,7 +3,7 @@
     "damage": 5000,
     "splash_damage": 5000,
     "splash_radius": 50,
-    "full_damage_splash_radius": 20,
+    "full_damage_splash_radius": 25,
     "splash_damages_allies": false,
     "initial_velocity": 200.0,
     "lifetime": 30,
@@ -30,5 +30,6 @@
             "audio_cue": "/SE/Impacts/missile_artillery_long_holkins",
             "effect_spec": "{main_ammo_explosion.pfx.json}"
         }
-    }
+    },
+    "firing_standard_deviation": 0
 }
