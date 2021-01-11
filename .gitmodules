@@ -1,0 +1,3 @@
+[submodule "dep/PAEIOU"]
+	path = dep/PAEIOU
+	url = git://github.com/DAEDALUS-Modding/pa-extension-interface-on-units.git
