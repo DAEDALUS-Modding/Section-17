@@ -8,9 +8,9 @@
             0.0
         ]
     },
-    "damage": 900,
-    "splash_damage": 900,
-    "splash_radius": 6,
+    "damage": 800,
+    "splash_damage": 800,
+    "splash_radius": 3,
     "full_damage_splash_radius": 1,
     "splash_damages_allies": false,
     "initial_velocity": 150.0,

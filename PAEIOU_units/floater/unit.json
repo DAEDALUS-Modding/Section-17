@@ -1,9 +1,8 @@
 {
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "display_name": "Chad",
-  "si_name": "exp_hover_tank",
-  "description": "!LOC:Assault Tank - Devastating damage with heavy armor. Vulnerable to flanking. Attacks land and sea targets.",
-  "max_health": 5000,
+  "display_name": "Floater",
+  "description": "!LOC:Assault Tank - Attacks land and sea targets. Draws large amounts of energy to deal devastating damage.",
+  "max_health": 6000,
   "build_metal_cost": 3000,
   "attachable": { "offsets": { "root": [0, 0, 0], "head": [0, 0, 3.4] } },
   "unit_types": [
@@ -12,15 +11,15 @@
     "UNITTYPE_Offense",
     "UNITTYPE_Land",
     "UNITTYPE_Advanced",
-    "UNITTYPE_FactoryBuild"
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Custom3"
   ],
-  "transportable": { "size": 1 },
   "guard_layer": "WL_LandHorizontal",
   "navigation": {
     "type": "hover",
     "acceleration": 100,
     "brake": 100,
-    "move_speed": 10,
+    "move_speed": 14,
     "turn_speed": 50
   },
   "physics": { "radius": 5 },
@@ -37,12 +36,12 @@
     }
   },
   "model": {
-    "filename": "/pa/units/pandapack/vehicle_chaddriffter/vehicle_chaddriffter.papa",
-    "animtree": "/pa/units/pandapack/vehicle_chaddriffter/vehicle_chaddriffter_anim_tree.json"
+    "filename": "{model.papa}",
+    "animtree": "{anim_tree.json}"
   },
   "tools": [
     {
-      "spec_id": "/pa/units/pandapack/vehicle_chaddriffter/vehicle_chaddriffter_main_weapon.json",
+      "spec_id": "{main_weapon.json}",
       "aim_bone": "bone_pitch",
       "record_index": 0,
       "fire_event": "fired0",
@@ -52,7 +51,7 @@
       ]
     },
     {
-      "spec_id": "/pa/units/pandapack/vehicle_chaddriffter/vehicle_chaddriffter_weapon.json",
+      "spec_id": "{second_weapon.json}",
       "aim_bone": "bone_right_pitch",
       "record_index": 1,
       "fire_event": "fired1",
@@ -62,7 +61,7 @@
       ]
     },
     {
-      "spec_id": "/pa/units/pandapack/vehicle_chaddriffter/vehicle_chaddriffter_weapon.json",
+      "spec_id": "{second_weapon.json}",
       "aim_bone": "bone_left_pitch",
       "record_index": 2,
       "fire_event": "fired2",
