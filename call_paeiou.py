@@ -22,13 +22,14 @@ def call_paeiou():
                             "com.pa.daedalus.experimentals", 
                             "PAEIOU_units/", 
                             "unit_add_list.txt", 
-                            "")
+                            "gen/")
 
 def main():
     # shutil.rmtree("gen")
     # os.mkdir("gen")
 
     call_paeiou()
+    shutil.copytree("gen/server", ".", dirs_exist_ok=True)
 
 if __name__ == '__main__':
     main()
