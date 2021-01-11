@@ -1,8 +1,14 @@
 {
-	"identifier": "com.pa.daedelus.dozer",
-	"display_name": "Dozer Unit Addition",
-	"description": "Adds a Bulldozer to MLA",
-	"author": "Dissonant, CyberPunkPanda",
+	"identifier": "com.pa.daedelus.experimentals",
+	"display_name": "Section 17 - Experimental Units",
+	"description": "Adds new units to the game, particularly Tier 3 Experimentals.",
+	"author": ["Team DAEDALUS, Taiga, Reckoner, Anonemous2"],
+	"authors": [
+		"Team DAEDALUS",
+		"Taiga",
+		"Reckoner",
+		"Anonemous2"
+	],
 	"signature": "not yet implemented",
 	"forum": "",
 	"priority": 100,
@@ -14,14 +20,14 @@
 	],
 	"scenes": {
 		"shared_build": [
-			"coui://ui/mods/com.pa.daedalus.dozer/shared_build.js"
+			"coui://ui/mods/com.pa.daedalus.experimentals/shared_build.js"
 		],
 		"icon_atlas": [
-			"coui://ui/mods/com.pa.daedalus.dozer/icon_atlas.js"
+			"coui://ui/mods/com.pa.daedalus.experimentals/icon_atlas.js"
 		]
 	},
 	"context": "server",
-	"date": "2020-07-01",
-	"build": "114618",
-	"version": "0.0.1"
+	"date": "2021-01-11",
+	"build": "115280",
+	"version": "0.0.2"
 }
