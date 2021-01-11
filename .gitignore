@@ -1,5 +1,4 @@
 PAEIOU_directory.txt
-gen/**
-genclient/**
-genserver/**
 pa_location.txt
+pa/**
+ui/**
