@@ -216,6 +216,7 @@
         "UNITTYPE_Construction",
         "UNITTYPE_Land",
         "UNITTYPE_Tank",
+        "UNITTYPE_Bot",
         "UNITTYPE_Structure",
         "UNITTYPE_Titan",
         "UNITTYPE_Important"
