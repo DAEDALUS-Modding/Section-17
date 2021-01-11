@@ -3,3 +3,5 @@ gen/**
 genclient/**
 genserver/**
 pa_location.txt
+dep/**
+.gitmodules
