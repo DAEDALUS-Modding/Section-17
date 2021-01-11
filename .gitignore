@@ -1,5 +1,5 @@
 PAEIOU_directory.txt
 pa_location.txt
 gen/**
-pa/**
-ui/**
+PAEIOU_units/**
+unit_add_list.txt
