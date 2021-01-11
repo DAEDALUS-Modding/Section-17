@@ -4,6 +4,9 @@
   "description": "!LOC:Assault Tank - Attacks land and sea targets. Draws large amounts of energy to deal devastating damage.",
   "max_health": 6000,
   "build_metal_cost": 3000,
+  "production": {
+    "energy": -1050
+  },
   "attachable": { "offsets": { "root": [0, 0, 0], "head": [0, 0, 3.4] } },
   "unit_types": [
     "UNITTYPE_Tank",
