@@ -3,3 +3,5 @@ pa_location.txt
 gen/**
 PAEIOU_units/**
 unit_add_list.txt
+dep/**
+.gitmodules
