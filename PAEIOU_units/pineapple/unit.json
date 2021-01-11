@@ -1,7 +1,7 @@
 {
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
     "display_name": "Pineapple",
-    "description": "!LOC:Radar Bot - Good Vision, and radar range",
+    "description": "!LOC:Towering Vision Experimental - Large vision and radar range. Attacks nearby enemies with rapid energy bursts.",
     "max_health": 8000,
     "build_metal_cost": 5000,
     "attachable": {
@@ -42,9 +42,6 @@
         "move_speed": 12,
         "turn_speed": 90,
         "group_preference": "back"
-    },
-    "transportable": {
-        "size": 1
     },
     "physics": {
         "radius": 3.5
