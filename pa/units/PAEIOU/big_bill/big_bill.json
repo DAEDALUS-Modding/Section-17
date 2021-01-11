@@ -1,0 +1,186 @@
+{
+  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+  "display_name": "Big Bill",
+  "description": "!LOC:Experimental Mobile Artillery - Main gun deals damage in a large area, but requires manual aim.",
+  "max_health": 5000,
+  "build_metal_cost": 10000,
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ],
+      "head": [
+        0,
+        0,
+        3.4
+      ]
+    }
+  },
+  "unit_types": [
+    "UNITTYPE_Tank",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Custom3"
+  ],
+  "guard_layer": "WL_LandHorizontal",
+  "navigation": {
+    "type": "land",
+    "acceleration": 100,
+    "brake": 100,
+    "move_speed": 10,
+    "turn_speed": 50,
+    "group_preference": "back"
+  },
+  "physics": {
+    "radius": 5
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 180
+        }
+      ]
+    }
+  },
+  "model": {
+    "filename": "/pa/units/PAEIOU/big_bill/model.papa",
+    "animtree": "/pa/units/PAEIOU/big_bill/anim_tree.json"
+  },
+  "tools": [
+    {
+      "spec_id": "/pa/units/PAEIOU/big_bill/main_weapon.json",
+      "aim_bone": "bone_cannon_pitch",
+      "record_index": 0,
+      "fire_event": "fired0",
+      "projectiles_per_fire": 1,
+      "muzzle_bone": [
+        "socket_cannon_muzzle"
+      ],
+      "secondary_weapon": true
+    },
+    {
+      "spec_id": "/pa/units/PAEIOU/big_bill/mini_weapon.json",
+      "aim_bone": "bone_rear_left_turret",
+      "record_index": 1,
+      "fire_event": "fired1",
+      "projectiles_per_fire": 2,
+      "muzzle_bone": [
+        "socket_rear_left_muzzle_1",
+        "socket_rear_left_muzzle_2"
+      ],
+      "primary_weapon": true
+    },
+    {
+      "spec_id": "/pa/units/PAEIOU/big_bill/mini_weapon.json",
+      "aim_bone": "bone_front_left_turret",
+      "record_index": 2,
+      "fire_event": "fired2",
+      "projectiles_per_fire": 2,
+      "muzzle_bone": [
+        "socket_front_left_muzzle_1",
+        "socket_front_left_muzzle_2"
+      ],
+      "primary_weapon": true
+    },
+    {
+      "spec_id": "/pa/units/PAEIOU/big_bill/mini_weapon.json",
+      "aim_bone": "bone_front_right_turret",
+      "record_index": 3,
+      "fire_event": "fired3",
+      "projectiles_per_fire": 2,
+      "muzzle_bone": [
+        "socket_front_right_muzzle_1",
+        "socket_front_right_muzzle_2"
+      ],
+      "primary_weapon": true
+    },
+    {
+      "spec_id": "/pa/units/PAEIOU/big_bill/mini_weapon.json",
+      "aim_bone": "bone_rear_right_turret",
+      "record_index": 4,
+      "fire_event": "fired4",
+      "projectiles_per_fire": 2,
+      "muzzle_bone": [
+        "socket_rear_right_muzzle_1",
+        "socket_rear_right_muzzle_2"
+      ],
+      "primary_weapon": true
+    }
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/veh"
+    },
+    "fired0": {
+      "audio_cue": "/SE/Weapons/sea/destroyer_fire",
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle",
+      "effect_scale": 5.0
+    },
+    "fired1": {
+      "audio_cue": "/SE/Weapons/veh/tank_hover_fire",
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_rear_left_muzzle_1 /pa/effects/specs/tank_muzzle_flash.pfx socket_rear_left_muzzle_2",
+      "effect_scale": 1.0
+    },
+    "fired2": {
+      "audio_cue": "/SE/Weapons/veh/tank_hover_fire",
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_front_left_muzzle_1 /pa/effects/specs/tank_muzzle_flash.pfx socket_front_left_muzzle_2",
+      "effect_scale": 1.0
+    },
+    "fired3": {
+      "audio_cue": "/SE/Weapons/veh/tank_hover_fire",
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_front_right_muzzle_1 /pa/effects/specs/tank_muzzle_flash.pfx socket_front_right_muzzle_2",
+      "effect_scale": 1.0
+    },
+    "fired4": {
+      "audio_cue": "/SE/Weapons/veh/tank_hover_fire",
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_rear_right_muzzle_1 /pa/effects/specs/tank_muzzle_flash.pfx socket_rear_right_muzzle_2",
+      "effect_scale": 1.0
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Veh",
+      "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx",
+      "effect_scale": 5.0
+    }
+  },
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/veh/tank_leveler_loop_T2",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/veh/tank_leveler_T2"
+    }
+  },
+  "selection_icon": {
+    "diameter": 20.0
+  },
+  "TEMP_texelinfo": 10.3794,
+  "mesh_bounds": [
+    10,
+    10,
+    5
+  ],
+  "production": {
+    "energy": -2000
+  },
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Attack",
+    "ORDER_Assist",
+    "ORDER_FireSecondaryWeapon"
+  ]
+}
