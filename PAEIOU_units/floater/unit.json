@@ -111,5 +111,8 @@
   },
   "selection_icon": { "diameter": 20.0 },
   "TEMP_texelinfo": 10.3794,
-  "mesh_bounds": [10, 10, 5]
+  "mesh_bounds": [10, 10, 5],
+  "transportable": {
+    "size": 1
+  }
 }

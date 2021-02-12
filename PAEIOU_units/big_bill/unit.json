@@ -182,5 +182,8 @@
     "ORDER_Attack",
     "ORDER_Assist",
     "ORDER_FireSecondaryWeapon"
-  ]
+  ],
+  "transportable": {
+    "size": 1
+  }
 }
