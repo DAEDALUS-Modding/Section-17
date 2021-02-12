@@ -7,6 +7,7 @@
   "production": {
     "energy": -3750
   },
+  "armor_type": "AT_Hover",
   "attachable": { "offsets": { "root": [0, 0, 0], "head": [0, 0, 3.4] } },
   "unit_types": [
     "UNITTYPE_Tank",
