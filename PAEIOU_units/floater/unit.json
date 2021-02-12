@@ -5,7 +5,7 @@
   "max_health": 6000,
   "build_metal_cost": 3000,
   "production": {
-    "energy": -1050
+    "energy": -3750
   },
   "attachable": { "offsets": { "root": [0, 0, 0], "head": [0, 0, 3.4] } },
   "unit_types": [
