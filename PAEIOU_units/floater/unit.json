@@ -2,7 +2,7 @@
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
   "display_name": "Floater",
   "description": "!LOC: Experimental Assault Hover Tank - Attacks land and sea targets. Draws large amounts of energy to deal devastating damage.",
-  "max_health": 6000,
+  "max_health": 5000,
   "build_metal_cost": 3000,
   "production": {
     "energy": -3750
