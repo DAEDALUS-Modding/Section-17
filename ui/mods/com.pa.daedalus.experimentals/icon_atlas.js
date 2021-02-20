@@ -3,5 +3,6 @@ var paeiouIcons = ["experimental_vehicle_gantry",
 "pineapple",
 "floater",
 "spoder",
+"dolfin",
 ];
 model.strategicIcons(model.strategicIcons().concat(paeiouIcons));
