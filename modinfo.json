@@ -16,6 +16,8 @@
 	"titansOnly": true,
 	"category": [
 		"addon",
+		"unit",
+		"expansion",
 		"titans"
 	],
 	"scenes": {
@@ -27,7 +29,7 @@
 		]
 	},
 	"context": "server",
-	"date": "2021-01-11",
+	"date": "2021-02-20",
 	"build": "115280",
-	"version": "0.0.2"
+	"version": "0.0.3"
 }
