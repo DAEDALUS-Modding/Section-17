@@ -11,6 +11,7 @@
   "attachable": { "offsets": { "root": [0, 0, 0], "head": [0, 0, 3.4] } },
   "unit_types": [
     "UNITTYPE_Tank",
+    "UNITTYPE_Hover",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
     "UNITTYPE_Land",
