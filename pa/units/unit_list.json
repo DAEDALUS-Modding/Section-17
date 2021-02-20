@@ -205,6 +205,7 @@
         "/pa/units/PAEIOU/experimental_vehicle_gantry/experimental_vehicle_gantry.json",
         "/pa/units/PAEIOU/big_bill/big_bill.json",
         "/pa/units/PAEIOU/pineapple/pineapple.json",
-        "/pa/units/PAEIOU/floater/floater.json"
+        "/pa/units/PAEIOU/floater/floater.json",
+        "/pa/units/PAEIOU/spoder/spoder.json"
     ]
 }
