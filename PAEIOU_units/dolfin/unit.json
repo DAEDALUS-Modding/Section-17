@@ -1,0 +1,167 @@
+{
+    "display_name": "Dolfin",
+    "description": "!LOC:Gun Cruiser - Fires anti-air barrages at swarms. Attacks land, sea, and air targets.",
+    "TEMP_texelinfo": 30.5603,
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/sea/T2_missile_ship_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/sea/sea_large"
+        }
+    },
+    "base_spec": "/pa/units/sea/base_ship/base_ship.json",
+    "build_metal_cost": 2800,
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/sea"
+        },
+        "fired0": {
+            "audio_cue": "/SE/Weapons/sea/T2_missile_ship_fire",
+            "effect_spec": ""
+        },
+        "fired1": {
+            "audio_cue": "/SE/Weapons/structure/air_defense_fire",
+            "effect_spec": ""
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Sea",
+            "effect_spec": "/pa/effects/specs/default_explosion_naval_t2.pfx",
+            "effect_scale": 1.0
+        }
+    },
+    "fx_offsets": [
+        {
+            "type": "moving_forward",
+            "filename": "/pa/units/sea/missile_ship/missile_ship_wake.pfx"
+        }
+    ],
+    "guard_layer": "WL_AnySurface",
+    "max_health": 3600,
+    "mesh_bounds": [
+        7,
+        32,
+        7
+    ],
+    "model": {
+        "filename": "{model.papa}",
+        "animations": {},
+        "animtree": "{anim_tree.json}"
+    },
+    "navigation": {
+        "type": "deepwater",
+        "acceleration": 40,
+        "brake": 120,
+        "move_speed": 12,
+        "turn_speed": 120,
+        "turn_accel": 60,
+        "group_preference": "front"
+    },
+    "nearby_target_tick_update_interval": 3,
+    "physics": {
+        "shape": "sphere",
+        "radius": 3
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 200
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 200
+                }
+            ]
+        }
+    },
+    "selection_icon": {
+        "diameter": 34.0
+    },
+    "spawn_layers": "WL_WaterSurface",
+    "tools": [
+        {
+            "spec_id": "{surface_weapon.json}",
+            "aim_bone": "bone_pitch_1",
+            "record_index": 0,
+            "fire_event": "fired0",
+            "muzzle_bone": [
+                "socket_muzzle_1"
+            ]
+        },
+        {
+            "spec_id": "{surface_weapon.json}",
+            "aim_bone": "bone_pitch_2",
+            "record_index": 1,
+            "fire_event": "fired1",
+            "muzzle_bone": [
+                "socket_muzzle_2"
+            ]
+        },
+        {
+            "spec_id": "{surface_weapon.json}",
+            "aim_bone": "bone_pitch_3",
+            "record_index": 2,
+            "fire_event": "fired2",
+            "muzzle_bone": [
+                "socket_muzzle_3"
+            ]
+        },
+        {
+            "spec_id": "{aa_weapon.json}",
+            "aim_bone": "socket_missile_1",
+            "record_index": 3,
+            "fire_event": "fired3",
+            "muzzle_bone": [
+                "socket_missile_1"
+            ]
+        },
+        {
+            "spec_id": "{aa_weapon.json}",
+            "aim_bone": "socket_missile_2",
+            "record_index": 4,
+            "fire_event": "fired4",
+            "muzzle_bone": [
+                "socket_missile_2"
+            ]
+        },
+        {
+            "spec_id": "{aa_weapon.json}",
+            "aim_bone": "socket_missile_1",
+            "record_index": 5,
+            "fire_event": "fired5",
+            "muzzle_bone": [
+                "socket_missile_3"
+            ]
+        },
+        {
+            "spec_id": "{aa_weapon.json}",
+            "aim_bone": "socket_missile_1",
+            "record_index": 6,
+            "fire_event": "fired6",
+            "muzzle_bone": [
+                "socket_missile_4"
+            ]
+        }
+    ],
+    "unit_types": [
+        "UNITTYPE_Naval",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Artillery",
+        "UNITTYPE_Heavy",
+        "UNITTYPE_AirDefense",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FactoryBuild"
+    ]
+}

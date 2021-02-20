@@ -1,0 +1,24 @@
+{
+    "blend_root": {
+        "type": "unit_state",
+        "nodes": {
+            "being_built": {
+                "type": "bind_pose"
+            },
+            "living": {
+                "type": "sequence",
+                "entries": [
+                ],
+                "transition_seek": {
+                    "func": "is_firing"
+                }
+            },
+            "dead": {
+                "type": "bind_pose"
+            },
+            "ghost": {
+                "type": "bind_pose"
+            }
+        }
+    }
+}
