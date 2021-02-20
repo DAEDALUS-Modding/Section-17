@@ -132,5 +132,8 @@
             "aim_bone": "bone_root",
             "muzzle_bone": "bone_root"
         }
-    ]
+    ],
+    "transportable": {
+      "size": 1
+    }
 }
