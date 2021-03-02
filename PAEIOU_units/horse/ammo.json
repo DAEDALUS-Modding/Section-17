@@ -25,7 +25,7 @@
     "splash_radius": 0,
     "stages": [
       {
-        "ignores_gravity": true,
+        "ignores_gravity": false,
         "ignores_LOS": true,
         "stage_change_range": 10,
         "stage_turn_rate": 360,
