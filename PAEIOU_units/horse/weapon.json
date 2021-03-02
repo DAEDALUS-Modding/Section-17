@@ -1,5 +1,5 @@
 {
-    "ammo_id": "{weapon.json}",
+    "ammo_id": "{ammo.json}",
     "auto_attack": true,
     "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
     "firing_arc_pitch": 360,
