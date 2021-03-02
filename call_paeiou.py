@@ -22,7 +22,8 @@ def call_paeiou():
                             "com.pa.daedalus.experimentals", 
                             "PAEIOU_units/", 
                             "unit_add_list.txt", 
-                            "gen")
+                            "",
+                            "s17")
 
 def main():
     # shutil.rmtree("gen")
