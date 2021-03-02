@@ -4,3 +4,4 @@ pineapple/
 floater/
 spoder/
 dolfin/
+horse/
