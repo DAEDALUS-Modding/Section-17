@@ -5,3 +5,7 @@ floater/
 spoder/
 dolfin/
 horse/
+poseidon/
+poseidon/pos_air_drone/
+poseidon/pos_amph_drone/
+poseidon/pos_torp_drone/

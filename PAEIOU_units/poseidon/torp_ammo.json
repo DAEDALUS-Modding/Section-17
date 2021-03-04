@@ -10,9 +10,9 @@
     },
     "turn_rate": 120,
     "spawn_layers": "WL_Underwater",
-    "spawn_unit_on_death": "{pos_torp_drone/pos_torp_drone.json}",
+    "spawn_unit_on_death": "{!pos_torp_drone/pos_torp_drone.json}",
     "spawn_unit_on_death_with_velocity": true,
     "model": {
-        "filename": "{!torp_drone/model.papa}"
+        "filename": "{!pos_torp_drone/model.papa}"
     }
   }

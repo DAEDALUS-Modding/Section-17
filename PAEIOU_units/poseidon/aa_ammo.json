@@ -16,7 +16,7 @@
     "lifetime": 3.0,
     "max_velocity": 140.0,
     "model": {
-        "filename": "{!pos_air_drone/mode.papa}"
+        "filename": "{!pos_air_drone/model.papa}"
     },
     "physics": {
         "radius": 1,
@@ -30,7 +30,7 @@
         }
     },
     "spawn_layers": "WL_Air",
-    "spawn_unit_on_death": "{pos_air_drone/pos_air_drone.json}",
+    "spawn_unit_on_death": "{!pos_air_drone/pos_air_drone.json}",
     "spawn_unit_on_death_with_velocity": true,
     "splash_damage": 0,
     "splash_radius": 0,

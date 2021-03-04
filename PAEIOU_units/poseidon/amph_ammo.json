@@ -16,7 +16,7 @@
     "lifetime": 3.0,
     "max_velocity": 140.0,
     "model": {
-        "filename": "{!amph_drone/mode.papa}"
+        "filename": "{!pos_amph_drone/model.papa}"
     },
     "physics": {
         "radius": 1,
@@ -29,7 +29,7 @@
             "ignore_radar": true
         }
     },
-    "spawn_unit_on_death": "{pos_amph_drone/pos_amph_drone.json}",
+    "spawn_unit_on_death": "{!pos_amph_drone/pos_amph_drone.json}",
     "spawn_unit_on_death_with_velocity": true,
     "splash_damage": 0,
     "splash_radius": 0,
