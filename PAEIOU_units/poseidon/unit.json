@@ -96,42 +96,54 @@
             "aim_bone": "socket_drone_launcher",
             "record_index": 0,
             "fire_event": "fired0",
-            "muzzle_bone": "socket_drone_launcher"
+            "muzzle_bone": "socket_drone_launcher",
+            "secondary_weapon": false,
+            "primary_weapon": true
         },
         {
             "spec_id": "{torp_weapon.json}",
             "aim_bone": "socket_torp_muzzle_1",
             "record_index": 1,
             "fire_event": "fired1",
-            "muzzle_bone": "socket_torp_muzzle_1"
+            "muzzle_bone": "socket_torp_muzzle_1",
+            "secondary_weapon": false,
+            "primary_weapon": true
         },
         {
             "spec_id": "{torp_weapon.json}",
             "aim_bone": "socket_torp_muzzle_2",
             "record_index": 2,
             "fire_event": "fired2",
-            "muzzle_bone": "socket_torp_muzzle_2"
+            "muzzle_bone": "socket_torp_muzzle_2",
+            "secondary_weapon": false,
+            "primary_weapon": true
         },
         {
             "spec_id": "{amph_weapon.json}",
             "aim_bone": "socket_missile_muzzle_1",
             "record_index": 3,
             "fire_event": "fired3",
-            "muzzle_bone": "socket_missile_muzzle_1"
+            "muzzle_bone": "socket_missile_muzzle_1",
+            "secondary_weapon": true,
+            "primary_weapon": true
         },
         {
             "spec_id": "{amph_weapon.json}",
             "aim_bone": "socket_missile_muzzle_2",
             "record_index": 4,
             "fire_event": "fired4",
-            "muzzle_bone": "socket_missile_muzzle_2"
+            "muzzle_bone": "socket_missile_muzzle_2",
+            "secondary_weapon": true,
+            "primary_weapon": true
         },
         {
             "spec_id": "{amph_weapon.json}",
             "aim_bone": "socket_missile_muzzle_3",
             "record_index": 5,
             "fire_event": "fired5",
-            "muzzle_bone": "socket_missile_muzzle_3"
+            "muzzle_bone": "socket_missile_muzzle_3",
+            "secondary_weapon": true,
+            "primary_weapon": true
         }
     ],
     "unit_types": [
@@ -143,5 +155,12 @@
         "UNITTYPE_Titan",
         "UNITTYPE_Important",
         "UNITTYPE_FabOrbBuild"
+    ],
+    "command_caps": [
+      "ORDER_Move",
+      "ORDER_Patrol",
+      "ORDER_Attack",
+      "ORDER_Assist",
+      "ORDER_FireSecondaryWeapon"
     ]
 }

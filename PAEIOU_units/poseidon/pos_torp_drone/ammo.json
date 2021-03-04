@@ -9,7 +9,5 @@
     ],
     "sim_fire_effect": "/pa/units/land/bot_bomb/bot_bomb_ammo_explosion_ent.json",
     "splash_damages_allies": false,
-    "splash_radius": 15,
-    "full_damage_splash_radius": 2,
-    "splash_damage": 250
+    "full_damage_splash_radius": 1
 }

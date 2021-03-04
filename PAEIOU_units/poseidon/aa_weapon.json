@@ -1,6 +1,6 @@
 {
-    "ammo_capacity": 300,
-    "ammo_demand": 75,
+    "ammo_capacity": 50,
+    "ammo_demand": 150,
     "ammo_id": "{aa_ammo.json}",
     "ammo_per_shot": 50,
     "ammo_source": "metal",

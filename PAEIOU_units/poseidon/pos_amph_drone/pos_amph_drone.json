@@ -111,6 +111,12 @@
         "UNITTYPE_Amphibious"
     ],
     "passive_health_regen": -10,
-    "command_caps": [],
+    "command_caps": [
+      "ORDER_Move",
+      "ORDER_Patrol",
+      "ORDER_Attack",
+      "ORDER_Assist",
+      "ORDER_Use"
+    ],
     "guard_radius": 1000
 }
