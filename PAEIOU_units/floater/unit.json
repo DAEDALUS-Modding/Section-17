@@ -24,7 +24,7 @@
     "type": "hover",
     "acceleration": 100,
     "brake": 100,
-    "move_speed": 14,
+    "move_speed": 11,
     "turn_speed": 50
   },
   "physics": { "radius": 5 },
