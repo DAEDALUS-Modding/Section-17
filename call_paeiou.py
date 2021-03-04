@@ -2,7 +2,7 @@ import shutil
 import os
 import sys
 
-def call_paeiou():
+def call_paeiou(gen_folder):
     paeiou_dir_in = "PAEIOU_directory.txt"
     if (os.path.isfile(paeiou_dir_in)):
         with open(paeiou_dir_in) as infile:
@@ -22,14 +22,17 @@ def call_paeiou():
                             "com.pa.daedalus.experimentals", 
                             "PAEIOU_units/", 
                             "unit_add_list.txt", 
-                            "gen/",
+                            f"{gen_folder}/",
                             "s17")
 
 def main():
-    # shutil.rmtree("gen")
-    # os.mkdir("gen")
+    gen = "gen"
 
-    call_paeiou()
+    if os.path.isdir(gen):
+        shutil.rmtree(gen)
+
+    shutil.copytree("export", gen, dirs_exist_ok=True)
+    call_paeiou(gen)
 
 if __name__ == '__main__':
     main()
