@@ -41,7 +41,7 @@
       3
     ],
     "model": {
-      "filename": "/pa/units/sea/attack_sub/attack_sub.papa",
+      "filename": "{model.papa}",
       "arrows": 5
     },
     "navigation": {

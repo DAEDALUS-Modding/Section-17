@@ -49,7 +49,7 @@
       3.1
     ],
     "model": {
-      "filename": "/pa/units/air/fighter/fighter.papa",
+      "filename": "{model.papa}",
       "arrows": 5
     },
     "navigation": {
