@@ -1,0 +1,18 @@
+{
+    "base_spec": "/pa/ammo/torpedo/torpedo.json",
+    "cruise_height": 2,
+    "damage": 0,
+    "initial_velocity": 10.0,
+    "lifetime": 5.0,
+    "max_velocity": 80.0,
+    "physics": {
+      "add_to_spatial_db": true
+    },
+    "turn_rate": 120,
+    "spawn_layers": "WL_Underwater",
+    "spawn_unit_on_death": "{pos_torp_drone/pos_torp_drone.json}",
+    "spawn_unit_on_death_with_velocity": true,
+    "model": {
+        "filename": "{!torp_drone/model.papa}"
+    }
+  }

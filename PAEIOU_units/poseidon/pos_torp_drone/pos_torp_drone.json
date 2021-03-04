@@ -1,0 +1,105 @@
+{
+    "display_name": "Orange Finned Zebra Danio",
+    "description": "!LOC:Suicide Submarine Drone - Radar stealth. Attacks sea and undersea targets.",
+    "TEMP_texelinfo": 8.37977,
+    "audio": {
+      "loops": {
+        "move": {
+          "cue": "/SE/Movement/sea/attack_sub_loop",
+          "flag": "vel_changed",
+          "should_start_func": "is_moving",
+          "should_stop_func": "is_not_moving"
+        }
+      }
+    },
+    "base_spec": "/pa/units/sea/base_ship/base_ship.json",
+    "build_metal_cost": 50,
+    "events": {
+      "build_complete": {
+        "audio_cue": "/SE/Build_Complete/sea"
+      },
+      "fired": {
+        "audio_cue": "/SE/Weapons/sea/attack_sub_fire"
+      },
+      "died": {
+        "audio_cue": "/SE/Death/Sea_sub",
+        "effect_spec": "/pa/effects/specs/default_explosion_naval_sub.pfx",
+        "effect_scale": 0.7
+      }
+    },
+    "fx_offsets": [
+      {
+        "type": "moving_forward",
+        "filename": "/pa/units/sea/attack_sub/attack_sub_wake.pfx"
+      }
+    ],
+    "guard_layer": "WL_AnyWater",
+    "max_health": 100,
+    "mesh_bounds": [
+      3,
+      10,
+      3
+    ],
+    "model": {
+      "filename": "/pa/units/sea/attack_sub/attack_sub.papa",
+      "arrows": 5
+    },
+    "navigation": {
+      "type": "underwater",
+      "acceleration": 400,
+      "brake": -1,
+      "move_speed": 50,
+      "turn_speed": 360,
+      "turn_accel": 300
+    },
+    "physics": {
+      "underwater": true,
+      "shape": "sphere",
+      "radius": 1.5
+    },
+    "recon": {
+      "observable": {
+        "layer": "underwater",
+        "ignore_radar": true
+      },
+      "observer": {
+        "items": [
+          {
+            "layer": "surface_and_air",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 50
+          },
+          {
+            "layer": "underwater",
+            "channel": "sight",
+            "shape": "capsule",
+            "radius": 50
+          }
+        ]
+      }
+    },
+    "selection_icon": {
+      "diameter": 24.0
+    },
+    "spawn_layers": "WL_Underwater",
+    "tools": [
+      {
+        "spec_id": "{weapon.json}",
+        "aim_bone": "bone_root",
+        "muzzle_bone": "bone_root"
+      }
+    ],
+    "unit_types": [
+      "UNITTYPE_Naval",
+      "UNITTYPE_Mobile",
+      "UNITTYPE_Offense",
+      "UNITTYPE_Basic",
+      "UNITTYPE_Sub",
+      "UNITTYPE_NoBuild"
+    ],
+    "passive_health_regen": -5,
+    "command_caps": [
+    ],
+    "guard_radius": 1000
+  }
