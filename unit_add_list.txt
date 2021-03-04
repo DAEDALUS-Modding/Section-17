@@ -2,9 +2,9 @@ experimental_vehicle_gantry/
 big_bill/
 pineapple/
 floater/
-spoder/
+spider/
 dolfin/
-horse/
+equestrian/
 poseidon/
 poseidon/pos_air_drone/
 poseidon/pos_amph_drone/
