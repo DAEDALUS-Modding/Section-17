@@ -89,7 +89,7 @@
     "selection_icon": {
         "diameter": 44.0
     },
-    "spawn_layers": "WL_Underwater",
+    "spawn_layers": "WL_DeepWater",
     "tools": [
         {
             "spec_id": "{aa_weapon.json}",
