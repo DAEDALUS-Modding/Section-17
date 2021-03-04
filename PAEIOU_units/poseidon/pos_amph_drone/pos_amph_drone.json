@@ -90,7 +90,7 @@
     "tools": [
         {
             "spec_id": "{weapon.json}",
-            "aim_bone": "bone_turret",
+            "aim_bone": "bone_pitch",
             "projectiles_per_fire": 2,
             "muzzle_bone": [
                 "socket_muzzle_right",
