@@ -3,7 +3,7 @@
   "display_name": "Floater",
   "description": "!LOC: Experimental Assault Hover Tank - Attacks land and sea targets. Draws large amounts of energy to deal devastating damage.",
   "max_health": 5000,
-  "build_metal_cost": 3000,
+  "build_metal_cost": 4000,
   "production": {
     "energy": -3750
   },
