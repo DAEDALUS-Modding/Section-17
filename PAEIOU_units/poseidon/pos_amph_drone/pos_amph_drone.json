@@ -41,7 +41,7 @@
         }
     },
     "guard_layer": "WL_AnySurface",
-    "max_health": 200,
+    "max_health": 160,
     "mesh_bounds": [
         4,
         2,
@@ -110,7 +110,7 @@
         "UNITTYPE_NoBuild",
         "UNITTYPE_Amphibious"
     ],
-    "passive_health_regen": -10,
+    "passive_health_regen": -8,
     "command_caps": [
       "ORDER_Move",
       "ORDER_Patrol",
@@ -118,5 +118,6 @@
       "ORDER_Assist",
       "ORDER_Use"
     ],
-    "guard_radius": 1000
+    "guard_radius": 1000,
+    "attack_range_frac": 0.2
 }
