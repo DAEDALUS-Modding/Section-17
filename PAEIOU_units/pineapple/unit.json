@@ -3,7 +3,7 @@
     "display_name": "Pineapple",
     "description": "!LOC:Experimental Vision Spire - Large vision and radar range. Attacks nearby enemies with rapid energy bursts.",
     "max_health": 8000,
-    "build_metal_cost": 5000,
+    "build_metal_cost": 7000,
     "attachable": {
         "offsets": {
             "root": [
