@@ -11,7 +11,7 @@
 	],
 	"signature": "not yet implemented",
 	"forum": "",
-	"priority": 100,
+	"priority": 90,
 	"icon": "https://github.com/Anonemous2/pa.mla.unit.addon/blob/master/icon_sdl.png?raw=true",
 	"titansOnly": true,
 	"category": [
@@ -29,7 +29,7 @@
 		]
 	},
 	"context": "server",
-	"date": "2021-03-04",
+	"date": "2021-03-05",
 	"build": "115546",
-	"version": "0.0.7"
+	"version": "0.0.8"
 }
