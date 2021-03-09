@@ -12,7 +12,7 @@
 	"signature": "not yet implemented",
 	"forum": "",
 	"priority": 90,
-	"icon": "https://github.com/Anonemous2/pa.mla.unit.addon/blob/master/icon_sdl.png?raw=true",
+	"icon": "https://raw.githubusercontent.com/DAEDALUS-Modding/Section-17/main/icon.jpg",
 	"titansOnly": true,
 	"category": [
 		"addon",
@@ -29,7 +29,7 @@
 		]
 	},
 	"context": "server",
-	"date": "2021-03-05",
+	"date": "2021-03-09",
 	"build": "115546",
-	"version": "0.0.8"
+	"version": "0.1.0"
 }
