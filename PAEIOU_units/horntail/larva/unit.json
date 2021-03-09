@@ -1,0 +1,130 @@
+{
+    "display_name": "Horntail Nanoswarm Bomb",
+    "description": "!LOC:Nanobot Swarm Bomb",
+    "TEMP_texelinfo": 6.38702,
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                0.25,
+                4.5
+            ]
+        }
+    },
+    "audio": {
+        "loops": {
+            "build": {
+                "cue": "/SE/Construction/Fab_contruction_beam_loop",
+                "flag": "build_target_changed",
+                "should_start_func": "has_build_target",
+                "should_stop_func": "no_build_target"
+            },
+            "move": {
+                "cue": "/SE/Movement/bot/swarm_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/bot/swarm"
+        }
+    },
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+    "build_metal_cost": 100,
+    "buildable_types": "",
+    "events": {
+        "fired": {
+            "audio_cue": "/SE/Weapons/bot/swarm",
+            "effect_spec": ""
+        },
+        "died": {
+            "audio_cue": "/SE/Death/swarm",
+            "effect_scale": 1.0
+        }
+    },
+    "fx_offsets": [
+        {
+            "type": "idle",
+            "filename": "/pa/effects/specs/nanoswarm_idle.pfx",
+            "bone": "bone_body",
+            "offset": [
+                0,
+                0,
+                0
+            ]
+        }
+    ],
+    "guard_layer": "WL_LandHorizontal",
+    "max_health": 40,
+    "mesh_bounds": [
+        0,
+        0,
+        0
+    ],
+    "model": {
+        "filename": "/pa/units/land/bot_nanoswarm/bot_nanoswarm.papa",
+        "animations": {
+            "idle": "/pa/units/land/bot_nanoswarm/bot_nanoswarm_anim_idle.papa"
+        },
+        "animtree": "/pa/anim/anim_trees/bot_nanoswarm_anim_tree.json"
+    },
+    "navigation": {
+        "type": "hover",
+        "acceleration": 0,
+        "brake": 0,
+        "move_speed": 0,
+        "turn_speed": 0,
+        "group_preference": "back"
+    },
+    "physics": {
+        "radius": 0,
+        "add_to_spatial_db": false
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 40
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 40
+                }
+            ]
+        }
+    },
+    "selection_icon": {
+        "diameter": 7.0
+    },
+    "spawn_layers": "WL_AnySurface",
+    "tools": [
+        {
+            "spec_id": "{weapon.json}",
+            "aim_bone": "bone_root"
+        }
+    ],
+    "transportable": {
+        "size": 1
+    },
+    "unit_types": [
+        "UNITTYPE_Offense",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_Deconstruction",
+        "UNITTYPE_NoBuild",
+        "UNITTYPE_Hover"
+    ],
+    "wreckage_health_frac": 0.0,
+    "command_caps": [],
+    "passive_health_regen": -10
+}
