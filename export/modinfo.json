@@ -10,7 +10,7 @@
 		"Anonemous2"
 	],
 	"signature": "not yet implemented",
-	"forum": "",
+	"forum": "https://forums.planetaryannihilation.com/threads/section-17-unit-addition-mod.73546/",
 	"priority": 90,
 	"icon": "https://raw.githubusercontent.com/DAEDALUS-Modding/Section-17/main/icon.jpg",
 	"titansOnly": true,
@@ -31,5 +31,5 @@
 	"context": "server",
 	"date": "2021-03-09",
 	"build": "115546",
-	"version": "0.1.0"
+	"version": "0.1.1"
 }
