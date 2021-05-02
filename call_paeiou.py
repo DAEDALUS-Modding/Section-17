@@ -9,7 +9,6 @@ import paeiou
 with open("pa_location.txt") as infile:
         pa_path = os.path.join(infile.readline(), "media")
 
-
 gen = "gen"
 dl_path = "download"
 stage_path = "stage"
@@ -17,8 +16,6 @@ stage_path = "stage"
 mod_urls = {
     "legion": "https://cdn.palobby.com/community-mods/downloads/com.pa.legion-expansion-server.zip"
 }
-
-
 
 def gen_unit_shadows():
     def adj_build_types(units, adjustment):
@@ -76,7 +73,6 @@ def gen_unit_shadows():
     
 
 def main():
-
     if os.path.isdir(gen):
         shutil.rmtree(gen)
 

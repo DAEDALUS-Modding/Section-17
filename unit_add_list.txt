@@ -1,4 +1,4 @@
-experimental_vehicle_gantry/
+experimental_gantry/
 big_bill/
 pineapple/
 floater/

@@ -1,6 +1,6 @@
 {
-    "display_name": "!LOC:Experimental Vehicle Gantry",
-    "description": "!LOC:Experimental Manufacturing - Builds basic, advanced, and experimental land vehicles.",
+    "display_name": "!LOC:Experimental Gantry",
+    "description": "!LOC:Experimental Manufacturing - Builds experimental units.",
     "TEMP_texelinfo": 62.1789,
     "area_build_separation": 2,
     "atrophy_cool_down": 15.0,
@@ -20,7 +20,7 @@
     "production": {
         "energy": -2000
     },
-    "buildable_types": "(Mobile & Tank & FactoryBuild & Custom3) - Custom1 - Custom2 - Custom4",
+    "buildable_types": "(Mobile & Land & FactoryBuild & Custom3) - Custom1 - Custom2 - Custom4",
     "command_caps": [
         "ORDER_Move",
         "ORDER_Patrol",
@@ -214,12 +214,10 @@
     "unit_types": [
         "UNITTYPE_Factory",
         "UNITTYPE_Construction",
-        "UNITTYPE_Land",
-        "UNITTYPE_Tank",
-        "UNITTYPE_Bot",
         "UNITTYPE_Structure",
         "UNITTYPE_Titan",
-        "UNITTYPE_Important"
+        "UNITTYPE_Important",
+        "UNITTYPE_AdvFabBuild"
     ],
     "wait_to_rolloff_time": 0,
     "fx_offsets": [
