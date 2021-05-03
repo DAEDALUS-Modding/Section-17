@@ -20,7 +20,7 @@
     "production": {
         "energy": -2000
     },
-    "buildable_types": "(Mobile & Land & FactoryBuild & Custom3) - Custom1 - Custom2 - Custom4",
+    "buildable_types": "(Mobile & FactoryBuild & Titan) - Custom1 - Custom2 - Custom3 - Custom4",
     "command_caps": [
         "ORDER_Move",
         "ORDER_Patrol",
@@ -241,5 +241,6 @@
         "spawn_points": [
             "socket_build"
         ]
-    }
+    },
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface"
 }

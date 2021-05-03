@@ -206,6 +206,9 @@
         "UNITTYPE_Offense",
         "UNITTYPE_Air",
         "UNITTYPE_Advanced",
-        "UNITTYPE_FactoryBuild"
-    ]
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_Titan",
+        "UNITTYPE_Deconstruction"
+    ],
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface"
 }

@@ -25,7 +25,7 @@
     "UNITTYPE_Land",
     "UNITTYPE_Advanced",
     "UNITTYPE_FactoryBuild",
-    "UNITTYPE_Custom3"
+    "UNITTYPE_Titan"
   ],
   "guard_layer": "WL_LandHorizontal",
   "navigation": {
