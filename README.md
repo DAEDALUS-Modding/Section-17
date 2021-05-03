@@ -1,7 +1,7 @@
 # Section 17: A Unit Addition Mod
-v0.1.0
+v0.2.0
 
-**Compatible with Second Wave, but not currently Legion.** Future Legion compatibility will be added.
+**Compatible with Second Wave and Legion.**
 
 ## Background
 
@@ -19,7 +19,7 @@ Section 17 derives its name from a planet in old Galactic War lore, specifically
 
 ## Features
 
-### Faction-Neutral (in the future)
+### Faction-Neutral
 
 One of the main archetypes in Section 17 is that of the "Experimental", an alternative T3 unit class. Experimentals will be faction-neutral in the future.
 
@@ -29,24 +29,19 @@ Compared to Titans, Experimentals require less metal to replace assuming that on
 
 Most experimentals tend to fulfill specific, but powerful, niches. There are some exceptions, like the Floater.
 
-#### Experimental Land Gantry
+#### Experimental Gantry
 
-- Built by T2 Bot or Vehicle fabs
+- Built by T2 Bot, Vehicle, or Air Fabs, or by Auxiliary Commanders (Colonels/Praetorians)
 - Builds:
   - Big Bill (large-AoE experimental mobile artillery)
   - Floater (direct combat experimental hovertank)
   - Pineapple (experimental mobile vision/radar)
-
-#### Other Experimentals
-
-There is currently one air experimental implemented; it is temporarily built by the T2 Air Factory:
-
-- Horntail (strategic nanoswarm bomber)
+  - Horntail (strategic nanoswarm bomber)
 
 #### Naval Titan
 - Poseidon (Submarine Carrier Titan):
   - Fields fighter drones against enemy air units
-  - Fields suicidal torpedo drones against submerged energy units
+  - Fields suicidal torpedo drones against submerged enemy units
   - Fields amphibious drones against enemy naval and land units
 
 ### MLA Only
@@ -57,3 +52,5 @@ There is currently one air experimental implemented; it is temporarily built by 
 #### T2 Naval
 - Dolfin (Gun Cruiser with Anti-Swarm Anti-Air)
   
+### T2 Air
+- Yellowjacket (High-Survivability Carpet Bomber)
