@@ -20,19 +20,23 @@ mod_urls = {
 def gen_unit_shadows():
     def adj_build_types(units, adjustment):
         for unit_filename in units:
-            with open(os.path.join(stage_path, unit_filename[1:]) as unit_file:
+            with open(os.path.join(stage_path, unit_filename[1:])) as unit_file:
                 unit = json.load(unit_file)
-            unit["buildable_types"] = f"({unit["buildable_types"]}){adjustment}"
+            unit["buildable_types"] = f"({unit['buildable_types']}){adjustment}"
 
-            with open(os.path.join(gen, unit_filename[1:]), "w") as out:
+            out_filename = os.path.join(gen, unit_filename[1:])
+            os.makedirs(os.path.dirname(out_filename), exist_ok = True)
+            with open(out_filename, "w") as out:
                 json.dump(unit, out)
 
     def override_build_types(unit_filename, new_build):
-        with open(os.path.join(stage_path, unit_filename[1:]) as unit_file:
+        with open(os.path.join(stage_path, unit_filename[1:])) as unit_file:
             unit = json.load(unit_file)
         unit["buildable_types"] = new_build
 
-        with open(os.path.join(gen, unit_filename[1:]), "w") as out:
+        out_filename = os.path.join(gen, unit_filename[1:])
+        os.makedirs(os.path.dirname(out_filename), exist_ok = True)
+        with open(out_filename, "w") as out:
             json.dump(unit, out)
 
     paeiou.simulate_mod_mount(pa_path, mod_urls, dl_path, stage_path)
@@ -64,11 +68,11 @@ def gen_unit_shadows():
         "/pa/units/sea/fabrication_ship_adv/fabrication_ship_adv.json",
         "/pa/units/sea/l_fabrication_ship_adv/l_fabrication_ship_adv.json"
     ]
-    adj_build(adv_naval_fabs, " | (Naval & Titan)")
+    adj_build_types(adv_naval_fabs, " | (Naval & Titan)")
     
     # MLA T2 Vehicle Fabs cannot build Naval Titan
     override_build_types("/pa/units/land/fabrication_vehicle_adv/fabrication_vehicle_adv.json",
-       "(Structure & Land & Advanced - Factory | Factory & Land & Tank & Advanced | FabAdvBuild | FabBuild | Titan & (Tank | Factory)) - Custom1 - Custom2 - Custom3 - Custom4")
+       "(Structure & Land & Advanced - Factory | Factory & Land & Tank & Advanced | FabAdvBuild | FabBuild | Titan & (Tank | Factory) - FactoryBuild) - Custom1 - Custom2 - Custom3 - Custom4")
 
     
 
