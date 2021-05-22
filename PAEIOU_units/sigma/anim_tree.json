@@ -1,0 +1,95 @@
+{
+    "blend_root": {
+        "type": "unit_state",
+        "nodes": {
+            "being_built": {
+                "type": "bind_pose"
+            },
+            "living": {
+                "type": "sequence",
+                "entries": [
+                    {
+                        "type": "sequence_entry",
+                        "name": "idle",
+                        "node": {
+                            "type": "playback",
+                            "anim_name": "idle",
+                            "looping": true
+                        },
+                        "transitions": [
+                            {
+                                "transition_forward": {
+                                    "func": "is_firing",
+                                    "target": "attack"
+                                },
+                                "transition_reverse": {
+                                    "func": "is_firing",
+                                    "target": "idle"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "type": "sequence_entry",
+                        "name": "attack",
+                        "node": {
+                            "type": "playback",
+                            "anim_name": "attack",
+                            "looping": false
+                        },
+                        "transitions": [
+                            {
+                                "transition_forward": {
+                                    "func": "anim_complete",
+                                    "target": "idle"
+                                },
+                                "transition_reverse": {
+                                    "func": "anim_complete",
+                                    "target": "idle"
+                                }
+                            }
+                        ],
+                        "reset": "playback_reset"
+                    }
+                ],
+                "transition_seek": {
+                    "func": "is_firing",
+                    "true_target": "attack",
+                    "false_target": "idle"
+                }
+            },
+            "dead": {
+                "type": "bind_pose"
+            },
+            "ghost": {
+                "type": "bind_pose"
+            }
+        }
+    },
+    "skeleton_controls": [
+        {
+            "type": "procedural_aim",
+            "rotation_bone": "bone_turret_front",
+            "rotation_axis": "z",
+            "weapon_index": 0
+        },
+        {
+            "type": "procedural_aim",
+            "rotation_bone": "bone_pitch_front",
+            "rotation_axis": "x",
+            "weapon_index": 0
+        },
+        {
+            "type": "procedural_aim",
+            "rotation_bone": "bone_turret_bottom",
+            "rotation_axis": "z",
+            "weapon_index": 1
+        },
+        {
+            "type": "procedural_aim",
+            "rotation_bone": "bone_pitch_bottom",
+            "rotation_axis": "x",
+            "weapon_index": 1
+        }
+    ]
+}

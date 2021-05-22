@@ -11,3 +11,4 @@ poseidon/pos_torp_drone/
 yellowjacket/
 horntail/
 horntail/larva/
+sigma/
