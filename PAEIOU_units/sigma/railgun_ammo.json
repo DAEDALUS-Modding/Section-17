@@ -3,7 +3,7 @@
     "collision_check": "enemies",
     "damage": 500,
     "fx_beam_spec": "{railgun_beam.pfx.json}",
-    "fx_collision_spec": "/pa/effects/specs/orbital_railgun_hit.pfx",
+    "fx_collision_spec": "{railgun_hit.pfx.json}",
     "initial_velocity": 300.0,
     "max_velocity": 300.0,
     "full_damage_splash_radius": 5

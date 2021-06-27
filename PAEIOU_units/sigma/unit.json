@@ -25,11 +25,29 @@
         },
         "fired0": {
             "audio_cue": "/SE/Weapons/orb/orb_railgun_fire",
-            "effect_spec": "/pa/effects/specs/orbital_railgun_muzzle_flash.pfx socket_muzzle_front"
+            "effect_spec": [
+                {
+                    "effect": "{railgun_muzzle_flash.pfx.json}",
+                    "bone": "socket_muzzle_front"
+                }
+            ]
         },
         "fired1": {
             "audio_cue": "/SE/Weapons/orb/orbital_battleship_fire",
-            "effect_spec": "/pa/effects/specs/orbital_railgun_muzzle_flash.pfx socket_muzzle_bottom_1 /pa/effects/specs/orbital_railgun_muzzle_flash.pfx socket_muzzle_bottom_2 /pa/effects/specs/orbital_railgun_muzzle_flash.pfx socket_muzzle_bottom_3"
+            "effect_spec": [
+                {
+                    "effect": "{railgun_muzzle_flash.pfx.json}",
+                    "bone": "socket_muzzle_bottom_1"
+                },
+                {
+                    "effect": "{railgun_muzzle_flash.pfx.json}",
+                    "bone": "socket_muzzle_bottom_2"
+                },
+                {
+                    "effect": "{railgun_muzzle_flash.pfx.json}",
+                    "bone": "socket_muzzle_bottom_3"
+                }
+            ]
         },
         "died": {
             "audio_cue": "/SE/Death/orbital",
@@ -50,8 +68,7 @@
             "filename": "{model.papa}",
             "animtree": "{anim_tree.json}",
             "animations": {
-                "idle": "{anim_idle.papa}",
-                "attack": "{anim_attack.papa}"
+                "idle": "{anim_idle.papa}"
             }
         }
     ],
@@ -60,11 +77,11 @@
         "acceleration": 30,
         "brake": 80,
         "move_speed": 15,
-        "turn_speed": 45,
+        "turn_speed": 15,
         "circle_min_time": 2,
         "circle_max_time": 4,
         "hover_time": -1.0,
-        "bank_factor": 1
+        "bank_factor": 0.0
     },
     "physics": {
         "radius": 30,
@@ -126,23 +143,13 @@
         },
         {
             "spec_id": "{avenger_weapon.json}",
-            "aim_bone": "bone_door_left_1",
-            "muzzle_bone": "bone_door_left_1"
+            "aim_bone": "bone_carrier_1",
+            "muzzle_bone": "bone_carrier_1"
         },
         {
             "spec_id": "{avenger_weapon.json}",
-            "aim_bone": "bone_door_left_2",
-            "muzzle_bone": "bone_door_left_2"
-        },
-        {
-            "spec_id": "{avenger_weapon.json}",
-            "aim_bone": "bone_door_right_1",
-            "muzzle_bone": "bone_door_right_1"
-        },
-        {
-            "spec_id": "{avenger_weapon.json}",
-            "aim_bone": "bone_door_right_2",
-            "muzzle_bone": "bone_door_right_2"
+            "aim_bone": "bone_carrier_2",
+            "muzzle_bone": "bone_carrier_2"
         }
     ],
     "unit_types": [
@@ -157,5 +164,6 @@
         "UNITTYPE_Important",
         "UNITTYPE_FabOrbBuild"
     ],
-    "wreckage_health_frac": 0.0
+    "wreckage_health_frac": 0.0,
+    "nearby_target_tick_update_interval": 20
 }
