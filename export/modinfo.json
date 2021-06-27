@@ -2,11 +2,11 @@
 	"identifier": "com.pa.daedelus.experimentals",
 	"display_name": "Section 17 - Experimental Units",
 	"description": "Adds new units to the game, particularly Tier 3 Experimentals.",
-	"author": ["Team DAEDALUS, Taiga, Reckoner, Anonemous2"],
+	"author": ["Team DAEDALUS, Taiga, Quildtide, Anonemous2"],
 	"authors": [
 		"Team DAEDALUS",
 		"Taiga",
-		"Reckoner",
+		"Quildtide",
 		"Anonemous2"
 	],
 	"signature": "not yet implemented",
@@ -29,7 +29,7 @@
 		]
 	},
 	"context": "server",
-	"date": "2021-05-02",
-	"build": "115546",
-	"version": "0.2.0"
+	"date": "2021-06-27",
+	"build": "115711",
+	"version": "0.2.1"
 }
