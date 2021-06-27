@@ -1,5 +1,5 @@
 # Section 17: A Unit Addition Mod
-v0.2.0
+v0.2.1
 
 **Compatible with Second Wave and Legion.**
 
@@ -54,3 +54,6 @@ Most experimentals tend to fulfill specific, but powerful, niches. There are som
   
 ### T2 Air
 - Yellowjacket (High-Survivability Carpet Bomber)
+
+### Endgame Orbital
+- Sigma (Endgame Fathership)
