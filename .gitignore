@@ -5,3 +5,4 @@ genserver/**
 pa_location.txt
 download/**
 stage/**
+__pycache__/**
