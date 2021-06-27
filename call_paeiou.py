@@ -7,7 +7,7 @@ import urllib.request as req
 import paeiou
 
 with open("pa_location.txt") as infile:
-        pa_path = os.path.join(infile.readline(), "media")
+        pa_path = os.path.join(infile.readline(), "media/")
 
 gen = "gen"
 dl_path = "download"
@@ -81,15 +81,17 @@ def main():
         shutil.rmtree(gen)
 
     shutil.copytree("export", gen, dirs_exist_ok=True)
-    paeiou.paeiou( False, 
-                    True, 
-                    0, 
-                    0, 
-                    "com.pa.daedalus.experimentals", 
-                    "PAEIOU_units/", 
-                    "unit_add_list.txt", 
-                    f"{gen}/",
-                    "s17")
+
+    paeiou.paeiou( 
+        mod_id = "com.pa.daedalus.experimentals", 
+        paeiou_unit_path = "PAEIOU_units/", 
+        unit_add_list = "unit_add_list.txt", 
+        output_path = f"{gen}/",
+        mod_prefix = "s17",
+        server = True,
+        client = False,
+        pa_path = pa_path
+    )
     gen_unit_shadows()
 
 if __name__ == '__main__':
