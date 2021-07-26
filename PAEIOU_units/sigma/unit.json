@@ -88,6 +88,9 @@
         "gravity_scalar": 0.001
     },
     "recon": {
+        "observable": {
+            "always_visible": true
+        },
         "observer": {
             "items": [
                 {
