@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.2.2 (2021-07-25)
+
+- Fix Sigma not always being visible while being built
+- Fix Horntail being buildable by T2 Air Fabs
+- Fix Legion Orbital Fabs not being able to build Poseidon
+
 ## v0.2.1 (2021-06-27)
 
 - Fix build bar location conflict between S17 Yellowjacket and 2W Pegasus

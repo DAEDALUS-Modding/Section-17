@@ -1,12 +1,12 @@
 {
 	"identifier": "com.pa.daedelus.experimentals",
-	"display_name": "Section 17 - Experimental Units",
-	"description": "Adds new units to the game, particularly Tier 3 Experimentals.",
+	"display_name": "Section 17 - Endgame Units",
+	"description": "Adds new units to the game, most notably a Naval Titan, an Orbital Fathership, and Tier 3 Experimentals.",
 	"author": ["Team DAEDALUS, Taiga, Quildtide, Anonemous2"],
 	"authors": [
 		"Team DAEDALUS",
-		"Taiga",
 		"Quildtide",
+		"Taiga",
 		"Anonemous2"
 	],
 	"signature": "not yet implemented",
@@ -29,7 +29,7 @@
 		]
 	},
 	"context": "server",
-	"date": "2021-06-27",
-	"build": "115711",
-	"version": "0.2.1"
+	"date": "2021-07-25",
+	"build": "115938",
+	"version": "0.2.2"
 }
