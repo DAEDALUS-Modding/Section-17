@@ -44,7 +44,6 @@ def gen_unit_shadows():
 
     # T2 Fabricators can build Experimental Gantry regardless of faction
     adv_fabs = [
-        "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv.json",
         "/pa/units/land/fabrication_bot_adv/fabrication_bot_adv.json",
         "/pa/units/land/bot_support_commander/bot_support_commander.json",
         "/pa/units/air/l_fabrication_aircraft_adv/l_fabrication_aircraft_adv.json",
@@ -74,7 +73,14 @@ def gen_unit_shadows():
     override_build_types("/pa/units/land/fabrication_vehicle_adv/fabrication_vehicle_adv.json",
        "(Structure & Land & Advanced - Factory | Factory & Land & Tank & Advanced | FabAdvBuild | FabBuild | Titan & (Tank | Factory) - FactoryBuild) - Custom1 - Custom2 - Custom3 - Custom4")
 
-    
+    # MLA T2 Air Fab can't build Horntails
+    override_build_types("/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv.json",
+        "(Land & Structure & Advanced - Factory | Factory & Advanced & Air | FabAdvBuild | FabBuild | Titan & Air - FactoryBuild) - Custom1 - Custom2 - Custom3 - Custom4")
+
+    # Legion Orbital Fab can build Naval Titan
+    override_build_types("/pa/units/orbital/l_orbital_fabrication_bot/l_orbital_fabrication_bot.json",
+        "Custom1 & FabOrbBuild | (Titan - Structure) & Custom1 | Naval & Titan")
+
 
 def main():
     if os.path.isdir(gen):
