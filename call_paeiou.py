@@ -7,7 +7,7 @@ import urllib.request as req
 import paeiou
 
 with open("pa_location.txt") as infile:
-        pa_path = os.path.join(infile.readline(), "media/")
+    pa_path = os.path.join(infile.readline(), "media/")
 
 gen = "gen"
 dl_path = "download"
