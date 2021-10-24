@@ -2,7 +2,7 @@
 	"identifier": "com.pa.daedelus.experimentals",
 	"display_name": "Section 17 - Endgame Units",
 	"description": "Adds new units to the game, most notably a Naval Titan, an Orbital Fathership, and Tier 3 Experimentals.",
-	"author": ["Team DAEDALUS, Taiga, Quildtide, Anonemous2"],
+	"author": "Team DAEDALUS, Taiga, Quildtide, Anonemous2",
 	"authors": [
 		"Team DAEDALUS",
 		"Quildtide",
@@ -29,7 +29,7 @@
 		]
 	},
 	"context": "server",
-	"date": "2021-07-25",
-	"build": "115938",
-	"version": "0.2.2"
+	"date": "2021-10-24",
+	"build": "115958",
+	"version": "0.3.0"
 }

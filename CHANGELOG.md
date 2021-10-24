@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.3.0 (2021-10-24)
+- Fix `modinfo.json` schema issues for PAMM compatibility
+- Reduce Sigma anti-surface range from 375 to 275
+
 ## v0.2.2 (2021-07-25)
 
 - Fix Sigma not always being visible while being built

@@ -1,5 +1,5 @@
 # Section 17: A Unit Addition Mod
-v0.2.2
+v0.3.0
 
 **Compatible with Second Wave and Legion.**
 
