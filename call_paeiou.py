@@ -14,7 +14,7 @@ dl_path = "download"
 stage_path = "stage"
 
 mod_urls = {
-    "legion": "https://cdn.palobby.com/community-mods/downloads/com.pa.legion-expansion-server.zip"
+    "legion": "https://github.com/Legion-Expansion/Legion-Expansion/releases/latest/download/com.pa.legion-expansion-server.zip"
 }
 
 def gen_unit_shadows():
