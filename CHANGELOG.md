@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.3.1 (2021-12-7)
+- Colorful Buildbar icons
+
 ## v0.3.0 (2021-10-24)
 - Fix `modinfo.json` schema issues for PAMM compatibility
 - Reduce Sigma anti-surface range from 375 to 275
