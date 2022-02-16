@@ -101,7 +101,12 @@
         },
         "fired": {
             "audio_cue": "/SE/Weapons/bot/spark_fire",
-            "effect_spec": "{shock_effect_ent.json} bone_root"
+            "effect_spec": [
+                {
+                    "effect": "{shock_effect.pfx.json}",
+                    "bone": "bone_root"
+                }
+            ]
         }
     },
     "audio": {
