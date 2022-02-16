@@ -16,6 +16,5 @@
     "full_damage_splash_radius": 85,
     "burn_damage": 25,
     "burn_radius": 80,
-    "sim_fire_effect": "{shock_effect_ent.json}",
     "splash_damages_allies": false
 }

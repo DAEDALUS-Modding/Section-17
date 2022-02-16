@@ -101,7 +101,7 @@
         },
         "fired": {
             "audio_cue": "/SE/Weapons/bot/spark_fire",
-            "effect_spec": "/pa/effects/specs/tesla_muzzle_flash.pfx socket_rightMuzzle /pa/effects/specs/tesla_muzzle_flash.pfx socket_leftMuzzle"
+            "effect_spec": "{shock_effect_ent.json} bone_root"
         }
     },
     "audio": {
