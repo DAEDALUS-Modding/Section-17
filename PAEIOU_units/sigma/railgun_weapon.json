@@ -9,13 +9,13 @@
     "max_range": 400,
     "pitch_range": 70,
     "pitch_rate": 35,
-    "rate_of_fire": 10,
+    "rate_of_fire": 0.5,
     "target_layers": [
         "WL_Orbital"
     ],
     "yaw_range": 120,
     "yaw_rate": 35,
     "spread_fire": true,
-    "fire_delay": 0.25,
+    "fire_delay": 0,
     "idle_aim_delay": 5
 }

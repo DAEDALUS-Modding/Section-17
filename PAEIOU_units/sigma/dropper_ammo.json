@@ -15,7 +15,7 @@
     },
     "full_damage_splash_radius": 3,
     "fx_trail": {
-        "filename": "/pa/units/air/unit_shell/unit_shell_trail.pfx"
+        "filename": "{drop_pod_trail.pfx}"
     },
     "initial_velocity": 35.0,
     "lifetime": 30,

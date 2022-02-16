@@ -23,8 +23,13 @@
         "build_complete": {
             "audio_cue": "/SE/Build_Complete/orbital"
         },
+        "died": {
+            "audio_cue": "/SE/Death/orbital",
+            "effect_scale": 5.0,
+            "effect_spec": "/pa/units/air/base_flyer/base_flyer_death_t2.pfx"
+        },
         "fired0": {
-            "audio_cue": "/SE/Weapons/orb/orb_railgun_fire",
+            "audio_cue": "/SE/Weapons/orb/orb_ssx_laser_fire",
             "effect_spec": [
                 {
                     "effect": "{railgun_muzzle_flash.pfx.json}",
@@ -33,7 +38,7 @@
             ]
         },
         "fired1": {
-            "audio_cue": "/SE/Weapons/orb/orbital_battleship_fire",
+            "audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
             "effect_spec": [
                 {
                     "effect": "{railgun_muzzle_flash.pfx.json}",
@@ -48,11 +53,19 @@
                     "bone": "socket_muzzle_bottom_3"
                 }
             ]
+        }
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/titan/air_titan_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving_laterally",
+                "should_stop_func": "is_not_moving"
+            }
         },
-        "died": {
-            "audio_cue": "/SE/Death/orbital",
-            "effect_spec": "/pa/units/air/base_flyer/base_flyer_death_t2.pfx",
-            "effect_scale": 5.0
+        "selection_response": {
+            "cue": "/SE/Selection/titan/air"
         }
     },
     "gravwell_velocity_multiplier": 6.0,
@@ -72,6 +85,323 @@
             }
         }
     ],
+    "fx_offsets": [
+        {
+            "type": "idle",
+            "filename": "{reactor.pfx}",
+            "bone": "bone_vert_engine_2",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "{panels.pfx}",
+            "bone": "bone_root",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "{runway_lights.pfx}",
+            "bone": "bone_door_left_1",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                -90,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "{runway_lights.pfx}",
+            "bone": "bone_door_right_1",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                -90,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "{runway_lights.pfx}",
+            "bone": "bone_door_left_2",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                -90,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "{runway_lights.pfx}",
+            "bone": "bone_door_right_2",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                -90,
+                0
+            ]
+        },
+        {
+            "type": "moving_forward",
+            "filename": "{thruster_normal.pfx}",
+            "bone": "bone_engine_1",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "type": "moving_forward",
+            "filename": "{thruster_normal.pfx}",
+            "bone": "bone_engine_2",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "type": "moving_forward",
+            "filename": "{thruster_normal.pfx}",
+            "bone": "bone_engine_3",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "type": "moving_forward",
+            "filename": "{thruster_normal.pfx}",
+            "bone": "bone_engine_4",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "type": "moving_forward",
+            "filename": "{thruster_normal.pfx}",
+            "bone": "bone_engine_5",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "type": "moving_forward",
+            "filename": "{thruster_normal.pfx}",
+            "bone": "bone_engine_6",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "type": "moving_forward",
+            "filename": "{thruster_normal.pfx}",
+            "bone": "bone_engine_7",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "type": "moving_forward",
+            "filename": "{thruster_normal.pfx}",
+            "bone": "bone_engine_8",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "type": "moving_forward",
+            "filename": "{thruster_normal.pfx}",
+            "bone": "bone_engine_9",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "type": "moving_forward",
+            "filename": "{thruster_normal.pfx}",
+            "bone": "bone_engine_10",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "type": "moving_forward",
+            "filename": "{thruster_normal.pfx}",
+            "bone": "bone_engine_11",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "type": "moving_forward",
+            "filename": "{thruster_normal.pfx}",
+            "bone": "bone_engine_12",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "type": "moving_forward",
+            "filename": "{thruster_normal.pfx}",
+            "bone": "bone_engine_13",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "type": "moving_forward",
+            "filename": "{thruster_normal.pfx}",
+            "bone": "bone_engine_14",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "type": "moving_forward",
+            "filename": "{thruster_normal.pfx}",
+            "bone": "bone_engine_15",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ]
+        }
+    ],
     "navigation": {
         "type": "orbital",
         "acceleration": 30,
@@ -83,6 +413,7 @@
         "hover_time": -1.0,
         "bank_factor": 0.0
     },
+    "nearby_target_tick_update_interval": 20,
     "physics": {
         "radius": 30,
         "gravity_scalar": 0.001
@@ -94,22 +425,22 @@
         "observer": {
             "items": [
                 {
+                    "channel": "sight",
                     "layer": "orbital",
-                    "channel": "sight",
-                    "shape": "sphere",
-                    "radius": 650
+                    "radius": 650,
+                    "shape": "sphere"
                 },
                 {
+                    "channel": "sight",
                     "layer": "surface_and_air",
-                    "channel": "sight",
-                    "shape": "capsule",
-                    "radius": 400
+                    "radius": 400,
+                    "shape": "capsule"
                 },
                 {
-                    "layer": "underwater",
                     "channel": "sight",
-                    "shape": "capsule",
-                    "radius": 400
+                    "layer": "underwater",
+                    "radius": 400,
+                    "shape": "capsule"
                 }
             ]
         }
@@ -121,38 +452,38 @@
     "spawn_layers": "WL_Orbital",
     "tools": [
         {
-            "spec_id": "{railgun_weapon.json}",
             "aim_bone": "bone_turret_front",
+            "fire_event": "fired0",
             "muzzle_bone": "socket_muzzle_front",
             "record_index": 0,
-            "fire_event": "fired0"
+            "spec_id": "{railgun_weapon.json}"
         },
         {
-            "spec_id": "{bottom_weapon.json}",
             "aim_bone": "bone_turret_bottom",
-            "projectiles_per_fire": 3,
+            "fire_event": "fired1",
             "muzzle_bone": [
                 "socket_muzzle_1_bottom",
                 "socket_muzzle_2_bottom",
                 "socket_muzzle_3_bottom"
             ],
+            "projectiles_per_fire": 3,
             "record_index": 1,
-            "fire_event": "fired1"
+            "spec_id": "{bottom_weapon.json}"
         },
         {
-            "spec_id": "{dropper_weapon.json}",
             "aim_bone": "bone_drop_pods",
-            "muzzle_bone": "bone_drop_pods"
+            "muzzle_bone": "bone_drop_pods",
+            "spec_id": "{dropper_weapon.json}"
         },
         {
-            "spec_id": "{avenger_weapon.json}",
             "aim_bone": "bone_carrier_1",
-            "muzzle_bone": "bone_carrier_1"
+            "muzzle_bone": "bone_carrier_1",
+            "spec_id": "{avenger_weapon.json}"
         },
         {
-            "spec_id": "{avenger_weapon.json}",
             "aim_bone": "bone_carrier_2",
-            "muzzle_bone": "bone_carrier_2"
+            "muzzle_bone": "bone_carrier_2",
+            "spec_id": "{avenger_weapon.json}"
         }
     ],
     "unit_types": [
@@ -167,6 +498,5 @@
         "UNITTYPE_Important",
         "UNITTYPE_FabOrbBuild"
     ],
-    "wreckage_health_frac": 0.0,
-    "nearby_target_tick_update_interval": 20
+    "wreckage_health_frac": 0.0
 }
