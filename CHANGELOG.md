@@ -12,15 +12,35 @@
 - Changes thanks to Ferretmaster
 - Upgrade textures from 256x256 to 512x512
 - Significantly upgraded visual and sound effects
-#### Anti-Orbital Railgun
-- Rate of Fire: 10 -> 0.5
-- Damage: 500 -> 2500
-- Full Damage Splash Radius: 5 -> 40
-- Fire Delay: 0.25 -> 0
-#### Anti-Surface Cannons
-- Full Damage Splash Radius: 2 -> 20
-- Splash Radius: 20 -> 30
-- Firing Standard Deviation: 0 -> 1.5
+- Anti-Orbital Railgun changed:
+  - Rate of Fire: 10 -> 0.5
+  - Damage: 500 -> 2500
+  - Full Damage Splash Radius: 5 -> 40
+  - Fire Delay: 0.25 -> 0
+- Anti-Surface Cannons changed:
+  - Full Damage Splash Radius: 2 -> 20
+  - Splash Radius: 20 -> 30
+  - Firing Standard Deviation: 0 -> 1.5
+
+### Poseidon
+- Health: 40,000 -> 20,000
+- Air Drone Launcher changed:
+  - Rate of Fire: 1.5 -> 2.0
+  - Ammo Demand: 75 -> 50
+  - Ammo per Shot: 50 -> 25
+  - Ammo Capacity: 50 -> 25
+- Amphibious Drone Launcher changed:
+  - Rate of Fire: 0.5 -> 1.0
+  - Ammo per Shot: 50 -> 25
+  - Ammo Capacity: 50 -> 25
+- Torpedo Drone Launcher changed:
+  - Rate of Fire: 1.0 -> 2.0
+  - Ammo per Shot: 50 -> 25
+  - Ammo Capacity: 50 -> 25
+  - Damage: 250 -> 500
+  - Full Damage Splash Radius: 0 -> 5
+  - Splash Damage: 0 -> 250
+  - Splash Radius: 0 -> 10
 
 ## v0.3.0 (2021-10-24)
 - Fix `modinfo.json` schema issues for PAMM compatibility
