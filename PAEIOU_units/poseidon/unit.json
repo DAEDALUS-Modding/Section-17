@@ -38,7 +38,7 @@
             "filename": "/pa/units/sea/nuclear_sub/nuclear_sub_wake.pfx"
         }
     ],
-    "max_health": 40000,
+    "max_health": 20000,
     "mesh_bounds": [
         25,
         50,
