@@ -1,5 +1,27 @@
 # Changelog
 
+## v0.4.0 (2022-02-21)
+- Update Legion compat to v1.22.0
+
+### Pineapple
+- Improve attack effects greatly (thanks to Ferretmaster)
+- Rate of Fire: 4 -> 1
+- Damage: 100 -> 400
+
+### Sigma
+- Changes thanks to Ferretmaster
+- Upgrade textures from 256x256 to 512x512
+- Significantly upgraded visual and sound effects
+#### Anti-Orbital Railgun
+- Rate of Fire: 10 -> 0.5
+- Damage: 500 -> 2500
+- Full Damage Splash Radius: 5 -> 40
+- Fire Delay: 0.25 -> 0
+#### Anti-Surface Cannons
+- Full Damage Splash Radius: 2 -> 20
+- Splash Radius: 20 -> 30
+- Firing Standard Deviation: 0 -> 1.5
+
 ## v0.3.0 (2021-10-24)
 - Fix `modinfo.json` schema issues for PAMM compatibility
 - Reduce Sigma anti-surface range from 375 to 275
