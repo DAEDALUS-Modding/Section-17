@@ -1,1 +1,2 @@
 click>=7.0,<=7.2 #via PAEIOU
+paeiou>=0.0.7,<=0.0.7
