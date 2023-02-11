@@ -1,8 +1,8 @@
 {
-    "ammo_capacity": 25,
-    "ammo_demand": 50,
+    "ammo_capacity": 30,
+    "ammo_demand": 30,
     "ammo_id": "{aa_ammo.json}",
-    "ammo_per_shot": 25,
+    "ammo_per_shot": 15,
     "ammo_source": "metal",
     "auto_attack": true,
     "base_spec": "{weapon_common.json}",
