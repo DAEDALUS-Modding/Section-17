@@ -1,7 +1,7 @@
 # Section 17: A Unit Addition Mod
-v0.4.0
+v0.5.0
 
-**Compatible with Second Wave and Legion.**
+**Compatible with Second Wave, Legion, Bugs, Thorosmen, and Dozer.**
 
 ## Background
 
@@ -21,11 +21,11 @@ Section 17 derives its name from a planet in old Galactic War lore, specifically
 
 ### Faction-Neutral
 
-One of the main archetypes in Section 17 is that of the "Experimental", an alternative T3 unit class. Experimentals will be faction-neutral in the future.
+One of the main archetypes in Section 17 is that of the "Experimental", an alternative T3 unit class. Experimentals are shared by MLA and Legion, but not accessible to Bugs.
 
 All experimentals require a large amount of energy to maintain, with heavy passive energy draw alongside additional heavy energy draw while in use.
 
-Compared to Titans, Experimentals require less metal to replace assuming that one already has the energy infrastructure required to field them.
+Compared to Titans, Experimentals require less metal to replace, assuming that one already has the energy infrastructure required to field them.
 
 Most experimentals tend to fulfill specific, but powerful, niches. There are some exceptions, like the Floater.
 
@@ -45,6 +45,9 @@ Most experimentals tend to fulfill specific, but powerful, niches. There are som
   - Fields amphibious drones against enemy naval and land units
 
 ### MLA Only
+
+#### T1 Utility Structure
+- Dox Materializer (free Dox every 30 seconds)
 
 #### T2 Bots
 - Spider (Heavy Single-target Anti-Air)
