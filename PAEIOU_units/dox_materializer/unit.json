@@ -1,0 +1,88 @@
+{
+    "display_name": "!LOC:Dox Materializer",
+    "description": "!LOC:Spawns a Dox for free every 30 seconds.",
+    "TEMP_texelinfo": 15.8224,
+    "area_build_type": "Line",
+    "atrophy_cool_down": 15.0,
+    "atrophy_rate": 7.5,
+    "audio": {
+        "selection_response": {
+            "cue": "/SE/Selection/structure/energy"
+        }
+    },
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "build_metal_cost": 450,
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/structure_small"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Factory",
+            "effect_scale": 0.5
+        }
+    },
+    "max_health": 600,
+    "mesh_bounds": [
+        7,
+        7,
+        12
+    ],
+    "model": [
+        {
+            "layer": "WL_LandHorizontal",
+            "filename": "/pa/units/land/energy_plant/energy_plant.papa",
+            "animations": {
+                "idle": "/pa/units/land/energy_plant/energy_plant_anim_work.papa"
+            },
+            "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+            "skirt_decal": "/pa/effects/specs/skirt_energy.json"
+        }
+    ],
+    "tools": [
+        {
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root",
+            "projectiles_per_fire": 1,
+            "spec_id": "{weapon.json}"
+        }
+    ],
+    "placement_size": [
+        15,
+        15
+    ],
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 40
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 40
+                }
+            ]
+        }
+    },
+    "selection_icon": {
+        "diameter": 21.5
+    },
+    "spawn_layers": "WL_LandHorizontal",
+    "unit_name": "Dox Materializer",
+    "unit_types": [
+        "UNITTYPE_Structure",
+        "UNITTYPE_Basic",
+        "UNITTYPE_FabBuild",
+        "UNITTYPE_Economy",
+        "UNITTYPE_Factory",
+        "UNITTYPE_Construction",
+        "UNITTYPE_Bot"
+    ],
+    "command_caps": [
+      "ORDER_Attack"
+    ]
+}

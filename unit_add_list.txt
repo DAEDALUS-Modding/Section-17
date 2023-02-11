@@ -12,3 +12,4 @@ yellowjacket/
 horntail/
 horntail/larva/
 sigma/
+dox_materializer/

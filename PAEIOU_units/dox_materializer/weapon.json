@@ -1,0 +1,25 @@
+{
+    "ammo_capacity": 30,
+    "ammo_demand": 1,
+    "start_fully_charged": true,
+    "ammo_id": [
+        {
+            "id": "{ammo.json}",
+            "layer": "WL_AnyLand"
+        }
+    ],
+    "ammo_per_shot": 30,
+    "ammo_source": "time",
+    "auto_attack": true,
+    "base_spec": "/pa/tools/base_bomb_bay/base_bomb_bay.json",
+    "fire_arc_pitch": 180,
+    "fire_arc_yaw": 180,
+    "yaw_range": 360,
+    "pitch_range": 360,
+    "max_range": 9000,
+    "rate_of_fire": 1,
+    "spread_fire": true,
+    "target_layers": [
+        "WL_LandHorizontal"
+    ]
+}
