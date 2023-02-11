@@ -173,8 +173,8 @@
     10,
     5
   ],
-  "production": {
-    "energy": -2000
+  "consumption": {
+    "energy": 2000
   },
   "command_caps": [
     "ORDER_Move",

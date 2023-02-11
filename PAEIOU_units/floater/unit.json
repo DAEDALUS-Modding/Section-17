@@ -4,8 +4,8 @@
   "description": "!LOC: Experimental Assault Hover Tank - Attacks land and sea targets. Draws large amounts of energy to deal devastating damage.",
   "max_health": 5000,
   "build_metal_cost": 4000,
-  "production": {
-    "energy": -3750
+  "consumption": {
+    "energy": 3750
   },
   "armor_type": "AT_Hover",
   "attachable": {

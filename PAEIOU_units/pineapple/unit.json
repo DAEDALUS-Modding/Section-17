@@ -18,12 +18,9 @@
             ]
         }
     },
-    "consumption": {
-        "energy": 6250
-    },
     "energy_efficiency_requirement": 0.9,
-    "production": {
-        "energy": -5000
+    "consumption": {
+        "energy": 11250
     },
     "unit_types": [
         "UNITTYPE_Tank",

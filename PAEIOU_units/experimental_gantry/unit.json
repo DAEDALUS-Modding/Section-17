@@ -17,8 +17,8 @@
     },
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
     "build_metal_cost": 1800,
-    "production": {
-        "energy": -2000
+    "consumption": {
+        "energy": 2000
     },
     "buildable_types": "(Mobile & FactoryBuild & Titan) - Custom1 - Custom2 - Custom3 - Custom4",
     "command_caps": [
