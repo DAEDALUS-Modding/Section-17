@@ -14,7 +14,7 @@ dl_path = "download"
 stage_path = "stage"
 
 mod_urls = {
-    "legion": "https://github.com/Legion-Expansion/com.pa.legion-expansion-server/archive/refs/heads/main.zip"
+    "legion": "https://github.com/Legion-Expansion/com.pa.legion-expansion-server/archive/main.zip"
 }
 
 def gen_unit_shadows():
