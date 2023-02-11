@@ -1,5 +1,45 @@
 # Changelog
 
+## v0.5.0 (2023-02-11)
+
+### General
+
+- All experimental negative energy production values have been converted into energy consumption.
+  - This means that you can power experimentals down now instead of having to delete them to regain energy. 
+  - This is a buff.
+- Update unit shadows
+  - TITANS Build 116400
+  - Legion v1.26.0-116242
+- Add consistent language localization support
+
+### Dox Materializer
+New Unit Addition
+- Costs 450 metal
+- Spawns a free Dox every 30 seconds
+- Includes a Dox preloaded
+
+### Poseidon
+Metal draw of the Poseidon has been decreased, with metal per shot lowered to compensate. This means that the Poseidon should be a bit more consistent in performance regardless of available metal. Torpedo drone capacity has also gone up.
+
+- Air Drone Launcher buffs:
+  - Ammo Demand: 50 -> 30
+  - Ammo per Shot: 25 -> 15
+  - Ammo Capacity: 50 -> 30
+- Amphibious Drone Launcher buffs:
+  - Ammo Demand: 25 -> 15
+  - Ammo per Shot: 25 -> 15
+  - Ammo Capacity: 25 -> 15
+- Torpedo Drone Launcher buffs:
+  - Ammo Demand: 50 -> 30
+  - Ammo per Shot: 25 -> 15
+  - Ammo Capacity: 25 -> 30
+
+### Horntail
+- Metal Cost: 5000 -> 4000
+- Bomb Damage: 150 -> 300
+- Bomb Splash Damage: 100 -> 200
+- Larva Metal Damage: 5 -> 10
+
 ## v0.4.0 (2022-02-21)
 - Update Legion compat to v1.22.0
 
