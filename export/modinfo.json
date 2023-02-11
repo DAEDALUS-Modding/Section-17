@@ -3,13 +3,6 @@
 	"display_name": "Section 17 - Endgame Units",
 	"description": "Adds new units to the game, most notably a Naval Titan, an Orbital Fathership, and Tier 3 Experimentals.",
 	"author": "Team DAEDALUS, Taiga, Quildtide, Anonemous2",
-	"authors": [
-		"Team DAEDALUS",
-		"Quildtide",
-		"Taiga",
-		"Anonemous2",
-		"Ferretmaster"
-	],
 	"signature": "not yet implemented",
 	"forum": "https://forums.planetaryannihilation.com/threads/section-17-unit-addition-mod.73546/",
 	"priority": 90,
@@ -30,7 +23,7 @@
 		]
 	},
 	"context": "server",
-	"date": "2022-02-21",
-	"build": "115872",
-	"version": "0.4.0"
+	"date": "2023-02-11",
+	"build": "116400",
+	"version": "0.5.0"
 }
