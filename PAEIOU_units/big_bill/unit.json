@@ -1,6 +1,6 @@
 {
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "display_name": "Big Bill",
+  "display_name": "!LOC:Big Bill",
   "description": "!LOC:Experimental Mobile Artillery - Main gun deals damage in a large area, but requires manual aim.",
   "max_health": 5000,
   "build_metal_cost": 10000,

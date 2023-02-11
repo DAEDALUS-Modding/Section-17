@@ -1,6 +1,6 @@
 {
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
-    "display_name": "Pineapple",
+    "display_name": "!LOC:Pineapple",
     "description": "!LOC:Experimental Vision Spire - Large vision and radar range. Amphibious. Attacks nearby enemies with rapid energy bursts.",
     "max_health": 8000,
     "build_metal_cost": 7000,
