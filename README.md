@@ -1,7 +1,8 @@
 # Section 17: A Unit Addition Mod
 v0.5.0
 
-**Compatible with Second Wave, Legion, Bugs, Thorosmen, and Dozer.**
+**Compatible with Second Wave, Legion, Bugs, and Dozer.**
+**Class 2 partial compatibility with Thorosmen and Aurora Artillery**
 
 ## Background
 
