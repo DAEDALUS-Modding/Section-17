@@ -80,7 +80,8 @@
         "UNITTYPE_Economy",
         "UNITTYPE_Factory",
         "UNITTYPE_Construction",
-        "UNITTYPE_Bot"
+        "UNITTYPE_Bot",
+        "UNITTYPE_Custom58"
     ],
     "command_caps": [
       "ORDER_Attack"

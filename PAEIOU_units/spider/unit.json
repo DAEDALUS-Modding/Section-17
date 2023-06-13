@@ -26,7 +26,8 @@
     "UNITTYPE_Advanced",
     "UNITTYPE_FactoryBuild",
     "UNITTYPE_CannonBuildable",
-    "UNITTYPE_Amphibious"
+    "UNITTYPE_Amphibious",
+    "UNITTYPE_Custom58"
   ],
   "transportable": {
     "size": 1
