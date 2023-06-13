@@ -58,7 +58,8 @@ def gen_unit_shadows():
     # T2 Naval Fabs can build Naval Titan
     adv_naval_fabs = [
         "/pa/units/sea/fabrication_ship_adv/fabrication_ship_adv.json",
-        "/pa/units/sea/l_fabrication_ship_adv/l_fabrication_ship_adv.json"
+        "/pa/units/sea/l_fabrication_ship_adv/l_fabrication_ship_adv.json",
+        "/pa/units/orbital/orbital_fabrication_bot/orbital_fabrication_bot.json"
     ]
     adj_build_types(adv_naval_fabs, " | (Naval & Titan)")
 
