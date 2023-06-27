@@ -162,6 +162,7 @@
         "UNITTYPE_Heavy",
         "UNITTYPE_AirDefense",
         "UNITTYPE_Advanced",
-        "UNITTYPE_FactoryBuild"
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_Custom58"
     ]
 }

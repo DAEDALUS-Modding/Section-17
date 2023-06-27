@@ -20,7 +20,7 @@
     "consumption": {
         "energy": 2000
     },
-    "buildable_types": "(Mobile & FactoryBuild & Titan) - Custom1 - Custom2 - Custom3 - Custom4",
+    "buildable_types": "(Mobile & FactoryBuild & Titan) - Custom1 - Custom2 - Custom3 - Custom4 - Custom58",
     "command_caps": [
         "ORDER_Move",
         "ORDER_Patrol",

@@ -496,7 +496,8 @@
         "UNITTYPE_FabberBuild",
         "UNITTYPE_Interplanetary",
         "UNITTYPE_Important",
-        "UNITTYPE_FabOrbBuild"
+        "UNITTYPE_FabOrbBuild",
+        "UNITTYPE_Custom58"
     ],
     "wreckage_health_frac": 0.0
 }

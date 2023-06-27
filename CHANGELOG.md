@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.6.0 (2023-06-12)
+
+### General
+- Update unit shadows
+  - TITANS Build 116982
+  - Legion 1.28.0-116982
+
+- Add Custom58 support.
+  - Likely less conflicts with Thorosmen now.
+
+### Dox Materializer
+- Cost: 450 -> 300
+
+
 ## v0.5.0 (2023-02-11)
 
 ### General

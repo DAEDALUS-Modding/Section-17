@@ -46,36 +46,22 @@ def gen_unit_shadows():
     adv_fabs = [
         "/pa/units/land/fabrication_bot_adv/fabrication_bot_adv.json",
         "/pa/units/land/bot_support_commander/bot_support_commander.json",
+        "/pa/units/land/fabrication_vehicle_adv/fabrication_vehicle_adv.json",
+        "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv.json",
         "/pa/units/air/l_fabrication_aircraft_adv/l_fabrication_aircraft_adv.json",
         "/pa/units/land/l_fabrication_bot_adv/l_fabrication_bot_adv.json",
-        "/pa/units/sea/l_fabrication_ship_adv/l_fabrication_ship_adv.json",
         "/pa/units/land/l_fabrication_vehicle_adv/l_fabrication_vehicle_adv.json",
-        "/pa/units/land/l_bot_support_commander/l_bot_support_commander.json"
+        "/pa/units/land/l_bot_support_commander/l_bot_support_commander.json",
     ]
     adj_build_types(adv_fabs, " | (Factory & Titan)")
-    
-    # Certain T2 MLA Factories can't build Experimentals
-    adv_facs = [
-        "/pa/units/land/bot_factory_adv/bot_factory_adv.json",
-        "/pa/units/air/air_factory_adv/air_factory_adv.json",
-        "/pa/units/land/vehicle_factory_adv/vehicle_factory_adv.json"
-    ]
-    adj_build_types(adv_facs, " - Titan")
 
     # T2 Naval Fabs can build Naval Titan
     adv_naval_fabs = [
         "/pa/units/sea/fabrication_ship_adv/fabrication_ship_adv.json",
-        "/pa/units/sea/l_fabrication_ship_adv/l_fabrication_ship_adv.json"
+        "/pa/units/sea/l_fabrication_ship_adv/l_fabrication_ship_adv.json",
+        "/pa/units/orbital/orbital_fabrication_bot/orbital_fabrication_bot.json"
     ]
     adj_build_types(adv_naval_fabs, " | (Naval & Titan)")
-    
-    # MLA T2 Vehicle Fabs cannot build Naval Titan
-    override_build_types("/pa/units/land/fabrication_vehicle_adv/fabrication_vehicle_adv.json",
-       "(Structure & Land & Advanced - Factory | Factory & Land & Tank & Advanced | FabAdvBuild | FabBuild | Titan & (Tank | Factory) - FactoryBuild) - Custom1 - Custom2 - Custom3 - Custom4")
-
-    # MLA T2 Air Fab can't build Horntails
-    override_build_types("/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv.json",
-        "(Land & Structure & Advanced - Factory | Factory & Advanced & Air | FabAdvBuild | FabBuild | Titan & Air - FactoryBuild) - Custom1 - Custom2 - Custom3 - Custom4")
 
     # Legion Orbital Fab can build Naval Titan
     override_build_types("/pa/units/orbital/l_orbital_fabrication_bot/l_orbital_fabrication_bot.json",
