@@ -1,6 +1,6 @@
 {
 	"base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
-	"ammo_id": "/pa/units/addon/ligma/carrier_bomber_ammo.json",
+	"ammo_id": "{carrier_bomber_ammo.json}",
 	"ammo_source": "metal",
 	"ammo_capacity": 3000,
 	"ammo_demand": 300,

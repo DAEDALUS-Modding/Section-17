@@ -6,11 +6,11 @@
     "events": {
         "died": {
             "audio_cue": "/SE/Impacts/missile_tactical",
-            "effect_spec": "/pa/units/addon/ligma/balls_explosion.pfx"
+            "effect_spec": "{balls_explosion.pfx}"
         }
     },
     "fx_trail": {
-        "filename": "/pa/units/addon/ligma/balls_idle.pfx"
+        "filename": "{balls_idle.pfx}"
     },
     "damage": 5000,
     "splash_damage": 2500,
