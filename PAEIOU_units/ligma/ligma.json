@@ -1,0 +1,257 @@
+{
+    "TEMP_texelinfo": 17.7177,
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ]
+        }
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/titan/air_titan_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving_laterally",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/titan/air"
+        }
+    },
+    "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
+    "build_metal_cost": 90000,
+    "command_caps": [
+        "ORDER_Move",
+        "ORDER_Patrol",
+        "ORDER_Attack",
+        "ORDER_Assist"
+    ],
+    "description": "!LOC:Fathership - Long range anti-orbital railgun. Produces and carries up to 60 Avengers and 20 Slammers.",
+    "display_name": "Ligma",
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/orbital"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/orbital",
+            "effect_scale": 5.0,
+            "effect_spec": "/pa/units/air/base_flyer/base_flyer_death_t2.pfx"
+        },
+        "fired0": {
+            "audio_cue": "/SE/Weapons/orb/orb_ssx_laser_fire",
+            "effect_spec": "/pa/units/addon/ligma/edison_bolt_fire.pfx socket_tesla_1"
+        },
+        "fired1": {
+            "audio_cue": "/SE/Weapons/orb/orb_ssx_laser_fire",
+            "effect_spec": "/pa/units/addon/ligma/edison_bolt_fire.pfx socket_tesla_2"
+        },
+        "fired2": {
+            "audio_cue": "/SE/Weapons/orb/orb_ssx_laser_fire",
+            "effect_spec": "/pa/units/addon/ligma/edison_bolt_fire.pfx socket_tesla_3"
+        },
+        "fired3": {
+            "audio_cue": "/SE/Weapons/orb/orb_ssx_laser_fire",
+            "effect_spec": "/pa/units/addon/ligma/edison_bolt_fire.pfx socket_tesla_4"
+        },
+		"fired4": {
+			"audio_cue": "/SE/Weapons/sea/drone_carrier_fire"
+		},
+        "fired5": {
+            "audio_cue": "/SE/Weapons/orb/orb_ssx_laser_fire"
+        }
+    },
+    
+    "gravwell_velocity_multiplier": 6.0,
+    "guard_layer": "WL_Orbital",
+    "maintain_priority_target": false,
+    "max_health": 90000,
+    "mesh_bounds": [
+        70,
+        100,
+        70
+    ],
+    "model": [
+        {
+            "animations": {
+                "idle": "/pa/units/addon/ligma/ligma_anim_idle.papa"
+            },
+            "animtree": "/pa/units/addon/ligma/anim_tree.json",
+            "filename": "/pa/units/addon/ligma/ligma.papa"
+        }
+    ],
+    "fx_offsets": [
+        {
+            "bone": "bone_root",
+            "filename": "/pa/units/addon/ligma/ion_engine.pfx",
+            "offset": [
+                0,
+                70.9,
+                0
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ],
+            "type": "idle"
+        },
+        {
+            "bone": "bone_root",
+            "filename": "/pa/units/addon/ligma/center_rings.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ],
+            "type": "idle"
+        },
+        {
+            "bone": "bone_root",
+            "filename": "/pa/units/addon/ligma/antenna.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ],
+            "type": "idle"
+        }
+    ],
+    "navigation": {
+        "acceleration": 100,
+        "aggressive_behavior": "circle",
+        "aggressive_distance": 325.0,
+        "bank_factor": 0.0,
+        "brake": 50,
+        "circle_max_time": 4,
+        "circle_min_time": 2,
+        "hover_time": -1.0,
+        "move_speed": 20,
+        "turn_speed": 10,
+        "type": "orbital"
+    },
+    "nearby_target_tick_update_interval": 2,
+    "physics": {
+        "gravity_scalar": 0.001,
+        "radius": 70
+    },
+    "recon": {
+        "observable": {
+            "always_visible": true
+        },
+        "observer": {
+            "items": [
+                {
+                    "channel": "sight",
+                    "layer": "orbital",
+                    "radius": 650,
+                    "shape": "sphere"
+                },
+                {
+                    "channel": "sight",
+                    "layer": "surface_and_air",
+                    "radius": 400,
+                    "shape": "capsule"
+                },
+                {
+                    "channel": "sight",
+                    "layer": "underwater",
+                    "radius": 400,
+                    "shape": "capsule"
+                }
+            ]
+        }
+    },
+    "selection_icon": {
+        "diameter": 300.0,
+        "vertical_offset": -3.0
+    },
+    "spawn_layers": "WL_Orbital",
+    "tools": [
+        {
+            "aim_bone": "socket_tesla_1",
+            "fire_event": "fired0",
+			"muzzle_bone": "socket_tesla_1",
+            "spec_id": "/pa/units/addon/ligma/edison_tool_weapon.json"
+        },
+        {
+            "aim_bone": "socket_tesla_2",
+            "fire_event": "fired1",
+			"muzzle_bone": "socket_tesla_2",
+            "spec_id": "/pa/units/addon/ligma/edison_tool_weapon.json"
+        },
+        {
+            "aim_bone": "socket_tesla_3",
+            "fire_event": "fired2",
+			"muzzle_bone": "socket_tesla_3",
+            "spec_id": "/pa/units/addon/ligma/edison_tool_weapon.json"
+        },
+        {
+            "aim_bone": "socket_tesla_4",
+            "fire_event": "fired3",
+			"muzzle_bone": "socket_tesla_4",
+            "spec_id": "/pa/units/addon/ligma/edison_tool_weapon.json"
+        },
+		{
+            "spec_id": "/pa/units/addon/ligma/carrier_fighter_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "fire_event": "fired4",
+			"muzzle_bone": [
+                "socket_f1",
+                "socket_f3",
+                "socket_f2",
+                "socket_f4"
+            ],
+			"projectiles_per_fire": 4
+        },
+        {
+            "spec_id": "/pa/units/addon/ligma/carrier_bomber_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "fire_event": "fired4",
+            "muzzle_bone": [
+                "socket_b1",
+                "socket_b3",
+                "socket_b2",
+                "socket_b4"
+            ],
+            "projectiles_per_fire": 4
+        },
+		{
+			"spec_id": "/pa/units/addon/ligma/central_weapon.json",
+			"aim_bone": "bone_root",
+			"fire_event": "fired5",
+			"muzzle_bone": [
+				"ball_muzzle_1",
+                "ball_muzzle_2"
+			],
+            "projectiles_per_fire": 2
+		}
+    ],
+    "unit_types": [
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Orbital",
+        "UNITTYPE_Fighter",
+        "UNITTYPE_Heavy",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FabberBuild",
+        "UNITTYPE_Interplanetary",
+        "UNITTYPE_Important",
+        "UNITTYPE_FabOrbBuild",
+        "UNITTYPE_Custom1"
+    ],
+    "wreckage_health_frac": 0.0
+}
