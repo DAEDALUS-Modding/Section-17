@@ -1,3 +1,4 @@
 {
-    "build": false
+    "build": false,
+    "unit": "fighter_drone.json"
 }
