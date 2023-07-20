@@ -7,4 +7,3 @@ download/**
 stage/**
 __pycache__/**
 *.zip
-pa_location.txt
