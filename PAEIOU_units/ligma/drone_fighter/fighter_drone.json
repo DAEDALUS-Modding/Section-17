@@ -62,7 +62,7 @@
         }
     },
     "model": {
-        "filename": "/pa/units/orbital/orbital_fighter/orbital_fighter.papa",
+        "filename": "{model.papa}",
         "animations": {
             "deploy": "/pa/units/orbital/orbital_fighter/orbital_fighter_anim_deploy.papa",
             "closed": "/pa/units/orbital/orbital_fighter/orbital_fighter_anim_closed.papa"
@@ -71,7 +71,7 @@
     },
     "tools": [
         {
-            "spec_id": "/pa/units/orbital/orbital_fighter/orbital_fighter_tool_weapon.json",
+            "spec_id": "{weapon.json}",
             "aim_bone": "bone_body",
             "muzzle_bone": "bone_recoil01"
         }

@@ -50,7 +50,7 @@
         }
     },
     "model": {
-        "filename": "{bomber_drone.papa}",
+        "filename": "{model.papa}",
         "animtree": "/pa/anim/anim_trees/drone_anim_tree.json"
     },
     "tools": [

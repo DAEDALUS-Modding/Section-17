@@ -100,7 +100,7 @@
                 "idle": "{ligma_anim_idle.papa}"
             },
             "animtree": "{anim_tree.json}",
-            "filename": "{ligma.papa}"
+            "filename": "{model.papa}"
         }
     ],
     "fx_offsets": [
