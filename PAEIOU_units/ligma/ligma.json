@@ -196,7 +196,7 @@
         }
     },
     "selection_icon": {
-        "diameter": 300.0,
+        "diameter": -300.0,
         "vertical_offset": -3.0
     },
     "spawn_layers": "WL_Orbital",
