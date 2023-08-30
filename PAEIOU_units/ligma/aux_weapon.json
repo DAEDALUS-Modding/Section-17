@@ -1,5 +1,5 @@
 {
-    "ammo_id": "/pa/units/paeiou/ligma/aux_ammo.json",
+    "ammo_id": "{aux_ammo.json}",
     "auto_attack": true,
     "base_spec": "/pa/tools/base_fighter_turret/base_fighter_turret.json",
     "firing_arc_pitch": 25,

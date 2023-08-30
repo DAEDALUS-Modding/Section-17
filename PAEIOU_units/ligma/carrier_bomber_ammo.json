@@ -4,7 +4,7 @@
 	"lifetime": 5,
 	"max_velocity": 90,
 	"spawn_layers": "WL_Air",
-	"spawn_unit_on_death": "/pa/units/addon/ligma/bomber_drone/bomber_drone.json",
+	"spawn_unit_on_death": "{!drone_bomber/drone_bomber.json}",
 	"spawn_unit_on_death_with_velocity": true,
 	"stages": [
 	  {

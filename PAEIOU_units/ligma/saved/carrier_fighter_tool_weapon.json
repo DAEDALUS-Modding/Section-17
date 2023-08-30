@@ -1,7 +1,7 @@
 {
     "ammo_capacity": 9000,
     "ammo_demand": 200,
-	"ammo_id": "/pa/units/addon/ligma/carrier_fighter_ammo.json",
+	"ammo_id": "{carrier_fighter_ammo.json}",
     "ammo_per_shot": 300,
     "ammo_source": "metal",
     "auto_attack": true,

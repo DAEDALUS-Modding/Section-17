@@ -43,19 +43,39 @@
         },
         "fired0": {
             "audio_cue": "/SE/Weapons/orb/orb_ssx_laser_fire",
-            "effect_spec": "/pa/units/addon/ligma/edison_bolt_fire.pfx socket_tesla_1"
+            "effect_spec": [
+                {
+                    "effect": "{edison_bolt_fire.pfx}",
+                    "bone": "socket_tesla_1"
+                }
+            ]
         },
         "fired1": {
             "audio_cue": "/SE/Weapons/orb/orb_ssx_laser_fire",
-            "effect_spec": "/pa/units/addon/ligma/edison_bolt_fire.pfx socket_tesla_2"
+            "effect_spec": [
+                {
+                    "effect": "{edison_bolt_fire.pfx}",
+                    "bone": "socket_tesla_2"
+                }
+            ]
         },
         "fired2": {
             "audio_cue": "/SE/Weapons/orb/orb_ssx_laser_fire",
-            "effect_spec": "/pa/units/addon/ligma/edison_bolt_fire.pfx socket_tesla_3"
+            "effect_spec": [
+                {
+                    "effect": "{edison_bolt_fire.pfx}",
+                    "bone": "socket_tesla_3"
+                }
+            ]
         },
         "fired3": {
             "audio_cue": "/SE/Weapons/orb/orb_ssx_laser_fire",
-            "effect_spec": "/pa/units/addon/ligma/edison_bolt_fire.pfx socket_tesla_4"
+            "effect_spec": [
+                {
+                    "effect": "{edison_bolt_fire.pfx}",
+                    "bone": "socket_tesla_4"
+                }
+            ]
         },
 		"fired4": {
 			"audio_cue": "/SE/Weapons/sea/drone_carrier_fire"
@@ -77,16 +97,16 @@
     "model": [
         {
             "animations": {
-                "idle": "/pa/units/addon/ligma/ligma_anim_idle.papa"
+                "idle": "{ligma_anim_idle.papa}"
             },
-            "animtree": "/pa/units/addon/ligma/anim_tree.json",
-            "filename": "/pa/units/addon/ligma/ligma.papa"
+            "animtree": "{anim_tree.json}",
+            "filename": "{model.papa}"
         }
     ],
     "fx_offsets": [
         {
             "bone": "bone_root",
-            "filename": "/pa/units/addon/ligma/ion_engine.pfx",
+            "filename": "{ion_engine.pfx}",
             "offset": [
                 0,
                 70.9,
@@ -101,7 +121,7 @@
         },
         {
             "bone": "bone_root",
-            "filename": "/pa/units/addon/ligma/center_rings.pfx",
+            "filename": "{center_rings.pfx}",
             "offset": [
                 0,
                 0,
@@ -116,7 +136,7 @@
         },
         {
             "bone": "bone_root",
-            "filename": "/pa/units/addon/ligma/antenna.pfx",
+            "filename": "{antenna.pfx}",
             "offset": [
                 0,
                 0,
@@ -185,28 +205,28 @@
             "aim_bone": "socket_tesla_1",
             "fire_event": "fired0",
 			"muzzle_bone": "socket_tesla_1",
-            "spec_id": "/pa/units/addon/ligma/edison_tool_weapon.json"
+            "spec_id": "{edison_tool_weapon.json}"
         },
         {
             "aim_bone": "socket_tesla_2",
             "fire_event": "fired1",
 			"muzzle_bone": "socket_tesla_2",
-            "spec_id": "/pa/units/addon/ligma/edison_tool_weapon.json"
+            "spec_id": "{edison_tool_weapon.json}"
         },
         {
             "aim_bone": "socket_tesla_3",
             "fire_event": "fired2",
 			"muzzle_bone": "socket_tesla_3",
-            "spec_id": "/pa/units/addon/ligma/edison_tool_weapon.json"
+            "spec_id": "{edison_tool_weapon.json}"
         },
         {
             "aim_bone": "socket_tesla_4",
             "fire_event": "fired3",
 			"muzzle_bone": "socket_tesla_4",
-            "spec_id": "/pa/units/addon/ligma/edison_tool_weapon.json"
+            "spec_id": "{edison_tool_weapon.json}"
         },
 		{
-            "spec_id": "/pa/units/addon/ligma/carrier_fighter_tool_weapon.json",
+            "spec_id": "{carrier_fighter_tool_weapon.json}",
             "aim_bone": "bone_root",
             "fire_event": "fired4",
 			"muzzle_bone": [
@@ -218,7 +238,7 @@
 			"projectiles_per_fire": 4
         },
         {
-            "spec_id": "/pa/units/addon/ligma/carrier_bomber_tool_weapon.json",
+            "spec_id": "{carrier_bomber_tool_weapon.json}",
             "aim_bone": "socket_main_weapon",
             "fire_event": "fired4",
             "muzzle_bone": [
@@ -230,7 +250,7 @@
             "projectiles_per_fire": 4
         },
 		{
-			"spec_id": "/pa/units/addon/ligma/central_weapon.json",
+			"spec_id": "{central_weapon.json}",
 			"aim_bone": "bone_root",
 			"fire_event": "fired5",
 			"muzzle_bone": [

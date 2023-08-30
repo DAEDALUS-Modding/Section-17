@@ -1,6 +1,6 @@
 {
     "base_spec": "/pa/tools/base_laser_turret/base_laser_turret.json",
-    "ammo_id": "/pa/units/addon/ligma/central_ammo.json",
+    "ammo_id": "{central_ammo.json}",
     "tool_type": "TOOL_Weapon",
     "rate_of_fire": 0.25,
     "max_range": 600,

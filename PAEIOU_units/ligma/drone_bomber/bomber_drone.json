@@ -50,12 +50,12 @@
         }
     },
     "model": {
-        "filename": "/pa/units/addon/ligma/bomber_drone/bomber_drone.papa",
+        "filename": "{model.papa}",
         "animtree": "/pa/anim/anim_trees/drone_anim_tree.json"
     },
     "tools": [
         {
-            "spec_id": "/pa/units/addon/ligma/bomber_drone/bomber_drone_tool_weapon.json",
+            "spec_id": "{weapon.json}",
             "aim_bone": "bone_root",
             "record_index": 1
         },
