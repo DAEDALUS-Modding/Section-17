@@ -42,7 +42,7 @@
 	"flight_type": "Staged",
 	"full_damage_splash_radius": 0,
 	"model": {
-        "filename": "/pa/units/sea/drone_carrier/drone/drone.papa"
+        "filename": "{!drone_bomber/model.papa}"
     },
     "fx_trail": {
         "filename": "/pa/units/sea/drone_carrier/carrier/carrier_ammo_trail.pfx",

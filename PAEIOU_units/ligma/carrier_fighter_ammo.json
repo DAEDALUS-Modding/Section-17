@@ -21,7 +21,7 @@
     "lifetime": 20.0,
     "max_velocity": 90.0,
     "model": {
-        "filename": "/pa/units/addon/ligma/fighter_drone/fighter_drone.papa"
+        "filename": "{!drone_fighter/model.papa}"
     },
     "physics": {
         "radius": 5,
