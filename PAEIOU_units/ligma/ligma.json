@@ -163,6 +163,7 @@
         "turn_speed": 10,
         "type": "orbital"
     },
+    "planetary_arrival_cooldown_time": 12.0,
     "nearby_target_tick_update_interval": 2,
     "physics": {
         "gravity_scalar": 0.001,
