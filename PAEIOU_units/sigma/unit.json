@@ -72,9 +72,9 @@
     "guard_layer": "WL_Orbital",
     "max_health": 80000,
     "mesh_bounds": [
-        50,
-        100,
-        18
+        80,
+        200,
+        40
     ],
     "model": [
         {
