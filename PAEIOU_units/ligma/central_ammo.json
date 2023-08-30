@@ -12,10 +12,10 @@
     "fx_trail": {
         "filename": "{balls_idle.pfx}"
     },
-    "damage": 5000,
-    "splash_damage": 2500,
-    "splash_radius": 19,
+    "damage": 2000,
+    "splash_damage": 2000,
+    "splash_radius": 25,
     "lifetime": 30,
-    "initial_velocity": 150.0,
-    "max_velocity": 150.0
+    "initial_velocity": 250.0,
+    "max_velocity": 250.0
 }

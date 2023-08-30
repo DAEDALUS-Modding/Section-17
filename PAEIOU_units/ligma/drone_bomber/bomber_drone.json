@@ -1,25 +1,27 @@
 {
     "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-    "display_name": "Ligma Bomber",
-    "description": "!LOC:Ligma drone bomber - Ligma Bombs :)",
-    "max_health": 80,
-    "build_metal_cost": 90,
+    "display_name": "Eta Aquariid",
+    "description": "!LOC:Drone bomber - from Ligma, 2 bombs",
+    "max_health": 40,
+    "build_metal_cost": 100,
     "guard_layer": "WL_AnySurface",
-    "guard_radius": 400,
-    "passive_health_regen": -3,
+    "guard_radius": 5000,
+    "passive_health_regen": -1,
     "nearby_target_tick_update_interval": 3,
     "unit_types": [
         "UNITTYPE_Mobile",
         "UNITTYPE_Air",
-        "UNITTYPE_Basic"
+        "UNITTYPE_Basic",
+        "UNITTYPE_NoBuild",
+        "UNITTYPE_Bomber"
     ],
     "command_caps": [],
     "navigation": {
         "type": "air",
-        "acceleration": 80,
-        "brake": 30,
-        "move_speed": 80,
-        "turn_speed": 240,
+        "acceleration": 270,
+        "brake": 40,
+        "move_speed": 85,
+        "turn_speed": 360,
         "aggressive_distance": 50.0,
         "aggressive_height": 100.0,
         "wobble_factor": 0.05,
@@ -57,11 +59,7 @@
         {
             "spec_id": "{weapon.json}",
             "aim_bone": "bone_root",
-            "record_index": 1
-        },
-        {
-            "spec_id": "/pa/units/land/laser_defense_adv/laser_defense_adv_tool_weapon.json",
-            "aim_bone": "bone_root",
+            "record_index": 1,
             "muzzle_bone": "socket_muzzle"
         }
     ],

@@ -1,15 +1,15 @@
 {
-    "ammo_capacity": 9000,
-    "ammo_demand": 200,
+    "ammo_capacity": 16000,
+    "ammo_demand": 400,
 	"ammo_id": "{carrier_fighter_ammo.json}",
-    "ammo_per_shot": 300,
+    "ammo_per_shot": 800,
     "ammo_source": "metal",
     "auto_attack": true,
     "firing_arc_pitch": 180,
     "firing_arc_yaw": 180,
-    "max_range": 500,
+    "max_range": 375,
     "pitch_range": 0,
-    "rate_of_fire": 4,
+    "rate_of_fire": 3,
     "target_layers": [
         "WL_Orbital"
     ],

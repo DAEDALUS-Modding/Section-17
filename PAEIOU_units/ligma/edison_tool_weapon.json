@@ -2,10 +2,10 @@
     "ammo_id": "{edison_ammo.json}",
     "auto_attack": true,
     "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
-    "max_range": 600,
+    "max_range": 250,
     "pitch_range": 3600,
     "pitch_rate": 3600,
-    "rate_of_fire": 7,
+    "rate_of_fire": 4,
     "spread_fire": true,
     "target_layers": [
       "WL_Orbital"

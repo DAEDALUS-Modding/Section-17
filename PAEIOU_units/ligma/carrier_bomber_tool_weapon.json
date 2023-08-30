@@ -2,19 +2,23 @@
 	"base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
 	"ammo_id": "{carrier_bomber_ammo.json}",
 	"ammo_source": "metal",
-	"ammo_capacity": 9000,
-	"ammo_demand": 200,
-	"ammo_per_shot": 300,
+	"ammo_capacity": 8000,
+	"ammo_demand": 400,
+	"ammo_per_shot": 400,
 	"firing_arc_pitch": 0,
 	"firing_arc_yaw": 0,
 	"firing_standard_deviation": 10,
-	"max_range": 300,
+	"max_range": 250,
 	"pitch_range": 360,
 	"pitch_rate": 360,
-	"rate_of_fire": 6,
+	"rate_of_fire": 2,
 	"yaw_range": 360,
 	"yaw_rate": 360,
 	"auto_attack": true,
 	"spread_fire": true,
-	"target_layers": ["WL_LandHorizontal", "WL_WaterSurface", "WL_Air"]
-  }
+	"target_layers": [
+		"WL_LandHorizontal",
+		"WL_WaterSurface",
+		"WL_Air"
+	]
+}

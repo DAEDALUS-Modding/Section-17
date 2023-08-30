@@ -1,9 +1,10 @@
 {
     "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
-    "display_name": "fighter_drone",
-    "description": "!LOC:Orbital Fighter - Fast moving orbital fighter for offense and defense.",
-    "build_metal_cost": 800,
-    "max_health": 250,
+    "display_name": "Crotalid",
+    "description": "!LOC:Orbital Fighter Drone - stored in the Ligma.",
+    "build_metal_cost": 200,
+    "max_health": 35,
+    "passive_health_regen": -1,
     "gravwell_velocity_multiplier": 6.0,
     "wreckage_health_frac": 0.0,
     "spawn_layers": "WL_Orbital",
@@ -22,30 +23,28 @@
         "UNITTYPE_Orbital",
         "UNITTYPE_Fighter",
         "UNITTYPE_Basic",
-        "UNITTYPE_Interplanetary"
+        "UNITTYPE_Interplanetary",
+        "UNITTYPE_NoBuild"
     ],
     "command_caps": [
-        "ORDER_Move",
-        "ORDER_Patrol",
-        "ORDER_Attack",
-        "ORDER_Assist"
     ],
     "guard_layer": "WL_Orbital",
+    "guard_radius": 5000,
     "navigation": {
         "type": "orbital",
-        "acceleration": 50,
-        "brake": 50,
-        "move_speed": 50,
-        "turn_speed": 90,
+        "acceleration": 270,
+        "brake": 40,
+        "move_speed": 90,
+        "turn_speed": 270,
         "circle_min_time": 2,
         "circle_max_time": 4,
         "hover_time": -1.0,
-        "aggressive_behavior": "circle",
-        "aggressive_distance": 150,
+        "aggressive_behavior": "line",
+        "aggressive_distance": 50,
         "bank_factor": 1
     },
     "physics": {
-        "radius": 5,
+        "radius": 4,
         "gravity_scalar": 0.001
     },
     "recon": {
@@ -55,7 +54,7 @@
                     "layer": "orbital",
                     "channel": "sight",
                     "shape": "sphere",
-                    "radius": 400
+                    "radius": 100
                 }
             ]
         }
@@ -67,12 +66,7 @@
     "tools": [
         {
             "spec_id": "{weapon.json}",
-            "aim_bone": "bone_root",
-            "projectiles_per_fire": 2,
-            "muzzle_bone": [
-                "socket_muzzle_laser_1",
-                "socket_muzzle_laser_2"
-            ]
+            "aim_bone": "bone_root"
         }
     ],
     "fx_offsets": [
@@ -135,7 +129,7 @@
         }
     },
     "selection_icon": {
-        "diameter": 26.0
+        "diameter": -18.0
     },
     "mesh_bounds": [
         20,

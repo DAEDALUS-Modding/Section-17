@@ -30,8 +30,8 @@
         "ORDER_Attack",
         "ORDER_Assist"
     ],
-    "description": "!LOC:Fathership - Long range anti-orbital railgun. Produces and carries up to 60 Avengers and 20 Slammers.",
-    "display_name": "Ligma",
+    "description": "!LOC:Fathership - Long range Energy Balls. Produces and carries up to 80 Fighters and 80 Bombers.",
+    "display_name": "!LOC:Ligma",
     "events": {
         "build_complete": {
             "audio_cue": "/SE/Build_Complete/orbital"
@@ -88,11 +88,11 @@
     "gravwell_velocity_multiplier": 6.0,
     "guard_layer": "WL_Orbital",
     "maintain_priority_target": false,
-    "max_health": 90000,
+    "max_health": 40000,
     "mesh_bounds": [
-        70,
-        100,
-        70
+        140,
+        220,
+        140
     ],
     "model": [
         {
@@ -151,17 +151,15 @@
         }
     ],
     "navigation": {
-        "acceleration": 100,
-        "aggressive_behavior": "circle",
-        "aggressive_distance": 325.0,
-        "bank_factor": 0.0,
-        "brake": 50,
-        "circle_max_time": 4,
-        "circle_min_time": 2,
-        "hover_time": -1.0,
+        "type": "orbital",
+        "acceleration": 150,
+        "brake": 30,
         "move_speed": 20,
         "turn_speed": 10,
-        "type": "orbital"
+        "circle_min_time": 2,
+        "circle_max_time": 4,
+        "hover_time": -1.0,
+        "bank_factor": 25.0
     },
     "planetary_arrival_cooldown_time": 12.0,
     "nearby_target_tick_update_interval": 2,
