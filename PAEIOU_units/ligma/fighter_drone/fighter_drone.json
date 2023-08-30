@@ -1,6 +1,6 @@
 {
     "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
-    "display_name": "Avenger",
+    "display_name": "fighter_drone",
     "description": "!LOC:Orbital Fighter - Fast moving orbital fighter for offense and defense.",
     "build_metal_cost": 800,
     "max_health": 250,
@@ -22,7 +22,6 @@
         "UNITTYPE_Orbital",
         "UNITTYPE_Fighter",
         "UNITTYPE_Basic",
-        "UNITTYPE_FactoryBuild",
         "UNITTYPE_Interplanetary"
     ],
     "command_caps": [
@@ -62,28 +61,55 @@
         }
     },
     "model": {
-        "filename": "/pa/units/orbital/orbital_fighter/orbital_fighter.papa",
-        "animations": {
-            "deploy": "/pa/units/orbital/orbital_fighter/orbital_fighter_anim_deploy.papa",
-            "closed": "/pa/units/orbital/orbital_fighter/orbital_fighter_anim_closed.papa"
-        },
-        "animtree": "/pa/anim/anim_trees/orbital_fighter_anim_tree.json"
+        "filename": "/pa/units/addon/ligma/fighter_drone/fighter_drone.papa",
+        "animtree": "/pa/anim/anim_trees/orbital_railgun_anim_tree.json.json"
     },
     "tools": [
         {
             "spec_id": "/pa/units/orbital/orbital_fighter/orbital_fighter_tool_weapon.json",
-            "aim_bone": "bone_body",
-            "muzzle_bone": "bone_recoil01"
+            "aim_bone": "bone_root",
+            "projectiles_per_fire": 2,
+            "muzzle_bone": ["socket_muzzle_laser_1","socket_muzzle_laser_2"]
         }
     ],
     "fx_offsets": [
         {
             "type": "moving",
             "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-            "bone": "bone_body",
+            "bone": "socket_engine_1",
             "offset": [
                 0,
-                8.9,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "moving",
+            "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+            "bone": "socket_engine_2",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "moving",
+            "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+            "bone": "socket_engine_3",
+            "offset": [
+                0,
+                0,
                 0
             ],
             "orientation": [

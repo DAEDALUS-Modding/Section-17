@@ -21,7 +21,7 @@
     "lifetime": 20.0,
     "max_velocity": 90.0,
     "model": {
-        "filename": "/pa/units/orbital/orbital_fighter/orbital_fighter.papa"
+        "filename": "/pa/units/addon/ligma/fighter_drone/fighter_drone.papa"
     },
     "physics": {
         "radius": 5,
@@ -35,7 +35,7 @@
         }
     },
     "spawn_layers": "WL_Orbital",
-    "spawn_unit_on_death": "/pa/units/orbital/orbital_fighter/orbital_fighter.json",
+    "spawn_unit_on_death": "/pa/units/addon/ligma/fighter_drone/fighter_drone.json",
     "spawn_unit_on_death_with_velocity": true,
     "splash_damage": 0,
     "splash_radius": 0,

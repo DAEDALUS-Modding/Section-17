@@ -1,23 +1,38 @@
 {
     "base_spec": "/pa/tools/base_bomb_bay/base_bomb_bay.json",
-    "ammo_id": "/pa/units/air/bomber_adv/bomber_adv_ammo.json",
-    "ammo_source": "infinite",
-    "rate_of_fire": 0.25,
-    "max_range": 180,
-    "ammo_capacity": 0,
-    "ammo_demand": 0,
-    "ammo_per_shot": 0,
+    "ammo_id": "/pa/units/air/bomber/bomber_ammo.json",
+    "ammo_source": "energy",
+    "rate_of_fire": 7.5,
+    "ammo_capacity": 300,
+    "ammo_demand": 150,
+    "ammo_per_shot": 200,
+    "max_range": 10,
     "yaw_rate": 3600,
     "pitch_rate": 3600,
-    "yaw_range": 30,
+    "yaw_range": 180,
     "pitch_range": 180,
     "auto_attack": true,
-    "spread_fire": true,
-    "carpet_fire": false,
-    "firing_standard_deviation": 0,
+    "spread_fire": false,
+    "carpet_fire": true,
+    "firing_standard_deviation": 10,
     "target_layers": [
+        "WL_Air",
         "WL_LandHorizontal",
         "WL_WaterSurface",
-        "WL_Seafloor"
+        "WL_Seafloor",
+        "WL_Underwater"
+    ],
+    "events": {
+        "died": {
+            "audio_cue": "/SE/Impacts/shell_artillery",
+            "effect_spec": "/pa/effects/specs/default_proj_area_explosion.pfx"
+        }
+    },
+    "target_priorities": [
+        "Commander",
+        "AirDefense & ( Land | Naval )",
+        "Titan & ( Land | Naval )",
+        "Artillery & Advanced & ( Land | Naval )",
+        "Nuke | NukeDefense"
     ]
 }
