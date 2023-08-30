@@ -53,7 +53,7 @@
             "apply_thrust": true,
             "ignores_LOS": true,
             "stage_turn_rate": 1000,
-            "stage_change_range": 300,
+            "stage_change_range": 150,
             "rotates_to_velocity": true
         },
         {
