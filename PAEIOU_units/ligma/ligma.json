@@ -260,7 +260,7 @@
 		}
     ],
     "unit_types": [
-        "UNITTYPE_Custom58",
+        "UNITTYPE_Custom1",
         "UNITTYPE_Mobile",
         "UNITTYPE_Offense",
         "UNITTYPE_Orbital",
