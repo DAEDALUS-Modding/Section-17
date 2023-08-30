@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.7.0 (2023-08-30)
+
+### Ligma (NEW UNIT)
+- Legion alternative to Sigma
+- More fragile than Sigma, but can overwhelm enemies with massive drone swarms
+- Carries 80 orbital fighter drones and 80 bomber drones
+- 12 second Planetary Annihilation Cooldown (normal orbital units have 3 seconds)
+
+### Sigma
+- Planetary Arrival Cooldown: 3 seconds -> 12 seconds
+- Hitbox size increased significantly
+
 ## v0.6.0 (2023-06-12)
 
 ### General
