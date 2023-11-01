@@ -16,3 +16,4 @@ dox_materializer/
 ligma/
 ligma/drone_fighter/
 ligma/drone_bomber/
+energy_coil/

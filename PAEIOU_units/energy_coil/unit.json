@@ -1,0 +1,98 @@
+{
+    "display_name": "!LOC:Energy Coil",
+    "description": "!LOC:Energy Coil - Experimental high-yield energy production. Discharges for up to 30 seconds when within 120 range of an enemy (180 sec. when orbital).",
+    "TEMP_texelinfo": 15.8224,
+    "area_build_type": "Line",
+    "atrophy_cool_down": 15.0,
+    "atrophy_rate": 7.5,
+    "audio": {
+        "selection_response": {
+            "cue": "/SE/Selection/structure/energy"
+        }
+    },
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "build_metal_cost": 600,
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/structure_small"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Factory",
+            "effect_scale": 0.5
+        }
+    },
+    "max_health": 650,
+    "mesh_bounds": [
+        10,
+        10,
+        16
+    ],
+    "model": [
+        {
+            "layer": "WL_LandHorizontal",
+            "filename": "{model.papa}",
+            "animations": {
+                "deploy": "{anim_deploy.papa}",
+                "open": "{anim_open.papa}",
+                "closed": "{anim_closed.papa}"
+            },
+            "animtree": "{anim_tree.json}",
+            "skirt_decal": "/pa/effects/specs/skirt_energy.json"
+        }
+    ],
+    "tools": [
+        {
+            "aim_bone": "socket_muzzle",
+            "muzzle_bone": "socket_muzzle",
+            "projectiles_per_fire": 1,
+            "spec_id": "{weapon.json}"
+        },
+        {
+            "aim_bone": "socket_muzzle",
+            "muzzle_bone": "socket_muzzle",
+            "projectiles_per_fire": 1,
+            "spec_id": "{weapon_orbital.json}"
+        }
+    ],
+    "placement_size": [
+        18,
+        18
+    ],
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 120
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 120
+                }
+            ]
+        }
+    },
+    "selection_icon": {
+        "diameter": 25
+    },
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "unit_name": "Energy Coil",
+    "unit_types": [
+        "UNITTYPE_Custom58",
+        "UNITTYPE_Structure",
+        "UNITTYPE_EnergyProduction",
+        "UNITTYPE_Basic",
+        "UNITTYPE_CmdBuild",
+        "UNITTYPE_FabBuild",
+        "UNITTYPE_Economy"
+    ],
+    "command_caps": [
+    ],
+    "production": {
+        "energy": 1200
+    }
+}
