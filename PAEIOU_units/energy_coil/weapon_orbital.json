@@ -1,30 +1,17 @@
 {
-    "ammo_capacity": 180000,
-    "ammo_demand": 1200,
     "ammo_id": "{ammo_orbital.json}",
-    "ammo_per_shot": 1800,
-    "ammo_source": "energy",
-    "auto_attack": true,
     "base_spec": "/pa/tools/base_laser_turret/base_laser_turret.json",
-    "idle_aim_delay": 1,
-    "max_range": 120,
+    "max_range": 200,
     "pitch_range": 180,
     "pitch_rate": 720,
     "rate_of_fire": 10,
     "target_layers": [
         "WL_Orbital"
     ],
-    "target_priorities": [
-        "Commander",
-        "Important",
-        "Advanced",
-        "Basic"
-    ],
     "yaw_range": 180,
     "yaw_rate": 180,
-    "carpet_fire": true,
-    "carpet_wait_for_full_ammo": false,
     "firing_arc_pitch": 180,
     "firing_arc_yaw": 180,
-    "firing_standard_deviation": 15
+    "firing_standard_deviation": 15,
+    "self_destruct": true
 }
