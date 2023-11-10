@@ -1,8 +1,8 @@
 {
     "base_spec": "/pa/ammo/base_bomb/base_bomb.json",
-    "damage": 300,
+    "damage": 400,
     "splash_damage": 200,
-    "splash_radius": 25,
+    "splash_radius": 4,
     "full_damage_splash_radius": 2,
     "initial_velocity": 15.0,
     "max_velocity": 15.0,
