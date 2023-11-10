@@ -217,7 +217,8 @@
         "UNITTYPE_Structure",
         "UNITTYPE_Titan",
         "UNITTYPE_Important",
-        "UNITTYPE_AdvFabBuild"
+        "UNITTYPE_AdvFabBuild",
+        "UNITTYPE_Custom58"
     ],
     "wait_to_rolloff_time": 0,
     "fx_offsets": [
