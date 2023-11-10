@@ -7,5 +7,6 @@
     "initial_velocity": 15.0,
     "max_velocity": 15.0,
     "lifetime": 7,
-    "spawn_unit_on_death": "{!larva/larva.json}"
+    "spawn_unit_on_death": "{!larva/larva.json}",
+    "damage_target": "Metal"
 }
