@@ -208,7 +208,8 @@
         "UNITTYPE_Advanced",
         "UNITTYPE_FactoryBuild",
         "UNITTYPE_Titan",
-        "UNITTYPE_Deconstruction"
+        "UNITTYPE_Deconstruction",
+        "UNITTYPE_Custom13"
     ],
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface"
 }
