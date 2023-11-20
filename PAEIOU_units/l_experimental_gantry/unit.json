@@ -2,10 +2,6 @@
     "display_name": "!LOC:Experimental Gantry",
     "description": "!LOC:Experimental Manufacturing - Builds experimental units.",
     "base_spec": "/pa/units/paeiou/experimental_gantry/experimental_gantry.json",
-    "build_metal_cost": 1800,
-    "consumption": {
-        "energy": 2000
-    },
     "unit_types": [
         "UNITTYPE_Factory",
         "UNITTYPE_Construction",
@@ -13,6 +9,9 @@
         "UNITTYPE_Titan",
         "UNITTYPE_Important",
         "UNITTYPE_AdvFabBuild",
-        "UNITTYPE_Custom1"
+        "UNITTYPE_Custom1",
+        "UNITTYPE_Bot",
+        "UNITTYPE_Vehicle",
+        "UNITTYPE_Air"
     ]
 }

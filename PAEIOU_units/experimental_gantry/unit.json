@@ -17,7 +17,7 @@
     },
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
     "build_metal_cost": 3500,
-    "buildable_types": "(Mobile & FactoryBuild & Titan) - Custom1 - Custom2 - Custom3 - Custom4 - Custom58",
+    "buildable_types": "(Mobile & FactoryBuild & Titan) & Custom7",
     "command_caps": [
         "ORDER_Move",
         "ORDER_Patrol",
@@ -215,7 +215,10 @@
         "UNITTYPE_Titan",
         "UNITTYPE_Important",
         "UNITTYPE_AdvFabBuild",
-        "UNITTYPE_Custom58"
+        "UNITTYPE_Custom58",
+        "UNITTYPE_Bot",
+        "UNITTYPE_Vehicle",
+        "UNITTYPE_Air"
     ],
     "wait_to_rolloff_time": 0,
     "fx_offsets": [
