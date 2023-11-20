@@ -29,10 +29,9 @@
     ],
     "model": [
         {
-            "layer": "WL_LandHorizontal",
-            "filename": "/pa/units/land/energy_plant/energy_plant.papa",
+            "filename": "{model.papa}",
             "animations": {
-                "idle": "/pa/units/land/energy_plant/energy_plant_anim_work.papa"
+                "idle": "{dox_materializer_idle.papa}"
             },
             "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
             "skirt_decal": "/pa/effects/specs/skirt_energy.json"
