@@ -10,8 +10,5 @@
     "pitch_range": 25,
     "target_layers": [
         "WL_Orbital"
-    ],
-    "target_priorities": [
-        "Orbital"
     ]
 }

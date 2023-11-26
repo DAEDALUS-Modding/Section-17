@@ -29,10 +29,7 @@
         }
     },
     "target_priorities": [
-        "Commander",
-        "AirDefense & ( Land | Naval )",
-        "Titan & ( Land | Naval )",
-        "Artillery & Advanced & ( Land | Naval )",
-        "Nuke | NukeDefense"
+        "Commander | AirDefense | Important | Nuke | NukeDefense | Economy | Construction | Factory",
+        "Wall"
     ]
 }

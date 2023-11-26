@@ -4,7 +4,7 @@
     "description": "!LOC:Missile and Torpedo Drone - Fast, fragile, attacks land, sea and air.",
     "max_health": 40,
     "build_metal_cost": 90,
-    "guard_radius": 250,
+    "guard_radius": 5000,
     "passive_health_regen": -3,
     "nearby_target_tick_update_interval": 3,
     "unit_types": [
