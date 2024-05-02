@@ -16,8 +16,11 @@
         }
     },
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "build_metal_cost": 3500,
     "buildable_types": "(Mobile & FactoryBuild & Titan) & Custom17",
+    "build_metal_cost": 1800,
+    "consumption": {
+        "energy": 2000
+    },
     "command_caps": [
         "ORDER_Move",
         "ORDER_Patrol",
@@ -165,8 +168,8 @@
         "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
     },
     "placement_size": [
-        100,
-        120
+        90,
+        130
     ],
     "recon": {
         "observer": {
