@@ -151,16 +151,16 @@
     ],
     "max_health": 30000,
     "mesh_bounds": [
-        60,
-        100,
-        35
+        50,
+        50,
+        23
     ],
     "model": {
         "filename": "{papa/model.papa}",
         "animations": {
-            "build_start": "{papa/anim_build.papa}",
-            "build_loop": "{papa/anim_build.papa}",
-            "build_end": "{papa/anim_build.papa}"
+            "build_start": "{papa/anim_start.papa}",
+            "build_loop": "{papa/anim_loop.papa}",
+            "build_end": "{papa/anim_end.papa}"
         },
         "animtree": "{anim_tree.json}"
     },
@@ -168,8 +168,8 @@
         "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
     },
     "placement_size": [
-        90,
-        130
+        30,
+        40
     ],
     "recon": {
         "observer": {
@@ -202,7 +202,7 @@
         ]
     ],
     "selection_icon": {
-        "diameter": 100.0
+        "diameter": 40.0
     },
     "tools": [
         {
@@ -226,262 +226,7 @@
     "wait_to_rolloff_time": 0,
     "fx_offsets": [
         {
-            "bone": "socket_fab1",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ],
-            "type": "build"
-        },
-        {
-            "bone": "socket_fab2",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ],
-            "type": "build"
-        },
-        {
-            "bone": "socket_fab3",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ],
-            "type": "build"
-        },
-        {
-            "bone": "socket_fab4",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ],
-            "type": "build"
-        },
-        {
-            "bone": "socket_fab5",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ],
-            "type": "build"
-        },
-        {
-            "bone": "socket_fab6",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ],
-            "type": "build"
-        },
-        {
-            "bone": "socket_fab7",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ],
-            "type": "build"
-        },
-        {
-            "bone": "socket_fab8",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ],
-            "type": "build"
-        },
-        {
-            "bone": "socket_fab9",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ],
-            "type": "build"
-        },
-        {
-            "bone": "socket_fab10",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ],
-            "type": "build"
-        },
-        {
-            "bone": "socket_fab11",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ],
-            "type": "build"
-        },
-        {
-            "bone": "socket_fab12",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ],
-            "type": "build"
-        },
-        {
-            "bone": "socket_fab13",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ],
-            "type": "build"
-        },
-        {
-            "bone": "socket_fab14",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ],
-            "type": "build"
-        },
-        {
-            "bone": "socket_fab15",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ],
-            "type": "build"
-        },
-        {
-            "bone": "socket_fab16",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ],
-            "type": "build"
-        },
-        {
-            "bone": "socket_arm_fab_left",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ],
-            "type": "build"
-        },
-        {
-            "bone": "socket_arm_fab_right",
+            "bone": "socket_fabber",
             "filename": "/pa/effects/specs/fab_spray.pfx",
             "offset": [
                 0,
@@ -498,7 +243,7 @@
     ],
     "factory": {
         "spawn_points": [
-            "bone_platform"
+            "socket_build"
         ]
     },
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface"
