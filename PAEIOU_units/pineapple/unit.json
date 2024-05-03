@@ -23,10 +23,10 @@
         "energy": 11250
     },
     "unit_types": [
-        "UNITTYPE_Tank",
+        "UNITTYPE_Bot",
         "UNITTYPE_Mobile",
         "UNITTYPE_Land",
-        "UNITTYPE_Scout",
+        "UNITTYPE_Recon",
         "UNITTYPE_Advanced",
         "UNITTYPE_FactoryBuild",
         "UNITTYPE_Custom17"
