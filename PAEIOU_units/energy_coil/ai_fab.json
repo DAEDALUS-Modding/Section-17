@@ -1,47 +1,49 @@
-{
-    "instance_count": 1,
-    "max_num_assisters": 5,
-    "shared_instance_count": "BasicEnergy",
-    "cross_planet_shared_count": true,
-    "priority": 500,
-    "builders": [
-        "AnyBasicFabber"
-    ],
-    "build_conditions": [
-        [
-            {
-                "test_type": "DesireEnergy"
-            },
-            {
-                "test_type": "UnitCount",
-                "unit_type_string0": "EnergyProduction & Basic",
-                "compare0": ">=",
-                "value0": 7
-            },
-            {
-                "test_type": "UnitCount",
-                "unit_type_string0": "EnergyProduction & Advanced",
-                "compare0": "<",
-                "value0": 1
-            },
-            {
-                "test_type": "HaveSeenEnemyUnits",
-                "unit_type_string0": "Orbital",
-                "boolean": false
-            },
-            {
-                "test_type": "CanFindPlaceToBuild"
+[
+    {
+        "instance_count": 1,
+        "max_num_assisters": 5,
+        "shared_instance_count": "BasicEnergy",
+        "cross_planet_shared_count": true,
+        "priority": 500,
+        "builders": [
+            "AnyBasicFabber"
+        ],
+        "build_conditions": [
+            [
+                {
+                    "test_type": "DesireEnergy"
+                },
+                {
+                    "test_type": "UnitCount",
+                    "unit_type_string0": "EnergyProduction & Basic",
+                    "compare0": ">=",
+                    "value0": 7
+                },
+                {
+                    "test_type": "UnitCount",
+                    "unit_type_string0": "EnergyProduction & Advanced",
+                    "compare0": "<",
+                    "value0": 1
+                },
+                {
+                    "test_type": "HaveSeenEnemyUnits",
+                    "unit_type_string0": "Orbital",
+                    "boolean": false
+                },
+                {
+                    "test_type": "CanFindPlaceToBuild"
+                }
+            ]
+        ],
+        "placement_rules": {
+            "buffer": 2,
+            "placement_type": "FromBaseCenter",
+            "threat": {
+                "influence_type": "AntiSurface",
+                "compare_type": "<",
+                "radius": 300,
+                "value": 10
             }
-        ]
-    ],
-    "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromBaseCenter",
-        "threat": {
-            "influence_type": "AntiSurface",
-            "compare_type": "<",
-            "radius": 300,
-            "value": 10
         }
     }
-}
+]

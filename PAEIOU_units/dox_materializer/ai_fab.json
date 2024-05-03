@@ -1,33 +1,35 @@
-{
-    "instance_count": 1,
-    "shared_instance_count": "BasicMetal",
-    "priority": 498,
-    "base_sort": "FromBuilder",
-    "builders": [
-        "AnyMLABasicFabber"
-    ],
-    "build_conditions": [
-        [
-            {
-                "test_type": "AloneOnPlanet",
-                "boolean": false
-            },
-            {
-                "test_type": "DesireMetal"
-            },
-            {
-                "test_type": "CanFindPlaceToBuild"
+[
+    {
+        "instance_count": 1,
+        "shared_instance_count": "BasicMetal",
+        "priority": 498,
+        "base_sort": "FromBuilder",
+        "builders": [
+            "AnyMLABasicFabber"
+        ],
+        "build_conditions": [
+            [
+                {
+                    "test_type": "AloneOnPlanet",
+                    "boolean": false
+                },
+                {
+                    "test_type": "DesireMetal"
+                },
+                {
+                    "test_type": "CanFindPlaceToBuild"
+                }
+            ]
+        ],
+        "placement_rules": {
+            "buffer": 6,
+            "placement_type": "FromMainBaseCenter",
+            "threat": {
+                "influence_type": "AntiSurface",
+                "compare_type": "<",
+                "radius": 10,
+                "value": 50
             }
-        ]
-    ],
-    "placement_rules": {
-        "buffer": 6,
-        "placement_type": "FromMainBaseCenter",
-        "threat": {
-            "influence_type": "AntiSurface",
-            "compare_type": "<",
-            "radius": 10,
-            "value": 50
         }
     }
-}
+]
