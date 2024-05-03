@@ -19,3 +19,4 @@ ligma/drone_bomber/
 energy_coil/
 aegir/
 l_experimental_gantry/
+katrina/

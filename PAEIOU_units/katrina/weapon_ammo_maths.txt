@@ -1,0 +1,68 @@
+
+Goal: We want to fire a volley of exactly 30 shots at 10 shots/second, using 30 ammo per shot, and have 6 seconds between the start of 1 volley and the start of the next.
+time_firing = 3
+rate_of_fire = 10
+ammo_per_shot = 30
+time_total = 6
+We need to find ammo_capacity and ammo_demand
+
+ammo_left = ammo_cap + ammo_demand * time_firing - ammo_per_shot * rate_of_fire * time_firing
+
+ammo_left = ammo_cap + (ammo_demand - ammo_per_shot * rate_of_fire) * time_firing
+
+0 = ammo_cap + (ammo_demand - 30 * 10) * 3
+
+ammo_demand = ammo_cap / time_reloading
+time_reloading = time_total - time_firing
+time_reloading = 6 - 3 = 3
+
+ammo_demand = ammo_cap / 3
+
+0 = ammo_cap + (ammo_cap/3 - 30 * 10) * 3
+0 = 2*ammo_cap - 900
+ammo_cap = 450
+
+ammo_demand = 150
+
+
+Note:
+It's literally 15 + 7.5 + 3.75 + . . . = 2 * 15 = 30 shots, ugh.
+I suspect general form is a geometric sequence sum(0≤k, ar^k) where r = time_firing/time_total, a = ammo_cap/(ammo_per_shot * rate_of_fire). Too lazy to prove.
+
+Caveat: Need integers in firing, sequence is actually:
+15 + 7 + 4 + 2 + 1 + 0 = 29, with 15 ammo left over
+
+With starting ammo 465 instead:
+15 + 8 + 4 + 2 + 1 + 0 = 30, with 0 ammo left over! Caveat: it takes 3.05 seconds of resting instead of 3 seconds between volleys. This is acceptable . . .
+
+With starting ammo 465, recharge rate 155:
+15 + 8 + 4 + 2 + 1 + 0 = 30, with 20 ammo left over. Only takes 2.87 seconds to rest.
+
+----
+
+Previous math didn't work, let's try something else, firing 15 shots each from 2 weapons:
+time_firing = 1.5
+rate_of_fire = 10
+ammo_per_shot = 45
+time_total = 6
+We need to find ammo_capacity and ammo_demand
+
+ammo_left = ammo_cap + ammo_demand * (time_firing - 1/rate_of_fire) - ammo_per_shot * rate_of_fire * time_firing
+
+ammo_left = ammo_cap + (ammo_demand - ammo_per_shot * rate_of_fire) * time_firing - ammo_demand * 1/rate_of_fire
+
+0 = ammo_cap + (ammo_demand - 45 * 10) * 1.5 - 0.1 * ammo_demand
+
+ammo_demand = ammo_cap / time_reloading
+time_reloading = time_total - (time_firing - 1/rate_of_fire)
+time_reloading = 6 - 1.4 = 4.6
+
+ammo_demand = ammo_cap / 4.6
+
+0 = ammo_cap + (ammo_cap/4.6 - 45 * 10) * 1.5 - 0.1 * ammo_cap/4.6
+0 = (1 + 1.4/4.6)*ammo_cap - 675
+ammo_cap = 517.5
+
+ammo_demand = 112.5
+
+Theoretically, fires: 11 + 3 + 1 = 15 shots, with 0 ammo left over, needing 4.6 seconds to reload
