@@ -6,12 +6,8 @@
         "UNITTYPE_Factory",
         "UNITTYPE_Construction",
         "UNITTYPE_Structure",
-        "UNITTYPE_Titan",
         "UNITTYPE_Important",
-        "UNITTYPE_AdvFabBuild",
-        "UNITTYPE_Custom1",
-        "UNITTYPE_Bot",
-        "UNITTYPE_Vehicle",
-        "UNITTYPE_Air"
+        "UNITTYPE_FabAdvBuild",
+        "UNITTYPE_Custom1"
     ]
 }

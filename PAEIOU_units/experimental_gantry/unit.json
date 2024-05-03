@@ -215,13 +215,9 @@
         "UNITTYPE_Factory",
         "UNITTYPE_Construction",
         "UNITTYPE_Structure",
-        "UNITTYPE_Titan",
         "UNITTYPE_Important",
-        "UNITTYPE_AdvFabBuild",
-        "UNITTYPE_Custom58",
-        "UNITTYPE_Bot",
-        "UNITTYPE_Vehicle",
-        "UNITTYPE_Air"
+        "UNITTYPE_FabAdvBuild",
+        "UNITTYPE_Custom58"
     ],
     "wait_to_rolloff_time": 0,
     "fx_offsets": [
