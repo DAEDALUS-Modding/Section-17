@@ -1,8 +1,8 @@
 # Section 17: A Unit Addition Mod
-v0.5.0
+v0.8.0
 
 **Compatible with Second Wave, Legion, Bugs, and Dozer.**
-**Class 2 partial compatibility with Thorosmen and Aurora Artillery**
+**Class 2 partial compatibility with Thorosmen**
 
 ## Background
 
@@ -39,25 +39,40 @@ Most experimentals tend to fulfill specific, but powerful, niches. There are som
   - Pineapple (experimental mobile vision/radar)
   - Horntail (strategic nanoswarm bomber)
 
+
+
+### MLA Only
+
+#### T1 Utility Structures
+- Dox Materializer (free Dox every 30 seconds)
+- Energy Coil (Unstable High-Efficiency Energy Generation)
+
+#### T2 Bots
+- Spider (Heavy Single-target Anti-Air)
+
+#### T2 Vehicles
+- Katrina (Low-accuracy Long-range Multiple Rocket Launcher)
+
+#### T2 Naval
+- Dolfin (Gun Cruiser with Anti-Swarm Anti-Air)
+  
+#### T2 Air
+- Yellowjacket (High-Survivability Carpet Bomber)
+
 #### Naval Titan
 - Poseidon (Submarine Carrier Titan):
   - Fields fighter drones against enemy air units
   - Fields suicidal torpedo drones against submerged enemy units
   - Fields amphibious drones against enemy naval and land units
 
-### MLA Only
-
-#### T1 Utility Structure
-- Dox Materializer (free Dox every 30 seconds)
-
-#### T2 Bots
-- Spider (Heavy Single-target Anti-Air)
-
-#### T2 Naval
-- Dolfin (Gun Cruiser with Anti-Swarm Anti-Air)
-  
-### T2 Air
-- Yellowjacket (High-Survivability Carpet Bomber)
-
 ### Endgame Orbital
 - Sigma (Endgame Fathership)
+
+### Legion Only
+
+#### Naval Titan
+- Ægir (Submarine Carrier Titan):
+  - Currently identicle to the Poseidon
+
+### Endgame Orbital
+- Ligma (Endgame Fathership)
