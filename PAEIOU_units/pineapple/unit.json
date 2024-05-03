@@ -29,7 +29,6 @@
         "UNITTYPE_Scout",
         "UNITTYPE_Advanced",
         "UNITTYPE_FactoryBuild",
-        "UNITTYPE_Titan",
         "UNITTYPE_Custom17"
     ],
     "guard_layer": "WL_AnySurface",
