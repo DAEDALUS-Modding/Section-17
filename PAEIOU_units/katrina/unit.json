@@ -83,14 +83,14 @@
     "tools": [
         {
             "spec_id": "{weapon.json}",
-            "aim_bone": "bone_pitch",
+            "aim_bone": "bone_turret",
             "muzzle_bone": [
                 "socket_muzzle_left"
             ]
         },
         {
             "spec_id": "{weapon.json}",
-            "aim_bone": "bone_pitch",
+            "aim_bone": "bone_turret",
             "muzzle_bone": [
                 "socket_muzzle_right"
             ]
