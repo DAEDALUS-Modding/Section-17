@@ -1,5 +1,72 @@
 # Changelog
 
+## v0.8.0 (2024-05-03)
+
+### Katrina (NEW UNIT)
+- T2 multiple rocket launcher vehicle
+- Low accuracy, high spread, high projectile count
+- 310 range
+- Costs 1700 metal
+
+### Energy Coil (NEW UNIT)
+- Unstable T1 Energy source
+- Produces 1200 energy per second
+- Costs 600 metal
+- Discharges for 30 seconds (stops producing energy) if enemy units enter within 200 range
+- Destroyed permanently if an enemy orbital unit enters within 200 range
+
+### Ægir (NEW UNIT)
+- Legion equivalent of Poseidon (Naval Titan)
+- Statistically and visually identical for now
+- Will change in the future
+
+### Poseidon
+- Build Bar icon color has changed to reflect MLA only status
+
+### Dox Materializer
+- New Model
+- Cost: 300 -> 270
+
+### Sigma
+These cost increases are a temporary stopgap measure that will be partially reverted in a future Section 17 update.
+- Cost: 90,000 -> 300,000
+- Health: 80,000 -> 60,000
+
+### Ligma
+These cost increases are a temporary stopgap measure that will be partially reverted in a future Section 17 update.
+- Cost: 90,000 -> 300,000
+- Health: 40,000 -> 30,000
+#### Bomber Drone
+- Target priorities are less precise in order to fix previous aggro issues
+#### Fighter Drone
+- Guard Radius: 250 -> 5000
+
+### Big Bill
+- Cost: 10000 -> 8000
+- Health: 5000 -> 3500
+
+### Floater
+- Cost: 4000 -> 3800
+
+### Horntail
+- Cost: 4000 -> 3600
+- Bomb impact changed from normal damage to metal damage
+- Bomb impact damage: 300 -> 400
+- Bomb impact splash radius: 25 -> 4
+- Range: 15 -> 5
+- Bomb dispersion deviation: 4 -> 2
+- Energy needed per bomb: 18000 -> 15000
+
+### Pineapple
+- Cost: 8000 -> 6000
+- Health: 8000 -> 6000
+
+### AI Changes
+The Vanilla AI (not Queller) and some modded variants can now build:
+- Katrina
+- Dox Materializer
+- Energy Coil
+
 ## v0.7.0 (2023-08-30)
 
 ### Ligma (NEW UNIT)
