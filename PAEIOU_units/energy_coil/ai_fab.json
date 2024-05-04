@@ -41,7 +41,7 @@
             "threat": {
                 "influence_type": "AntiSurface",
                 "compare_type": "<",
-                "radius": 300,
+                "radius": 250,
                 "value": 10
             }
         }
