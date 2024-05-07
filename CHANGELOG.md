@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.8.1 (2024-05-06)
+- Increment version number
+
 ## v0.8.0 (2024-05-03)
 
 ### Katrina (NEW UNIT)
