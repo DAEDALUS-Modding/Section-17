@@ -3,7 +3,7 @@
     "armor_damage_map": {
         "AT_Orbital": 0.0
     },
-    "damage": 400,
+    "damage": 100,
     "damage_volume": {
         "initial_radius": 20.0,
         "radius_velocity": 280.0,
