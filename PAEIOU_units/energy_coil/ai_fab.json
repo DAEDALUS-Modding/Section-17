@@ -2,9 +2,8 @@
     {
         "instance_count": 1,
         "max_num_assisters": 5,
-        "shared_instance_count": "BasicEnergy",
         "cross_planet_shared_count": true,
-        "priority": 500,
+        "priority": 261,
         "builders": [
             "AnyBasicFabber"
         ],
@@ -14,35 +13,91 @@
                     "test_type": "DesireEnergy"
                 },
                 {
-                    "test_type": "UnitCount",
-                    "unit_type_string0": "EnergyProduction & Basic",
+                    "test_type": "DistFromMainBase",
                     "compare0": ">=",
-                    "value0": 7
+                    "value0": 150
                 },
                 {
-                    "test_type": "UnitCount",
-                    "unit_type_string0": "EnergyProduction & Advanced",
+                    "test_type": "HasPersonalityTag",
+                    "string0": "Tutorial",
+                    "boolean": false
+                },
+                {
+                    "test_type": "UnitCountInBase",
+                    "unit_type_string0": "Structure & Basic & SurfaceDefense",
                     "compare0": "<",
                     "value0": 1
                 },
                 {
-                    "test_type": "HaveSeenEnemyUnits",
-                    "unit_type_string0": "Orbital",
+                    "test_type": "UnitCountInBase",
+                    "unit_type_string0": "Structure & MetalProduction",
+                    "compare0": ">=",
+                    "value0": 2
+                },
+                {
+                    "test_type": "CanFindPlaceToBuild",
+                    "string0": "BasicLandDefenseSingle"
+                }
+            ],
+            [
+                {
+                    "test_type": "DesireEnergy"
+                },
+                {
+                    "test_type": "CanAffordBuildDemand"
+                },
+                {
+                    "test_type": "DistFromNearestEnemyThreat",
+                    "compare0": "<=",
+                    "value0": 200
+                },
+                {
+                    "test_type": "HasPersonalityTag",
+                    "string0": "Tutorial",
                     "boolean": false
                 },
                 {
-                    "test_type": "CanFindPlaceToBuild"
+                    "test_type": "UnitCountInBase",
+                    "unit_type_string0": "Structure & Basic & SurfaceDefense",
+                    "compare0": "<",
+                    "value0": 1
+                },
+                {
+                    "test_type": "UnitCountInBase",
+                    "unit_type_string0": "Structure & MetalProduction",
+                    "compare0": ">=",
+                    "value0": 2
+                },
+                {
+                    "test_type": "CanFindPlaceToBuild",
+                    "string0": "BasicLandDefenseSingle"
                 }
             ]
         ],
         "placement_rules": {
             "buffer": 2,
-            "placement_type": "FromBaseCenter",
+            "placement_type": "FromMainBasePerimeter",
+            "unit_count_rules": [
+                {
+                    "unit_type_string": "Structure & MetalProduction",
+                    "alliance": "Ally",
+                    "compare_type": ">=",
+                    "range": 50,
+                    "count": 1
+                },
+                {
+                    "unit_type_string": "Structure & Basic & SurfaceDefense",
+                    "alliance": "Ally",
+                    "compare_type": "<",
+                    "range": 100,
+                    "count": 1
+                }
+            ],
             "threat": {
                 "influence_type": "AntiSurface",
                 "compare_type": "<",
-                "radius": 250,
-                "value": 10
+                "radius": 35,
+                "value": 5
             }
         }
     }
