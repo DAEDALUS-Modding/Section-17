@@ -1,7 +1,6 @@
 {
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
     "unit_name": "Solar Cell",
-    "si_name": "solar_cell",
     "display_name": "!LOC:Solar Cell",
     "description": "!LOC:Basic Economy - Can produce energy for little initial metal, but takes up alot of space and is quite vulnerable.",
     "max_health": 75,

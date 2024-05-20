@@ -20,3 +20,4 @@ energy_coil/
 aegir/
 l_experimental_gantry/
 katrina/
+solar_cell/
