@@ -74,7 +74,7 @@
         ]
     ],
     "production": {
-        "energy": 175
+        "energy": 145
     },
     "unit_types": [
         "UNITTYPE_Structure",
