@@ -3,7 +3,7 @@
     "display_name": "!LOC:Pineapple",
     "description": "!LOC:Experimental Vision Spire - Large vision and radar range. Amphibious. Attacks nearby enemies with rapid energy bursts.",
     "max_health": 6000,
-    "build_metal_cost": 6000,
+    "build_metal_cost": 5000,
     "attachable": {
         "offsets": {
             "root": [
@@ -20,7 +20,7 @@
     },
     "energy_efficiency_requirement": 0.9,
     "consumption": {
-        "energy": 11250
+        "energy": 15000
     },
     "unit_types": [
         "UNITTYPE_Bot",
@@ -128,9 +128,14 @@
             "spec_id": "{weapon.json}",
             "aim_bone": "bone_root",
             "muzzle_bone": "bone_root"
+        },
+        {
+            "spec_id": "{weapon_neg.json}",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root"
         }
     ],
     "transportable": {
-      "size": 1
+        "size": 1
     }
 }

@@ -1,0 +1,14 @@
+{
+    "recon": {
+        "observable": {
+            "layer": "surface_and_air",
+            "sphere_radius": 5,
+            "ignore_radar": true,
+            "always_visible": true
+        }
+    },
+    "spawn_response": {
+        "effect_spec": "{shock_effect.pfx.json}",
+        "effect_world_aligned": true
+    }
+}

@@ -1,6 +1,6 @@
 {
     "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
-    "ammo_id": "{ammo.json}",
+    "ammo_id": "{ammo_neg.json}",
     "rate_of_fire": 10.0,
     "max_range": 140,
     "fire_delay": 0,
