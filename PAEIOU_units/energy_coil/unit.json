@@ -46,12 +46,6 @@
             "muzzle_bone": "socket_muzzle",
             "projectiles_per_fire": 1,
             "spec_id": "{weapon.json}"
-        },
-        {
-            "aim_bone": "socket_muzzle",
-            "muzzle_bone": "socket_muzzle",
-            "projectiles_per_fire": 1,
-            "spec_id": "{weapon_orbital.json}"
         }
     ],
     "placement_size": [

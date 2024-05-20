@@ -13,8 +13,7 @@
     "rate_of_fire": 4,
     "target_layers": [
         "WL_Air",
-        "WL_AnyHorizontalGroundOrWaterSurface",
-        "WL_Orbital"
+        "WL_AnyHorizontalGroundOrWaterSurface"
     ],
     "target_priorities": [
         "Commander",
@@ -28,5 +27,5 @@
     "carpet_wait_for_full_ammo": false,
     "firing_arc_pitch": 180,
     "firing_arc_yaw": 180,
-    "firing_standard_deviation": 5
+    "firing_standard_deviation": 0.25
 }
