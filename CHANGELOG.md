@@ -1,6 +1,6 @@
 # Changelog
 
-## v0.8.2 (2024-05-19)
+## v0.8.2 (2024-06-06)
 
 ### Solar Cell (PREVIOUS SECOND WAVE UNIT, IT'S BACK)
 - Cheap T1 energy production
