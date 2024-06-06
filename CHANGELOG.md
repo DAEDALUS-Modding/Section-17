@@ -1,5 +1,65 @@
 # Changelog
 
+## v0.8.2 (2024-05-19)
+
+### Solar Cell (PREVIOUS SECOND WAVE UNIT, IT'S BACK)
+- Cheap T1 energy production
+- Easily destroyed and space-inefficient
+- Useful when stalling energy
+- Metal Cost: 100
+- Energy Produced: 145
+
+### Energy Coil (REWORKED, NEW ROLE)
+- Energy Plant/Defensive Tower hybrid
+- Lower efficiency than T1 Power
+- Similar health to an X2 Laser Tower
+- Shoots land and air
+- 130 range
+- Produces 500 energy per second
+- Requires 500 energy per second to keep firing
+- Build Cost: 450
+
+### Experimental Gantry
+- Model changed
+- Significantly larger building footprint
+- Build Cost: 1800 -> 5400
+- Metal Demand: 15 -> 80
+- Energy Demand: 1750 -> 6000
+
+### Floater
+- Primary Weapon Buffed:
+  - Range: 130 -> 140
+  - Fire Rate: 6 -> 8
+  - Energy Demand: 7500 -> 8000
+  - Energy per Shot: 1250 -> 1000
+  - Splash Damage: 200 -> 400
+- Build Cost: 3800 -> 3500
+
+### Horntail
+- Metal Cost: 3600 -> 2500
+
+### Pineapple
+- Cost: 6000 -> 5000
+- Passive Energy Drain: 11250 -> 15000
+- Attack pattern reworked:
+  - Now does 200 DPS in a ring
+  - Outer Radius: 140
+  - Inner Radius: 120
+  - Enemies within the Inner Radius do not take damage.
+  - Energy Demand: 7500 -> 0
+
+### Dox Materializer
+- Build Bar location moved
+  - Old position is now occupied by the Solar Cell
+
+### AI Changes
+- AI build rules for Energy Coil have been adjusted for its new role
+- AI can build Solar Cell
+
+### Known Issues
+- Katyusha projectiles still aren't intercepted by Legion Rampart Shields
+  - This will be resolved in the near future.
+
 ## v0.8.1 (2024-05-06)
 - Increment version number
 
