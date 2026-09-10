@@ -76,6 +76,7 @@
         "energy": 145
     },
     "unit_types": [
+        "UNITTYPE_Custom58",
         "UNITTYPE_Structure",
         "UNITTYPE_EnergyProduction",
         "UNITTYPE_Basic",

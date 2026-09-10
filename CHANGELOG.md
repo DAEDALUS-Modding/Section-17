@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+### Solar Cell
+- Can be built again: the unit was missing the MLA faction type, so no MLA commander or fabber could build it
+
 ## v0.8.2 (2024-06-06)
 
 ### Solar Cell (PREVIOUS SECOND WAVE UNIT, IT'S BACK)
