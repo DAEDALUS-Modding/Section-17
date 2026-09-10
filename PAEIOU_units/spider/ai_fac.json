@@ -28,7 +28,7 @@
                 {
                     "test_type": "UnitRatioOnPlanet",
                     "unit_type_string0": "(Tank | Bot) & AirDefense",
-                    "unit_type_string1": "(Tank | Bot) - Fabber",
+                    "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
                     "compare0": "<",
                     "value0": 0.1
                 }
@@ -55,7 +55,7 @@
                 {
                     "test_type": "UnitRatioOnPlanet",
                     "unit_type_string0": "(Tank | Bot) & AirDefense",
-                    "unit_type_string1": "(Tank | Bot) - Fabber",
+                    "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
                     "compare0": "<",
                     "value0": 0.25
                 }
@@ -80,7 +80,7 @@
                 {
                     "test_type": "UnitRatioOnPlanet",
                     "unit_type_string0": "(Tank | Bot) & AirDefense",
-                    "unit_type_string1": "(Tank | Bot) - Fabber",
+                    "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
                     "compare0": "<",
                     "value0": 0.1
                 },
