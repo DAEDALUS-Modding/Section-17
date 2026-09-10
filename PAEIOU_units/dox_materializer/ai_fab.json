@@ -1,20 +1,60 @@
 [
     {
         "instance_count": 1,
-        "shared_instance_count": "BasicMetal",
-        "priority": 498,
-        "base_sort": "FromBuilder",
+        "max_num_assisters": 2,
+        "shared_instance_count": "BasicFactory",
+        "priority": 375,
         "builders": [
-            "AnyMLABasicFabber"
+            "AnyBasicFabber"
         ],
         "build_conditions": [
             [
                 {
-                    "test_type": "AloneOnPlanet",
+                    "test_type": "HaveEcoForAdvanced",
                     "boolean": false
                 },
                 {
-                    "test_type": "DesireMetal"
+                    "test_type": "NeedBasicBotFactory",
+                    "boolean": false
+                },
+                {
+                    "test_type": "UnitCountOnPlanet",
+                    "unit_type_string0": "Factory & Construction & Bot & Basic - Orbital - Economy",
+                    "compare0": ">=",
+                    "value0": 1
+                },
+                {
+                    "test_type": "CanAffordBuildDemand"
+                },
+                {
+                    "test_type": "CanDeployLandFromBase",
+                    "boolean": true
+                },
+                {
+                    "test_type": "CanFindPlaceToBuild"
+                }
+            ],
+            [
+                {
+                    "test_type": "HaveEcoForAdvanced",
+                    "boolean": true
+                },
+                {
+                    "test_type": "NeedBasicBotFactory",
+                    "boolean": true
+                },
+                {
+                    "test_type": "UnitCountOnPlanet",
+                    "unit_type_string0": "Factory & Construction & Bot & Basic - Orbital - Economy",
+                    "compare0": ">=",
+                    "value0": 1
+                },
+                {
+                    "test_type": "CanAffordBuildDemand"
+                },
+                {
+                    "test_type": "CanDeployLandFromBase",
+                    "boolean": true
                 },
                 {
                     "test_type": "CanFindPlaceToBuild"
@@ -22,8 +62,7 @@
             ]
         ],
         "placement_rules": {
-            "buffer": 6,
-            "placement_type": "FromMainBaseCenter",
+            "buffer": 3,
             "threat": {
                 "influence_type": "AntiSurface",
                 "compare_type": "<",
