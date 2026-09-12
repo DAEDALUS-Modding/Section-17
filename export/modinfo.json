@@ -2,7 +2,7 @@
 	"identifier": "com.pa.daedelus.experimentals",
 	"display_name": "Section 17 - Endgame Units",
 	"description": "Adds new units to the game, including T3 Experimentals, Naval Titans, and Orbital Fathership Post-Titans.",
-	"author": "Team DAEDALUS, Quildtide, Taiga, Anonemous2, Bot",
+	"author": "Team DAEDALUS, Quildtide, Taiga, Anonemous2, Bot, Quitch",
 	"signature": "not yet implemented",
 	"forum": "https://forums.planetaryannihilation.com/threads/section-17-unit-addition-mod.73546/",
 	"priority": 90,
@@ -23,7 +23,7 @@
 		]
 	},
 	"context": "server",
-	"date": "2024-06-06",
-	"build": "120799",
-	"version": "0.8.2"
+	"date": "2026-09-12",
+	"build": "124674",
+	"version": "0.8.3"
 }
