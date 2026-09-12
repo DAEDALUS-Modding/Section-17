@@ -1,11 +1,11 @@
 [
     {
+        "name": "S17 Energy Coil",
         "instance_count": 1,
-        "max_num_assisters": 5,
-        "shared_instance_count": "BasicLandDefense",
-        "cross_planet_shared_count": true,
-        "priority": 261,
+        "priority": 85,
+        "base_sort": "FromPerimeter",
         "builders": [
+            "Commander",
             "AnyBasicFabber"
         ],
         "build_conditions": [
@@ -14,9 +14,13 @@
                     "test_type": "DesireEnergy"
                 },
                 {
-                    "test_type": "DistFromMainBase",
-                    "compare0": ">=",
-                    "value0": 150
+                    "test_type": "CanAffordBuildDemand"
+                },
+                {
+                    "test_type": "UnitCountInBase",
+                    "unit_type_string0": "Structure & Basic & SurfaceDefense",
+                    "compare0": "<",
+                    "value0": 2
                 },
                 {
                     "test_type": "HasPersonalityTag",
@@ -25,19 +29,12 @@
                 },
                 {
                     "test_type": "UnitCountInBase",
-                    "unit_type_string0": "Structure & Basic & SurfaceDefense",
-                    "compare0": "<",
-                    "value0": 1
-                },
-                {
-                    "test_type": "UnitCountInBase",
-                    "unit_type_string0": "Structure & MetalProduction",
+                    "unit_type_string0": "Structure & (EnergyProduction | Factory)",
                     "compare0": ">=",
-                    "value0": 2
+                    "value0": 3
                 },
                 {
-                    "test_type": "CanFindPlaceToBuild",
-                    "string0": "BasicLandDefenseSingle"
+                    "test_type": "CanFindPlaceToBuild"
                 }
             ],
             [
@@ -48,11 +45,6 @@
                     "test_type": "CanAffordBuildDemand"
                 },
                 {
-                    "test_type": "DistFromNearestEnemyThreat",
-                    "compare0": "<=",
-                    "value0": 200
-                },
-                {
                     "test_type": "HasPersonalityTag",
                     "string0": "Tutorial",
                     "boolean": false
@@ -61,17 +53,16 @@
                     "test_type": "UnitCountInBase",
                     "unit_type_string0": "Structure & Basic & SurfaceDefense",
                     "compare0": "<",
-                    "value0": 1
-                },
-                {
-                    "test_type": "UnitCountInBase",
-                    "unit_type_string0": "Structure & MetalProduction",
-                    "compare0": ">=",
                     "value0": 2
                 },
                 {
-                    "test_type": "CanFindPlaceToBuild",
-                    "string0": "BasicLandDefenseSingle"
+                    "test_type": "UnitCountInBase",
+                    "unit_type_string0": "Structure & (Tactical | Artillery)",
+                    "compare0": ">=",
+                    "value0": 1
+                },
+                {
+                    "test_type": "CanFindPlaceToBuild"
                 }
             ]
         ],
@@ -80,7 +71,7 @@
             "placement_type": "FromMainBasePerimeter",
             "unit_count_rules": [
                 {
-                    "unit_type_string": "Structure & MetalProduction",
+                    "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
                     "alliance": "Ally",
                     "compare_type": ">=",
                     "range": 50,
@@ -90,16 +81,77 @@
                     "unit_type_string": "Structure & Basic & SurfaceDefense",
                     "alliance": "Ally",
                     "compare_type": "<",
-                    "range": 100,
+                    "range": 50,
                     "count": 1
                 }
-            ],
-            "threat": {
-                "influence_type": "AntiSurface",
-                "compare_type": "<",
-                "radius": 35,
-                "value": 5
-            }
+            ]
+        }
+    },
+    {
+        "name": "S17 Energy Coil - Threat",
+        "instance_count": 1,
+        "priority": 262,
+        "base_sort": "FromPerimeter",
+        "builders": [
+            "Commander",
+            "AnyBasicFabber"
+        ],
+        "build_conditions": [
+            [
+                {
+                    "test_type": "DesireEnergy"
+                },
+                {
+                    "test_type": "CanAffordBuildDemand"
+                },
+                {
+                    "test_type": "UnitCountInBase",
+                    "unit_type_string0": "Structure & Basic & SurfaceDefense",
+                    "compare0": "<",
+                    "value0": 4
+                },
+                {
+                    "test_type": "HasPersonalityTag",
+                    "string0": "Tutorial",
+                    "boolean": false
+                },
+                {
+                    "test_type": "PlanetHighestEnemyArmyThreatRatio",
+                    "string0": "Land",
+                    "string1": "AntiSurface",
+                    "compare0": ">",
+                    "value0": 1.0
+                },
+                {
+                    "test_type": "UnitCountInBase",
+                    "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+                    "compare0": ">=",
+                    "value0": 3
+                },
+                {
+                    "test_type": "CanFindPlaceToBuild"
+                }
+            ]
+        ],
+        "placement_rules": {
+            "buffer": 2,
+            "placement_type": "FromMainBaseCenter",
+            "unit_count_rules": [
+                {
+                    "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+                    "alliance": "Ally",
+                    "compare_type": ">=",
+                    "range": 50,
+                    "count": 1
+                },
+                {
+                    "unit_type_string": "Structure & Basic & SurfaceDefense",
+                    "alliance": "Ally",
+                    "compare_type": "<",
+                    "range": 75,
+                    "count": 2
+                }
+            ]
         }
     }
 ]

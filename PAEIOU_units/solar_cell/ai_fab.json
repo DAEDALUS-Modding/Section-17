@@ -7,7 +7,7 @@
         "cross_planet_shared_count": true,
         "priority": 351,
         "builders": [
-            "MLACommander"
+            "Commander"
         ],
         "build_conditions": [
             [
@@ -45,7 +45,7 @@
         "cross_planet_shared_count": true,
         "priority": 501,
         "builders": [
-            "AnyMLABasicFabber"
+            "AnyBasicFabber"
         ],
         "build_conditions": [
             [
