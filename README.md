@@ -71,7 +71,7 @@ Most experimentals tend to fulfill specific, but powerful, niches. There are som
 
 #### Naval Titan
 - Ægir (Submarine Carrier Titan):
-  - Currently identicle to the Poseidon
+  - Currently identical to the Poseidon
 
 ### Endgame Orbital
 - Ligma (Endgame Fathership)
