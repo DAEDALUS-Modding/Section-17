@@ -77,7 +77,7 @@
         "socket_rear_left_muzzle_1",
         "socket_rear_left_muzzle_2"
       ],
-      "primary_weapon": true
+      "primary_weapon": false
     },
     {
       "spec_id": "{mini_weapon.json}",
@@ -89,7 +89,7 @@
         "socket_front_left_muzzle_1",
         "socket_front_left_muzzle_2"
       ],
-      "primary_weapon": true
+      "primary_weapon": false
     },
     {
       "spec_id": "{mini_weapon.json}",
@@ -101,7 +101,7 @@
         "socket_front_right_muzzle_1",
         "socket_front_right_muzzle_2"
       ],
-      "primary_weapon": true
+      "primary_weapon": false
     },
     {
       "spec_id": "{mini_weapon.json}",
@@ -113,7 +113,7 @@
         "socket_rear_right_muzzle_1",
         "socket_rear_right_muzzle_2"
       ],
-      "primary_weapon": true
+      "primary_weapon": false
     }
   ],
   "events": {
