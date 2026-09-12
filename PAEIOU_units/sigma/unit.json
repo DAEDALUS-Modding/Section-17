@@ -494,7 +494,6 @@
         "UNITTYPE_Fighter",
         "UNITTYPE_Heavy",
         "UNITTYPE_Advanced",
-        "UNITTYPE_FabberBuild",
         "UNITTYPE_Interplanetary",
         "UNITTYPE_Important",
         "UNITTYPE_FabOrbBuild",
