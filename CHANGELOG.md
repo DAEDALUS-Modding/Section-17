@@ -2,11 +2,14 @@
 
 ## v0.8.3 (Unreleased)
 
-### Bugfixes (Quitch, Claude Fable 5.1)
+### Bugfixes (Claude Fable 5.1, Quitch, Quildtide)
 - Solar Cell can actually be built by players now.
 - Vanilla AI can actually build Dox Materializer and Solar Cell now
 - Vanilla AI rules for building Energy Coil improved
 - Vanilla AI build ratios for Katrina and Spider no longer consider noncombat land units.
+- Big Bill's navigation type has been adjusted from non-existant `land` to `land-small`
+- Big Bill, Poseidon, and Aegir now only have 1 weapon indicated as primary in the unit spec (hopefully causes no regressions)
+- Removed invalid unittype from Sigma
 
 ## v0.8.2 (2024-06-06)
 
