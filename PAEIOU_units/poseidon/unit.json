@@ -107,7 +107,8 @@
             "fire_event": "fired1",
             "muzzle_bone": "socket_torp_muzzle_1",
             "secondary_weapon": false,
-            "primary_weapon": true
+            "primary_weapon": false,
+            "show_range": false
         },
         {
             "spec_id": "{torp_weapon.json}",
@@ -116,7 +117,8 @@
             "fire_event": "fired2",
             "muzzle_bone": "socket_torp_muzzle_2",
             "secondary_weapon": false,
-            "primary_weapon": true
+            "primary_weapon": false,
+            "show_range": false
         },
         {
             "spec_id": "{amph_weapon.json}",
@@ -125,7 +127,8 @@
             "fire_event": "fired3",
             "muzzle_bone": "socket_missile_muzzle_1",
             "secondary_weapon": true,
-            "primary_weapon": true
+            "primary_weapon": false,
+            "show_range": false
         },
         {
             "spec_id": "{amph_weapon.json}",
@@ -134,7 +137,8 @@
             "fire_event": "fired4",
             "muzzle_bone": "socket_missile_muzzle_2",
             "secondary_weapon": true,
-            "primary_weapon": true
+            "primary_weapon": false,
+            "show_range": false
         },
         {
             "spec_id": "{amph_weapon.json}",
@@ -143,7 +147,8 @@
             "fire_event": "fired5",
             "muzzle_bone": "socket_missile_muzzle_3",
             "secondary_weapon": true,
-            "primary_weapon": true
+            "primary_weapon": false,
+            "show_range": false
         }
     ],
     "unit_types": [

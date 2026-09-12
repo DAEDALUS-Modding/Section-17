@@ -7,6 +7,8 @@
 - Dox Materializer is built under the same conditions as a basic bot factory instead of as if it were a metal extractor, and only once the AI already owns a bot factory, so it no longer satisfies the AI's "first factory" checks on its own
 - Energy Coil AI build entries are based on the stock double laser tower entries (which it matches in cost and health) instead of a copy of the single laser tower's metal extractor entry: placement checks use the coil's own footprint, one coil under construction no longer blocks laser tower builds on other planets, the AI commander can build it too, and the AI builds a second coil when its base is under land threat
 - Katrina and Spider factory ratios count only offensive land units, matching the TITANS factory builds
+### Solar Cell
+- Can be built again: the unit was missing the MLA faction type, so no MLA commander or fabber could build it
 
 ## v0.8.2 (2024-06-06)
 
