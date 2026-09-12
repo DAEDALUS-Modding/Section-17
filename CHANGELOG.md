@@ -4,6 +4,7 @@
 
 ### Bugfixes (Claude Fable 5.1, Quitch, Quildtide)
 - Solar Cell can actually be built by players now.
+- Dox Materializer no longer counts as a factory (relevant for idle factory counts in UI)
 - Vanilla AI can actually build Dox Materializer and Solar Cell now
 - Vanilla AI rules for building Energy Coil improved
 - Vanilla AI build ratios for Katrina and Spider no longer consider noncombat land units.
