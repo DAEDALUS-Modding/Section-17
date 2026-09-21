@@ -37,7 +37,7 @@ If animations turn out to belong server-side (see the verification step below), 
 
 ## Defects in the shipped zip
 
-Found by resolving every path the zip's json and pfx files reference against the zip itself, `pa/`, and `pa_ex1/`. All three are fixable in the source tree and should go out with the same release as the split, because the first two decide what the companion carries.
+Found by resolving every path the zip's json and pfx files reference against the zip itself, `pa/`, and `pa_ex1/`. All three were fixed on `main` on 2026-09-21 in 94a94b37, 6035aecc, and 711ec251, and are kept here for the record. The first two decide what the companion carries.
 
 ### 1. Solar Cell ships with no textures
 
@@ -161,7 +161,7 @@ The `forum` field currently points at `forums.planetaryannihilation.com`, which 
 
 ### 3. Fix the three references
 
-Apply the fixes in the Defects section so the companion carries the Solar Cell textures and the server mod carries the Ligma tori.
+The fixes in the Defects section are already on `main`, so the companion carries the Solar Cell textures and the server mod carries the Ligma tori.
 
 ### 4. Release order
 
