@@ -1,7 +1,7 @@
 {
-    "model": [
+    "models": [
         "solar_cell.papa",
-        "naval/solar_cell.papa"
+        "naval/naval_solar_cell.papa"
     ],
     "unit": "solar_cell.json",
     "img": "solar_cell_icon_buildbar.png"
