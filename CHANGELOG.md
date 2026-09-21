@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.8.4 (Unreleased)
+
+### Bugfixes (Claude Fable 5.1, Quildtide)
+- Solar Cell model variant when built on water works again.
+- Ligma visual effect has intact textures again.
+- Floater secondary projectile effects now work without additional client mods.
+
 ## v0.8.3 (Unreleased)
 
 ### Bugfixes (Claude Fable 5.1, Quitch, Quildtide)
